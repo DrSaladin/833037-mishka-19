@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Vitaly Sdelnikov](https://up.htmlacademy.ru/adaptive/19/user/833037).
-* Наставник: `Неизвестно`.
+* Наставник: Святослав Родионов.
 
 ---
 
