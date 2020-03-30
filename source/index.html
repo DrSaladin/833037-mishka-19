@@ -4,51 +4,48 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
-  <link rel=stylesheet href=css/normalize.css>
   <link rel=stylesheet href=css/style.css>
 </head>
 
 <body>
 
   <header class="page-header">
-    <div class="container container--page-header">
-      <a href="" class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" class="page-header__logo-image"
-          alt="Магазин подарков ручной работы Mishka" height="86" width="35">
+    <div class="container page-header__wrapper">
+      <a href="index.html" class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" class="page-header__logo-img"
+          alt="Магазин подарков ручной работы Mishka" height="35" width="86">
       </a>
-      <nav class="page-navigationa">
-        <button class="page-navigationa__show-menu-button" type="button">Меню</button>
-
-        <ul class="page-navigation__list">
-          <li><a href="" class="page-navigation__list-item">Каталог товаров</a></li>
-          <li><a href="" class="page-navigation__list-item">Вязание на заказ</a></li>
-          <li><a href="" class="page-navigation__list-item">Поиск по сайту</a></li>
-          <li><a href="" class="page-navigation__list-item">Коризина</a></li>
+      <nav class="page-nav">
+        <button class="page-nav__hamburger-btn" type="button">Меню</button>
+        <ul class="page-nav__list">
+          <li><a href="catalog.html" class="page-nav__list-item">Каталог товаров</a></li>
+          <li><a href="form.html" class="page-nav__list-item">Вязание на заказ</a></li>
+          <li><a href="" class="page-nav__list-item">Поиск по сайту</a></li>
+          <li><a href="" class="page-nav__list-item">Коризина</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-
   <main class="page-main">
-    <div class="image-banner index--banner">
-      <h1 class="title-h1 title-h1--index">Милые штуки ручной работы для дома</h1>
+    <div class="index-intro">
+      <h1 class="index-intro__title">Милые штуки ручной работы для дома</h1>
     </div>
 
-    <div class="menu-options menu-options--index">
-      <ul class="menu-options__list">
-        <li><a class="menu-options__list-item" href="">Предметы интерьера</a></li>
-        <li><a class="menu-options__list-item" href="">Детские игрушки</a></li>
+    <div class="goods-options">
+      <ul class="goods-options__list">
+        <li class="goods-options__list-item"><a href="">Предметы интерьера</a></li>
+        <li class="goods-options__list-item"><a href="">Детские игрушки</a></li>
       </ul>
     </div>
 
     <section class="popular-goods">
-      <h2 class="visually-hidden">Товары недели</h2>
+      <h2 class="visually-hidden">Популярный крафтовые подарки интернет-магазина Мишка</h2>
       <article class="popular-goods__item">
-        <span class="popular-goods__item-title">Вязаные корзинки</span>
-        <h3 class="title-h3 title-h3--popular-goods">Товары недели</h3>
+        <h3 class="popular-goods__item-title">Вязаные корзинки</h3>
+        <div class="popular-goods__item-group">Товары недели</div>
         <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-        <table class="popular-goods__item-characteristics">
+        <table class="popular-goods__item-table">
           <tr>
             <td>Цвет:</td>
             <td>«Тиффани»/серый</td>
@@ -62,17 +59,17 @@
             <td>15 см</td>
           </tr>
         </table>
-        <img class="popular-goods__item-image" src="https://via.placeholder.com/150x150"
+        <img class="popular-goods__item-img" src="https://via.placeholder.com/150x150"
           alt="Экологически чистая пряжа, ручная работа. Доступны в шести расцветках (красный, черный, белый, синий, желтый и бирюзовый) и трех размерах (2м, 3м и 5м)."
           width="260" height="315">
-        <span class="popular-goods__item-price">Цена: 990 руб.</span>
-        <a href="" class="button order--button">Заказать</a>
+        <div class="popular-goods__item-price">Цена: 990 руб.</div>
+        <a href="" class="btn popular-goods__item-btn">Заказать</a>
       </article>
     </section>
 
     <section class="about-us">
-      <div class="container container--about-us">
-        <h2 class="title-h2 title-h2--about-us">Коротко о нас:</h2>
+      <div class="container about-us__wrapper">
+        <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__list-item">Экологически чистые материалы</li>
           <li class="about-us__list-item">Скандинавский стиль по российской цене</li>
@@ -85,49 +82,49 @@
     </section>
 
     <section class="review-block">
-      <h2 class="title-h2 title-h2--review-block">Отзывы</h2>
-      <div class="container container--review-block">
+      <h2 class="review-block__title">Отзывы</h2>
+      <div class="container review-block__wrapper">
         <input type="radio" id="index-review-button-1" name="toggle" checked>
         <input type="radio" id="index-review-button-2" name="toggle">
         <div class="review-block__slider-labels">
           <label for="index-review-button-1" class="index-review-arrow-1"></label>
           <label for="index-review-button-2" class="index-review-arrow-2"></label>
         </div>
-        <div class="review-block_sliding">
-          <div class="review-block_sliding-block review-block-1">
-            <p class="review-text review-text--1">
+        <div class="review-block__sliding">
+          <div class="review-block__sliding-field">
+            <p class="review-block__sliding-field-text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
               как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
               и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </p>
-            <ul class="review-name review-name--1">
+            <ul class="review-block__sliding-field-name">
               <li>Анастасия Красильникова</li>
               <li>@misssssiskras</li>
             </ul>
           </div>
-          <div class="review-block_sliding-block review-block-2">
-            <p class="review-text review-text--2">
+          <div class="review-block__sliding-field">
+            <p class="review-block__sliding-field-text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
               как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
               и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </p>
-            <ul class="review-name review-name--2">
+            <ul class="review-block__sliding-field-name">
               <li>Анастасия Красильникова</li>
               <li>@misssssiskras</li>
             </ul>
           </div>
         </div>
-        <a href="" class="button write-review-button">Написать</a>
+        <a href="" class="review-block__btn">Написать</a>
       </div>
     </section>
 
     <section class="contacts">
-      <h2 class="title-h2 title-h2--contacts">Контакты</h2>
+      <h2 class="contacts__title">Контакты</h2>
       <a href="" class="contacts__map">
-        <img class="contacts__map-image" src="https://via.placeholder.com/150x150"
+        <img class="contacts__map-img" src="https://via.placeholder.com/150x150"
           alt="адрес - г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="322" height="457">
       </a>
-      <a href="" class="button contacts--write-us-button">Написать</a>
+      <a href="" class="contacts__btn">Написать</a>
     </section>
 
   </main>
@@ -139,13 +136,12 @@
         <li class="page-footer__social-list-item"><a href=""></a></li>
         <li class="page-footer__social-list-item"><a href=""></a></li>
       </ul>
-      <span class="page-footer__developers">Разработано
+      <div class="page-footer__developers">Разработано
         <a class="page-footer__developers-logo" href="">
         </a>
-      </span>
+      </div>
     </div>
   </footer>
-
 </body>
 
 </html>

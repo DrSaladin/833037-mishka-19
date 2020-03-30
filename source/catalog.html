@@ -4,98 +4,106 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Каталог</title>
-  <link rel=stylesheet href=css/normalize.css>
   <link rel=stylesheet href=css/style.css>
 </head>
 
 <body>
 
   <header class="page-header">
-    <div class="container container--page-header">
-      <a href="" class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" class="page-header__logo-image" alt="Магазин подарков ручной работы Mishka" height="86" width="35">
+    <div class="container page-header__wrapper">
+      <a href="index.html" class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" class="page-header__logo-img"
+          alt="Магазин подарков ручной работы Mishka" height="35" width="86">
       </a>
-      <nav class="page-navigationa">
-        <button class="page-navigationa__show-menu-button" type="button">Меню</button>
-
-        <ul class="page-navigation__list">
-          <li><a href="" class="page-navigation__list-item">Каталог товаров</a></li>
-          <li><a href="" class="page-navigation__list-item">Вязание на заказ</a></li>
-          <li><a href="" class="page-navigation__list-item">Поиск по сайту</a></li>
-          <li><a href="" class="page-navigation__list-item">Коризина</a></li>
+      <nav class="page-nav">
+        <button class="page-nav__hamburger-btn" type="button">Меню</button>
+        <ul class="page-nav__list">
+          <li><a href="catalog.html" class="page-nav__list-item">Каталог товаров</a></li>
+          <li><a href="form.html" class="page-nav__list-item">Вязание на заказ</a></li>
+          <li><a href="" class="page-nav__list-item">Поиск по сайту</a></li>
+          <li><a href="" class="page-nav__list-item">Коризина</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-<main class="page-main">
-<div class="image-banner catalog--banner">
-  <h1 class="title-h1 title-h1--catalog">Каталог товаров</h1>
-</div>
+  <main class="page-main">
+    <div class="top-banner">
+      <div class="container">
+        <h1 class="top-banner__title">Каталог товаров</h1>
+      </div>
+    </div>
 
-<ul class="catalog">
-  <li class="catalog-item">
-    <img src="https://via.placeholder.com/150x150" class="catalog-item__image" alt="Зайчик-попрыгайчик. Детская игрушка сделанная из гипоаллергенного материала. Лучший подарок вашим маленьким ангелочкам."
-    width="260" height="195">
-    <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
-    <span class="catalog-item-characteristics">Рост 30 см, вес 200 г</span>
-    <ul class="catalog-item-order-managments">
-      <li class="catalog-item-price">
-        1 200 руб.
+    <ul class="catalog">
+      <li class="catalog-item">
+        <img src="https://via.placeholder.com/150x150" class="catalog-item__image"
+          alt="Зайчик-попрыгайчик. Детская игрушка сделанная из гипоаллергенного материала. Лучший подарок вашим маленьким ангелочкам."
+          width="260" height="195">
+        <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
+        <div class="catalog-item__info">Рост 30 см, вес 200 г</div>
+        <table class="catalog-item__table">
+          <tr>
+            <td class="catalog-item__table-price">
+              1 200 руб.
+            </td>
+            <td class="catalog-item__table-cart-btn">
+              <a href=""></a>
+            </td>
+          </tr>
+        </table>
       </li>
-      <li class="catalog-item-cart">
-        <a class="catalog-item-cart-link" href=""></a>
+
+      <li class="catalog-item">
+        <img src="https://via.placeholder.com/150x150" class="catalog-item__image"
+          alt="Корзинка для белья. Создана любящими руками только из натуральных тканей. Пять расцветок, три размера."
+          width="260" height="195">
+        <h3 class="catalog-item__title">Корзинка для белья</h3>
+        <div class="catalog-item__info">Диаметр 15 см, высота 10 см</div>
+        <table class="catalog-item__table">
+          <tr>
+            <td class="catalog-item__table-price">
+              690 руб.
+            </td>
+            <td class="catalog-item__table-cart-btn">
+              <a href=""></a>
+            </td>
+          </tr>
+        </table>
+      </li>
+
+      <li class="catalog-item">
+        <img src="https://via.placeholder.com/150x150" class="catalog-item__image"
+          alt="Большая корзинка для игрушек. Домик для все игрушек вашего чада. Гипоаллергенный материал и простой фасон подойдет для детей любого возраста."
+          width="260" height="195">
+        <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
+        <span class="catalog-item__info">Диаметр 30 см, высота 30 см</span>
+        <table class="catalog-item__table">
+          <tr>
+            <td class="catalog-item__table-price">
+              1 500 руб.
+            </td>
+            <td class="catalog-item__table-cart-btn">
+              <a href=""></a>
+            </td>
+          </tr>
+        </table>
       </li>
     </ul>
-  </li>
 
-  <li class="catalog-item">
-    <img src="https://via.placeholder.com/150x150" class="catalog-item__image"
-      alt="Корзинка для белья. Создана любящими руками только из натуральных тканей. Пять расцветок, три размера."
-      width="260" height="195">
-    <h3 class="catalog-item__title">Корзинка для белья</h3>
-    <span class="catalog-item-characteristics">Диаметр 15 см, высота 10 см</span>
-    <ul class="catalog-item-order-managments">
-      <li class="catalog-item-price">
-        690 руб.
-      </li>
-      <li class="catalog-item-cart">
-        <a class="catalog-item-cart-link" href=""></a>
-      </li>
-    </ul>
-  </li>
-
-  <li class="catalog-item">
-    <img src="https://via.placeholder.com/150x150" class="catalog-item__image"
-      alt="Большая корзинка для игрушек. Домик для все игрушек вашего чада. Гипоаллергенный материал и простой фасон подойдет для детей любого возраста."
-      width="260" height="195">
-    <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
-    <span class="catalog-item-characteristics">Диаметр 30 см, высота 30 см</span>
-    <ul class="catalog-item-order-managments">
-      <li class="catalog-item-price">
-        1 500 руб.
-      </li>
-      <li class="catalog-item-cart">
-        <a class="catalog-item-cart-link" href=""></a>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-
-</main>
-<footer class="page-footer">
-  <div class="container container--page-footer">
-    <ul class="page-footer__social-list">
-      <li class="page-footer__social-list-item"><a href=""></a></li>
-      <li class="page-footer__social-list-item"><a href=""></a></li>
-      <li class="page-footer__social-list-item"><a href=""></a></li>
-    </ul>
-    <span class="page-footer__developers">Разработано
-      <a class="page-footer__developers-logo" href="">
-      </a>
-    </span>
-  </div>
-</footer>
+  </main>
+  <footer class="page-footer">
+    <div class="container container--page-footer">
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-list-item"><a href=""></a></li>
+        <li class="page-footer__social-list-item"><a href=""></a></li>
+        <li class="page-footer__social-list-item"><a href=""></a></li>
+      </ul>
+      <div class="page-footer__developers">Разработано
+        <a class="page-footer__developers-logo" href="">
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
