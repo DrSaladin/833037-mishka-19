@@ -1,0 +1,168 @@
+@basicfont: "Open Sans", Arial, sans-serif;
+@color-black: #000000;
+@color-grey: #444444;
+@color-turquoise: #63d1bb;
+@color-dark-turquoise: #56c3b2;
+@color-white: #ffffff;
+@color-socials: #46c1ae;
+@color-light-grey: #f1f1f1;
+
+
+.h1-title() {
+  font-size: 27px;
+  font-family: @basicfont;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+
+.h2-title() {
+  font-size: 25px;
+  font-family: @basicfont;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.h3-title() {
+  font-size: 17px;
+  font-family: @basicfont;
+  line-height: 1.41;
+  font-weight: bold;
+}
+
+
+.abtitle() {
+  font-size: 17px;
+  font-family: @basicfont;
+  line-height: 1.18;
+  font-weight: bold;
+  color: @color-turquoise;
+}
+
+
+.common-p() {
+  font-size: 15px;
+  font-family: @basicfont;
+  line-height: 1.6;
+  color: @color-grey;
+}
+
+.uppercase() {
+  text-transform: uppercase;
+}
+
+.btn() {
+  .block();
+  .border-box();
+  .links-wipe();
+  .bold();
+  .text-center();
+  padding: 15px 0;
+  width: 260px;
+  min-height: 52px;
+  border: solid 2px @color-grey;
+  font-family: @basicfont;
+}
+
+.btn-hover() {
+  .block();
+  .border-box();
+  .links-wipe();
+  .bold();
+  .text-center();
+  padding: 15px 0;
+  width: 260px;
+  min-height: 52px;
+  border: solid 2px @color-grey;
+  font-family: @basicfont;
+  color: @color-white;
+  background-color: @color-grey;
+}
+
+.btn-focus() {
+  .block();
+  .border-box();
+  .links-wipe();
+  .bold();
+  .text-center();
+  padding: 15px 0;
+  width: 260px;
+  min-height: 52px;
+  border: solid 2px @color-grey;
+  font-family: @basicfont;
+  color: lighten(@color-grey; 30%);
+  background-color: @color-grey;
+}
+
+.wipe() {
+  margin: 0;
+  padding: 0;
+}
+
+.list-wipe() {
+  padding: 0;
+  list-style: none;
+}
+
+.links-wipe() {
+  text-decoration: none;
+  color: @color-black;
+}
+
+
+.container() {
+  margin: auto;
+  padding: 0;
+  width: 320px;
+}
+
+.hide() {
+  visibility: hidden;
+}
+
+
+.flex() {
+  display: flex;
+}
+
+.block() {
+  display: block;
+}
+
+.blackout {
+  display: none;
+}
+
+.flex-wrap() {
+  flex-wrap: wrap;
+}
+
+.border-box() {
+  box-sizing: border-box;
+}
+
+.relative() {
+  position: relative;
+}
+
+.absolute() {
+  position: absolute;
+}
+
+.fixed() {
+  position: fixed;
+}
+
+
+
+.text-center() {
+  text-align: center;
+}
+
+.bold() {
+  font-weight: 800;
+}
+
+.common-hover-focus-and-path {
+
+}
