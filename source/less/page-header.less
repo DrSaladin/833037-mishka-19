@@ -1,14 +1,15 @@
 
 .page-header {
+  .border-box();
   font-family: @basicfont;
   background-color: #ffffff;
   min-width: 320px;
-  .border-box();
+  min-height: 79px;
 
 }
 
-.page-header__logo {
-  padding: 20px;
+.page-nav__logo {
+  margin-left: calc(100% - 200px);
 
   &:hover {
     opacity: 0.6;
@@ -19,7 +20,9 @@
   }
 }
 
-
+.page-nav__logo-img {
+  margin-top: 22px;
+}
 
 
 .container {
@@ -27,8 +30,10 @@
 }
 
 .page-nav {
+  .relative();
   width: 320px;
-  .absolute();
+  min-height: 79px;
+
 }
 
 .page-nav__hamburger-checkbox {
@@ -44,7 +49,7 @@
   .hide();
   .wipe();
   .list-wipe();
-  .absolute();
+  display: none;
   top: 78px;
   font-family: @basicfont;
   z-index: 1;
