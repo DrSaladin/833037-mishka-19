@@ -1,0 +1,73 @@
+.form-order {
+  font-family: @basicfont;
+}
+
+
+.form-order__preform-text {
+  font-family: @basicfont;
+  font-size: 13px;
+  color: #444444;
+  line-height: 1.85;
+  padding: 0 48px 30px 31px;
+}
+
+.fieldset {
+  .wipe();
+  width: 260px;
+  border:0 none;
+  margin: auto;
+
+}
+
+.fieldset__legend {
+  .h3-title();
+  .relative();
+  color: @color-turquoise;
+  text-transform: uppercase;
+}
+
+.fieldset__legend--line::before {
+  content: "";
+  .absolute();
+  border: 1px solid #63d1bb;
+  width: 198px;
+  left: 60px;
+  top: 12px;
+}
+
+
+.fieldset__label {
+  .h3-title();
+
+}
+
+input[type=text],
+input[type=tel],
+input[type=email] {
+  .border-box();
+  width: 260px;
+  border: none;
+  border-bottom: 3px solid #000000;
+  line-height: 2;
+}
+
+textarea {
+  width: 260px;
+
+}
+
+.form-order__item-type {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-order__item-color {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-order__item-info {
+  display: flex;
+  flex-direction: column;
+}
+

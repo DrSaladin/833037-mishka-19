@@ -1,7 +1,13 @@
 .about-us {
   font-family: @basicfont;
-
+  .relative();
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-repeat: repeat-x;
+  background-position: 0 36px;
+  background-size: 110%;
+  padding-top: 76px;
 }
+
 
 .container {
   .container();
@@ -9,7 +15,7 @@
 
 .about-us__title {
   .h2-title();
-  padding-left: 30px
+  padding-left: 30px;
 }
 
 .about-us__list {
@@ -18,40 +24,39 @@
   width: 260px;
 }
 
-.about-us-materials {
+.about-us__list-item {
+  background-position: 5% 30%;
+  background-repeat: no-repeat;
+}
+
+.about-us__list-item--materials {
   background-image: url(../img/icon-feature-flower.svg);
-  background-position: 5% 30%;
-  background-repeat: no-repeat;
+
 }
 
-.about-us-price {
+.about-us__list-item--price {
   background-image: url(../img/icon-feature-money.svg);
-  background-position: 5% 30%;
-  background-repeat: no-repeat;
+
 }
 
-.about-us-likes {
+.about-us__list-item--likes {
   background-image: url(../img/icon-feature-heart.svg);
-  background-position: 5% 30%;
-  background-repeat: no-repeat;
+
 }
 
-.about-us-handmade {
+.about-us__list-item--handmade {
   background-image: url(../img/icon-feature-ball.svg);
-  background-position: 5% 30%;
-  background-repeat: no-repeat;
+
 }
 
-.about-us-producers {
+.about-us__list-item--producers {
   background-image: url(../img/icon-feature-ball.svg);
-  background-position: 5% 30%;
-  background-repeat: no-repeat;
+
 }
 
-.about-us-gift {
+.about-us__list-item--gift {
   background-image: url(../img/icon-feature-gift.svg);
-  background-position: 5% 30%;
-  background-repeat: no-repeat;
+
 }
 
 .about-us__list-item {
