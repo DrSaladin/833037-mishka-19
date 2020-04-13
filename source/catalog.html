@@ -51,13 +51,14 @@
       <h1 class="top-banner__title">Каталог товаров</h1>
     </div>
 
-    <ul class="catalog">
-      <li class="catalog-item">
+    <ul class="catalog-list">
+      <li class="catalog-list__item catalog-item">
         <a href="" class="catalog-item__img-link">
           <img src="img/photo-hare-mobile@1x.jpg"
             alt="Зайчик-попрыгайчик. Детская игрушка сделанная из гипоаллергенного материала. Лучший подарок вашим маленьким ангелочкам."
             width="260" height="195">
         </a>
+        <div>
         <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
         <p class="catalog-item__info">Рост 30 см, вес 200 г</p>
         <p class="catalog-item__order">
@@ -74,6 +75,7 @@
             </svg>
           </a>
         </p>
+        </div>
       </li>
 
       <li class="catalog-item">
@@ -127,11 +129,10 @@
 
     <section class="video-block">
       <h3 class="video-block__title">Процесс производства</h3>
-      <img src="https://via.placeholder.com/150x150" class="video-block__image" alt="заглушка для видео" width="260"
-        height="150">
+      <img class="video-block__video" src="img/video-mobile@1x.jpg" aria-label="Процесс создания вязаных игрушек" width="260" height="150">
       <p class="video-block__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
         появляются наши товары.</p>
-      <a href="form.html" class="btn video-block__btn">Сделать заказ</a>
+      <a href="form.html" class="video-block__btn btn">Сделать заказ</a>
     </section>
   </main>
 
@@ -195,23 +196,27 @@
       </a>
     </div>
   </footer>
-  <form action="catalog.html" method="get" class="catalog-popup">
 
-    <b class="catalog-popup__title">Добавить в корзину</b>
-    <p class="catalog-popup__info">Выберите размер:</p>
-    <label class="catalog-popup__size">
-      <input type="radio" name="order-size" value="size-s">
+  <form action="catalog.html" method="get" class="catalog-popup size-popup">
+    <b class="size-popup__title">Добавить в корзину</b>
+    <p class="size-popup__info">Выберите размер:</p>
+    <div class="size-popup_wrapper">
+    <input class="size-radio" type="radio" id="size-s" name="order-size" value="size-s">
+    <label class="size-popup__label" for="size-s">
       S
     </label>
-    <label class="catalog-popup__size">
-      <input type="radio" name="order-size" value="size-m">
+
+    <input class="size-radio" type="radio" id="size-m" name="order-size" value="size-m">
+    <label class="size-popup__label" for="size-m">
       M
     </label>
-    <label class="catalog-popup__size">
-      <input type="radio" name="order-size" value="size-l">
+
+    <input class="size-radio" type="radio" id="size-l" name="order-size" value="size-l">
+    <label class="size-popup__label" for="size-l">
       L
     </label>
-    <button type="submit" class="btn catalog-popup__btn">Добавить</button>
+    </div>
+    <button type="submit" class="btn size-popup__btn">Добавить</button>
   </form>
 </body>
 

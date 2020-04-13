@@ -1,0 +1,116 @@
+.size-popup {
+  position: fixed;
+  box-sizing: border-box;
+  font-family: @opensans;
+  left: calc(50% - 160px);
+  top: 50%;
+  min-width: 320px;
+  max-width: 566px;
+  min-height: 336px;
+  background-color: @color-white;
+  display: none;
+}
+
+.size-popup_wrapper {
+  display: flex;
+  width: 260px;
+  margin: auto;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.size-popup__label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 80px;
+  background-color: @color-white;
+  border: solid 2px #444444;
+  text-align: center;
+  line-height: 3;
+}
+
+.size-radio  {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.size-radio:hover + .size-popup__label {
+  border: solid 2px rgba(68,68,68,0.5);
+}
+
+.size-radio:checked + .size-popup__label {
+  border: solid 2px #62d1ba;
+}
+
+
+.size-popup__title {
+  font-family: @opensans;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: @color-black;
+  display: block;
+  padding: 36px 86px 25px 86px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+
+.size-popup__info {
+  text-align: center;
+}
+
+
+.size-popup .size-popup__btn {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: @color-white;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  width: 260px;
+  min-height: 52px;
+  font-family: @opensans;
+  margin: auto;
+  background-color: #63d1bb;
+  border: none;
+}
+
+.size-popup .size-popup__btn:hover {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: @color-black;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  width: 260px;
+  min-height: 52px;
+  font-family: @opensans;
+  color: @color-white;
+  background-color: #46c1ae;
+  border: none;
+}
+
+.size-popup .size-popup__btn:focus {
+  width: 260px;
+  min-height: 52px;
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: @color-white;
+  background-color: #63d1bb;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  font-family: @opensans;
+  color: @color-white;
+  border: none;
+}
+
+

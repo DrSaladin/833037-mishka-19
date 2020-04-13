@@ -1,6 +1,6 @@
 .about-us {
-  font-family: @basicfont;
-  .relative();
+  font-family: @opensans;
+  position: relative;
   background-image: url(../img/bg-zigzag-line.svg);
   background-repeat: repeat-x;
   background-position: 0 36px;
@@ -10,16 +10,23 @@
 
 
 .container {
-  .container();
+  margin: auto;
+  padding: 0;
+  width: 320px;
 }
 
 .about-us__title {
-  .h2-title();
+  font-family: @opensans;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: @color-black;
   padding-left: 30px;
 }
 
 .about-us__list {
-  .list-wipe();
+  padding: 0;
+  list-style: none;
   margin: auto;
   width: 260px;
 }
@@ -60,10 +67,13 @@
 }
 
 .about-us__list-item {
-  .bold();
-  padding-top: 85px;
-  font-family: @basicfont;
+  font-family: @opensans;
+  font-size: 17px;
   line-height: 1.18;
+  font-weight: bold;
+  color: @color-black;
+  padding-top: 85px;
+
 }
 
 

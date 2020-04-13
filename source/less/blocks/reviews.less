@@ -1,37 +1,51 @@
 .reviews {
-  font-family: @basicfont;
-  .relative();
+  font-family: @opensans;
+  position: relative;
   margin-top: 61px;
 }
 
 
 .reviews__title {
-  .h2-title();
+  font-family: @opensans;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: @color-black;
   padding-left: 30px;
-
 }
 
 .container {
-  .container();
+  margin: auto;
+  padding: 0;
+  width: 320px;
 }
 
 .reviews__sliding {
-  .list-wipe();
+  padding: 0;
+  list-style: none;
   margin: auto;
   width: 260px;
 }
 
 .reviews__sliding-field {
-  .list-wipe();
+  padding: 0;
+  list-style: none;
 
 }
 
 .reviews__sliding-field-text {
-  .common-p();
+  font-family: @opensans;
+  font-size: 15px;
+  line-height: 1.6;
+  color: @color-grey;
 }
 
 .reviews__sliding-field-name {
-  .h3-title();
+  font-family: @opensans;
+  font-size: 17px;
+  line-height: 1.41;
+  font-weight: bold;
+  color: @color-black;
 }
 
 .reviews__sliding-field-nickname {
@@ -40,8 +54,9 @@
 }
 
 .reviews__switch-arrows {
-  .list-wipe();
-  .flex();
+  padding: 0;
+  list-style: none;
+  display: flex;
   margin: auto;
   width: 260px;
   padding-bottom: 38px;
@@ -62,8 +77,55 @@
   opacity: 0.3;
 }
 
+.btn{
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  width: 260px;
+  min-height: 52px;
+  border: solid 2px @color-grey;
+  font-family: @opensans;
+}
+
+.btn:hover {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  width: 260px;
+  min-height: 52px;
+  border: solid 2px @color-grey;
+  font-family: @opensans;
+  color: @color-white;
+  background-color: @color-grey;
+}
+
+.btn:focus {
+  width: 260px;
+  min-height: 52px;
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000000;
+  background-color: @color-grey;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  border: solid 2px @color-grey;
+  font-family: @opensans;
+  color: lighten(@color-grey; 30%);
+}
+
 .reviews__btn {
   margin: auto;
 }
+
 
 

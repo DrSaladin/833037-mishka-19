@@ -1,13 +1,18 @@
 .video-block {
-  .wipe();
+  margin: 0;
+  padding: 0;
   border: 1px solid @color-light-grey;
   width: 260px;
   margin: 30px auto;
-  font-family: @basicfont;
+  font-family: @opensans;
 }
 
 .video-block__title {
-  .h3-title();
+  font-family: @opensans;
+  font-size: 17px;
+  line-height: 1.41;
+  font-weight: bold;
+  color: @color-black;
   padding-left: 91px;
   background-image: url(../img/icon-video.svg);
   background-repeat: no-repeat;
@@ -15,7 +20,22 @@
 
 }
 
+.video-block__video {
+
+}
+
+
+.video-block__video:hover:before {
+
+}
+
+.video-block__video:focus:before {
+
+}
+
+
 .video-block__info {
+  font-family: @opensans;
   font-size: 13px;
   line-height: 1.85;
   color: @color-grey;
@@ -23,16 +43,51 @@
   margin: 34px auto 29px auto;
 }
 
-.video-block__btn {
+
+.video-block .video-block__btn {
   width: 192px;
   margin: auto;
   margin-bottom: 33px;
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: @color-black;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  min-height: 52px;
+  border: solid 2px @color-grey;
+  font-family: @opensans;
 
   &:hover {
     width: 192px;
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: @color-black;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+    min-height: 52px;
+    border: solid 2px @color-grey;
+    font-family: @opensans;
+    color: @color-white;
+    background-color: @color-grey;
   }
 
   &:focus {
     width: 192px;
+    min-height: 52px;
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: @color-black;
+    background-color: @color-grey;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+    border: solid 2px @color-grey;
+    font-family: @opensans;
+    color: lighten(@color-grey; 30%);
   }
 }
