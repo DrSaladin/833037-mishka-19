@@ -1,16 +1,3 @@
-.form-order {
-  font-family: @opensans;
-}
-
-
-.form-order__preform-text {
-  font-family: @opensans;
-  font-size: 13px;
-  line-height: 1.85;
-  color: @color-grey;
-  padding: 29px 48px 30px 31px;
-  margin: 0;
-}
 
 .fieldset {
   padding: 0;
@@ -22,7 +9,7 @@
 }
 
 .fieldset__legend {
-  font-family: @opensans;
+  font-family: @open-sans-font;
   font-size: 17px;
   line-height: 1.41;
   font-weight: bold;
@@ -52,7 +39,7 @@
 
 
 .fieldset__label {
-  font-family: @opensans;
+  font-family: @open-sans-font;
   font-size: 17px;
   line-height: 1.06;
   font-weight: bold;
@@ -81,6 +68,8 @@
   -moz-appearance: none;
   appearance: none;
 }
+
+
 
 .fieldset__label--radio:before {
   content: "";
@@ -143,19 +132,6 @@
 }
 
 
-.form-order__item-type label {
-  margin-bottom: 30px;
-  padding-right: 43px;
-}
-
-.form-order__item-color label {
-  margin-top: 44px;
-}
-
-.form-order__item-color .fieldset__legend:first-child {
-  margin-bottom: 0px;
-}
-
 input[type=text],
 input[type=tel],
 input[type=email] {
@@ -181,85 +157,7 @@ input[type=email] {
   background-position: 95% 50%;
 }
 
-
 textarea {
   width: 260px;
+  resize: none;
 }
-
-.form-order__item-type {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-order__item-color {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-order__item-color label:last-child {
-  margin-bottom: 49px;
-}
-
-.form-order__item-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.btn {
-  display: block;
-  box-sizing: border-box;
-  text-decoration: none;
-  color: @color-black;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px 0;
-  width: 260px;
-  min-height: 52px;
-  border: solid 2px @color-grey;
-  font-family: @opensans;
-}
-
-.btn:hover {
-  display: block;
-  box-sizing: border-box;
-  text-decoration: none;
-  color: @color-black;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px 0;
-  width: 260px;
-  min-height: 52px;
-  border: solid 2px @color-grey;
-  font-family: @opensans;
-  color: @color-white;
-  background-color: @color-grey;
-}
-
-.btn:focus {
-  width: 260px;
-  min-height: 52px;
-  display: block;
-  box-sizing: border-box;
-  text-decoration: none;
-  color: @color-black;
-  background-color: @color-grey;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px 0;
-  border: solid 2px @color-grey;
-  font-family: @opensans;
-  color: lighten(@color-grey; 30%);
-}
-
-.form-order__submit-btn {
-  margin-bottom: 55px;
-}
-
-.form-order__elemts-notabene {
-  font-family: @opensans;
-  font-size: 14px;
-  line-height: 1.14;
-  color: @color-grey;
-  padding: 18px 0 31px 0;
-}
-

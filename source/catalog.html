@@ -200,22 +200,26 @@
   <form action="catalog.html" method="get" class="catalog-popup size-popup">
     <b class="size-popup__title">Добавить в корзину</b>
     <p class="size-popup__info">Выберите размер:</p>
-    <div class="size-popup_wrapper">
-    <input class="size-radio" type="radio" id="size-s" name="order-size" value="size-s">
-    <label class="size-popup__label" for="size-s">
-      S
-    </label>
-
-    <input class="size-radio" type="radio" id="size-m" name="order-size" value="size-m">
-    <label class="size-popup__label" for="size-m">
-      M
-    </label>
-
-    <input class="size-radio" type="radio" id="size-l" name="order-size" value="size-l">
-    <label class="size-popup__label" for="size-l">
-      L
-    </label>
-    </div>
+    <ul class="size-popup__list">
+      <li class="size-popup__list-item">
+        <input class="size-popup__list-item-radio" type="radio" id="size-s" name="order-size" value="size-s">
+        <label class="size-popup__list-item-label" for="size-s">
+          S
+        </label>
+      </li>
+      <li class="size-popup__list-item">
+        <input class="size-popup__list-item-radio" type="radio" id="size-m" name="order-size" value="size-m">
+        <label class="size-popup__list-item-label" for="size-m">
+          M
+        </label>
+      </li>
+      <li class="size-popup__list-item">
+        <input class="size-popup__list-item-radio" type="radio" id="size-l" name="order-size" value="size-l">
+        <label class="size-popup__list-item-label" for="size-l">
+          L
+        </label>
+      </li>
+    </ul>
     <button type="submit" class="btn size-popup__btn">Добавить</button>
   </form>
 </body>

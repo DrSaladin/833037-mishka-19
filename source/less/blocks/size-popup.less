@@ -1,7 +1,7 @@
 .size-popup {
   position: fixed;
   box-sizing: border-box;
-  font-family: @opensans;
+  font-family: @open-sans-font;
   left: calc(50% - 160px);
   top: 50%;
   min-width: 320px;
@@ -11,15 +11,20 @@
   display: none;
 }
 
-.size-popup_wrapper {
+.size-popup__list {
   display: flex;
   width: 260px;
+  padding: 0;
   margin: auto;
   justify-content: space-around;
   margin-bottom: 30px;
 }
 
-.size-popup__label {
+.size-popup__list-item {
+  list-style: none;
+}
+
+.size-popup__list-item-label {
   cursor: pointer;
   position: relative;
   display: block;
@@ -31,23 +36,23 @@
   line-height: 3;
 }
 
-.size-radio  {
+.size-popup__list-item-radio  {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.size-radio:hover + .size-popup__label {
+.size-popup__list-item-radio:hover + .size-popup__list-item-label {
   border: solid 2px rgba(68,68,68,0.5);
 }
 
-.size-radio:checked + .size-popup__label {
+.size-popup__list-item-radio:checked + .size-popup__list-item-label {
   border: solid 2px #62d1ba;
 }
 
 
 .size-popup__title {
-  font-family: @opensans;
+  font-family: @open-sans-font;
   font-size: 25px;
   line-height: 1.2;
   font-weight: bold;
@@ -59,57 +64,25 @@
 }
 
 
-
 .size-popup__info {
   text-align: center;
 }
 
-
-.size-popup .size-popup__btn {
-  display: block;
-  box-sizing: border-box;
-  text-decoration: none;
+.size-popup__btn {
   color: @color-white;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px 0;
-  width: 260px;
-  min-height: 52px;
-  font-family: @opensans;
-  margin: auto;
   background-color: #63d1bb;
   border: none;
 }
 
-.size-popup .size-popup__btn:hover {
-  display: block;
-  box-sizing: border-box;
-  text-decoration: none;
-  color: @color-black;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px 0;
-  width: 260px;
-  min-height: 52px;
-  font-family: @opensans;
+.size-popup__btn:hover {
   color: @color-white;
   background-color: #46c1ae;
   border: none;
 }
 
-.size-popup .size-popup__btn:focus {
-  width: 260px;
-  min-height: 52px;
-  display: block;
-  box-sizing: border-box;
-  text-decoration: none;
+.size-popup__btn:focus {
   color: @color-white;
   background-color: #63d1bb;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px 0;
-  font-family: @opensans;
-  color: @color-white;
   border: none;
 }
 
