@@ -21,10 +21,34 @@
   margin-top: 22px;
 }
 
-.page-nav__toggle {
+.page-nav__hamburger {
   position: absolute;
   top: 32px;
   right: 31px;
+  appearance: none;
+  border: none;
+  background-color: @color-white;
+}
+
+
+.page-nav__hamburger-box {
+  width: 20px;
+  height: 14px;
+  border-bottom: 2px @color-black solid;
+  border-top: 2px @color-black solid;
+  display: block;
+  cursor: pointer;
+  background-color: @color-white;
+  border-radius: 5%;
+}
+
+
+.page-nav__hamburger-inner {
+  width: 20px;
+  height: 2px;
+  background-color: @color-black;
+  display: block;
+  margin-top: 6px;
 }
 
 
