@@ -2,7 +2,6 @@
   position: relative;
   width: 320px;
   min-height: 79px;
-
 }
 
 .page-nav__logo {
@@ -48,7 +47,6 @@
 
 .page-nav__list-item {
   position: relative;
-
 }
 
 .page-nav__list-item a {
@@ -60,18 +58,16 @@
   display: block;
   box-sizing: border-box;
   text-decoration: none;
-  color: @color-black;
   min-width: 320px;
   min-height: 79px;
   background-color: @color-white;
   box-shadow: 0px 1px 0 0 #ececec, inset 0px 1px 0 0 #ececec;
   padding-left: calc(30% - 20px);
 
-
 }
 
 .page-nav__list-item a:hover {
-  color: lighten(@color-black; 30%);
+  color: lighten(@color-black, 30%);
 }
 
 .page-nav__list-item a:hover path {
@@ -79,11 +75,11 @@
 }
 
 .page-nav__list-item a:focus {
-  color: lighten(@color-black; 60%);
+  color: lighten(@color-black, 60%);
 }
 
 .page-nav__list-item a:focus path {
-  fill: lighten(#63d1bb; 15%);
+  fill: lighten(#63d1bb, 15%);
 }
 
 .page-nav__list-item svg {
@@ -93,43 +89,35 @@
 }
 
 .page-nav__list-item svg path {
-  fill: lighten(@color-black; 80%);
-}
-
-
-.page-header__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
+  fill: lighten(@color-black, 80%);
 }
 
 .page-nav__list-item--search a {
-  background-image: url(../img/icon-search.svg);
+  background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
   background-position: calc(20% - 20px);
 }
 
 .page-nav__list-item--search a:hover {
-  background-image: url(../img/icon-search-hover.svg);
+  background-image: url("../img/icon-search-hover.svg");
 }
 
 .page-nav__list-item--search a:focus {
-  background-image: url(../img/icon-search-hover.svg);
+  background-image: url("../img/icon-search-hover.svg");
   opacity: 0.6;
 }
 
 .page-nav__list-item--cart a {
-  background-image: url(../img/icon-cart.svg);
+  background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: calc(20% - 20px);
 }
 
 .page-nav__list-item--cart a:hover {
-  background-image: url(../img/icon-cart-hover.svg);
+  background-image: url("../img/icon-cart-hover.svg");
 }
 
 .page-nav__list-item--cart a:focus {
-  background-image: url(../img/icon-cart-hover.svg);
+  background-image: url("../img/icon-cart-hover.svg");
   opacity: 0.6;
 }

@@ -57,13 +57,13 @@
           Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
         <fieldset class="form-order__item-type fieldset">
-          <legend class="fieldset__legend ">Тип</legend>
-          <input class="radio-input" type="radio" id="accessory-rd" name="gift-type-radio" value="accessory-rd">
+          <legend class="fieldset__legend">Тип</legend>
+          <input class="fieldset__radio-input" type="radio" id="accessory-rd" name="gift-type-radio" value="accessory-rd">
           <label class="fieldset__label fieldset__label--radio" for="accessory-rd">
             Аксессуар для интерьера
           </label>
 
-          <input class="radio-input" type="radio" id="child-toy-rd" name="gift-type-radio" value="child-toy-rd">
+          <input class="fieldset__radio-input" type="radio" id="child-toy-rd" name="gift-type-radio" value="child-toy-rd">
           <label class="fieldset__label fieldset__label--radio" for="child-toy-rd">
             Детская игрушка
           </label>
@@ -71,27 +71,27 @@
 
         <fieldset class="form-order__item-color fieldset">
           <legend class="fieldset__legend ">Цвет</legend>
-          <input class="checkbox-input" id="white-cb" type="checkbox" name="white-cb" value="white-cb" checked>
+          <input class="fieldset__checkbox-input" id="white-cb" type="checkbox" name="white-cb" value="white-cb" checked>
           <label class="fieldset__label fieldset__label--checkbox" for="white-cb">
             Белый
           </label>
-          <input class="checkbox-input" id="grey-cb" type="checkbox" name="grey-cb" value="grey-cb" checked>
+          <input class="fieldset__checkbox-input" id="grey-cb" type="checkbox" name="grey-cb" value="grey-cb" checked>
           <label class="fieldset__label fieldset__label--checkbox" for="grey-cb">
             Серый
           </label>
-          <input class="checkbox-input" id="tiffani-cb" type="checkbox" name="tiffani-cb" value="tiffani-cb">
+          <input class="fieldset__checkbox-input" id="tiffani-cb" type="checkbox" name="tiffani-cb" value="tiffani-cb">
           <label class="fieldset__label fieldset__label--checkbox" for="tiffani-cb">
             «Тиффани»
           </label>
-          <input class="checkbox-input" id="black-cb" type="checkbox" name="black-cb" value="black-cb">
+          <input class="fieldset__checkbox-input" id="black-cb" type="checkbox" name="black-cb" value="black-cb">
           <label class="fieldset__label fieldset__label--checkbox" for="black-cb">
             Черный
           </label>
-          <input class="checkbox-input" id="pink-cb" type="checkbox" name="pink-cb" value="pink-cb">
+          <input class="fieldset__checkbox-input" id="pink-cb" type="checkbox" name="pink-cb" value="pink-cb">
           <label class="fieldset__label fieldset__label--checkbox" for="pink-cb">
             Розовый
           </label>
-          <input class="checkbox-input" id="orange-cb" type="checkbox" name="orange-cb" value="orange-cb">
+          <input class="fieldset__checkbox-input" id="orange-cb" type="checkbox" name="orange-cb" value="orange-cb">
           <label class="fieldset__label fieldset__label--checkbox" for="orange-cb">
             Оранжевый
           </label>
@@ -102,31 +102,30 @@
           <label for="first-name" class="fieldset__label">
             Имя:
           </label>
-          <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
+          <input class="fieldset__text-input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
           <label for="middle-name" class="fieldset__label">
             Фамилия:
-            <input type="text" name="middle-name" id="middle-name" placeholder="Укажите фамилию*" required>
+            <input class="fieldset__text-input" type="text" name="middle-name" id="middle-name" placeholder="Укажите фамилию*" required>
           </label>
           <label for="last-name" class="fieldset__label">
             Отчество:
-            <input type="text" name="last-name" id="last-name" placeholder="Отчество, если желаете">
+            <input class="fieldset__text-input" type="text" name="last-name" id="last-name" placeholder="Отчество, если желаете">
           </label>
 
           <p class="fieldset__legend ">Тел</p>
           <label for="tel" class="fieldset__label">
             Тел:
-            <input type="tel" name="tel" id="tel" placeholder="+7 XXX XXX XX XX*" required>
+            <input class="fieldset__tel-input" type="tel" name="tel" id="tel" placeholder="+7 XXX XXX XX XX*" required>
           </label>
           <p class="fieldset__legend fieldset__legend--shorter-line">E-mail</p>
 
           <label for="mail" class="fieldset__label">
             E-mail:
-            <input type="email" name="mail" id="mail" placeholder="Ваш Email*" required>
+            <input class="fieldset__email-input" type="email" name="mail" id="mail" placeholder="Ваш Email*" required>
           </label>
           <p class="fieldset__legend ">Доп</p>
           <label for="text" class="fieldset__label">
-            <textarea placeholder="Опишите все ваши пожелания к заказу" name="text" id="text" cols="25" rows="5">
-
+            <textarea class="fieldset__textarea" placeholder="Опишите все ваши пожелания к заказу" name="text" id="text" cols="25" rows="5">
             </textarea>
           </label>
           <small class="form-order__elemts-notabene">*Поля обязательны для заполнения</small>
