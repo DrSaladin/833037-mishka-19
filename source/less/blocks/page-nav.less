@@ -23,49 +23,65 @@
 
 .page-nav__hamburger {
   position: absolute;
-  top: 32px;
+  top: 25px;
   right: 31px;
-  appearance: none;
-  border: none;
-  background-color: @color-white;
-}
-
-
-.page-nav__hamburger-box {
-  width: 20px;
-  height: 14px;
-  border-bottom: 2px @color-black solid;
-  border-top: 2px @color-black solid;
+  z-index: 2;
   display: block;
-  cursor: pointer;
+  width: 35px;
+  height: 28px;
   background-color: @color-white;
-  border-radius: 5%;
+  cursor: pointer;
+  border: none;
 }
 
-
-.page-nav__hamburger-inner {
+.page-nav--closed .page-nav__hamburger::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
   width: 20px;
   height: 2px;
   background-color: @color-black;
-  display: block;
-  margin-top: 6px;
+  box-shadow: 0 8px 0 0 @color-black, 0 16px 0 0 @color-black;
 }
 
-
-.page-nav__hamburger-checkbox {
-  position: absolute;
-  display: block;
-  right: 20px;
-  top: 30px;
-  z-index: 1;
+.page-nav--closed .page-nav__hamburger:active::before {
+  background-color: lighten(@color-black, 30%);
+  box-shadow: 0 8px 0 0 lighten(@color-black, 30%), 0 16px 0 0 lighten(@color-black, 30%);
 }
 
+.page-nav--opened .page-nav__hamburger {
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 8px;
+    width: 20px;
+    height: 2px;
+    background-color: @color-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: lighten(@color-black, 30%);
+  }
+}
 
 .page-nav__list {
   padding: 0;
   list-style: none;
   margin: 0;
-  display: none;
   font-family: @open-sans-font;
 }
 
@@ -87,7 +103,6 @@
   background-color: @color-white;
   box-shadow: 0px 1px 0 0 #ececec, inset 0px 1px 0 0 #ececec;
   padding-left: calc(30% - 20px);
-
 }
 
 .page-nav__list-item a:hover {
