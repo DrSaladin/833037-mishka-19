@@ -60,12 +60,10 @@
 
 .fieldset__radio-input,
 .fieldset__checkbox-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
-.fieldset__label--radio:before {
+.fieldset__label--radio::before {
   content: "";
   width: 40px;
   height: 40px;
@@ -86,7 +84,7 @@
   opacity: 0.3;
 }
 
-.fieldset__radio-input:checked + .fieldset__label--radio:after {
+.fieldset__radio-input:checked + .fieldset__label--radio::after {
   content: url("../../../img/radio-dot.png");
   width: 5px;
   height: 5px;
@@ -95,7 +93,7 @@
   bottom: 20px;
 }
 
-.fieldset__label--checkbox:before {
+.fieldset__label--checkbox::before {
   content: "";
   width: 40px;
   height: 40px;
@@ -115,7 +113,7 @@
   opacity: 0.3;
 }
 
-.fieldset__checkbox-input:checked + .fieldset__label--checkbox:after {
+.fieldset__checkbox-input:checked + .fieldset__label--checkbox::after {
   content: url("../../../img/tick-checkbox.svg");
   width: 22px;
   height: 16px;
