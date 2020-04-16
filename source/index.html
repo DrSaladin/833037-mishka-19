@@ -15,7 +15,7 @@
           <img src="img/logo-mobile.svg" class="page-nav__logo-img" alt="Магазин подарков ручной работы Mishka"
             height="35" width="86">
         </a>
-        <button class="page-nav__hamburger" type="button" aria-label="открыть главное меню">
+        <button class="page-nav__hamburger" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="page-nav__list">
@@ -176,14 +176,14 @@
     <section class="contacts">
       <div class="container contacts__wrapper">
       <h2 class="contacts__title">Контакты</h2>
-      <dl class="contacts__details">
-        <dt>e-mail:</dt>
-          <dd><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
-        <dt>адрес:</dt>
-          <dd>г. Санкт-Петербург,
-            ул. Большая Конюшенная,
-            д. 19/8, офис 101</dd>
-      </dl>
+      <address class="contacts__details">
+        <p class="contacts__details-mail">e-mail:</p>
+        <a class="contacts__details-mail-plate" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <p class="contacts__details-adress">адрес:</p>
+        <p class="contacts__details-adress-plate">
+        г. Санкт-Петербург, ул. Большая
+        Конюшенная, <br>д. 19/8, офис 101</p>
+      </address>
       <a href="" class="contacts__map">
         <img class="contacts__map-img" src="img/map-mobile@1x.jpg"
           alt="Адрес - г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="322" height="457">
@@ -243,6 +243,7 @@
           </a>
         </li>
       </ul>
+      <hr class="page-footer__line">
       <a class="page-footer__developers" href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
         <svg fill="#63d1bb" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
