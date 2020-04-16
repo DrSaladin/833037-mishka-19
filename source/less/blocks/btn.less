@@ -1,0 +1,45 @@
+.btn {
+  width: 260px;
+  margin: auto;
+  margin-bottom: 33px;
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: @color-black;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  min-height: 52px;
+  border: solid 2px @color-grey;
+  font-family: @open-sans-font;
+
+  &:hover {
+    width: 260px;
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+    min-height: 52px;
+    border: solid 2px @color-grey;
+    font-family: @open-sans-font;
+    color: @color-white;
+    background-color: @color-grey;
+  }
+
+  &:focus {
+    width: 260px;
+    min-height: 52px;
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: @color-grey;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+    border: solid 2px @color-grey;
+    font-family: @open-sans-font;
+    color: lighten(@color-grey, 30%);
+  }
+}

@@ -11,12 +11,14 @@
 
   <header class="page-header">
     <div class="container page-header__wrapper">
-      <nav class="page-nav">
+      <nav class="page-nav page-nav--opened">
         <a href="index.html" class="page-nav__logo">
           <img src="img/logo-mobile.svg" class="page-nav__logo-img" alt="Магазин подарков ручной работы Mishka"
             height="35" width="86">
         </a>
-        <button class="page-nav__toggle" type="button">Открыть меню</button>
+        <button class="page-nav__hamburger" type="button" aria-label="открыть главное меню">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="page-nav__list">
           <li class="page-nav__list-item">
             <a href="catalog.html">
@@ -48,13 +50,14 @@
       <h1 class="top-banner__title">Каталог товаров</h1>
     </div>
 
-    <ul class="catalog">
-      <li class="catalog-item">
+    <ul class="catalog-list">
+      <li class="catalog-list__item catalog-item">
         <a href="" class="catalog-item__img-link">
           <img src="img/photo-hare-mobile@1x.jpg"
             alt="Зайчик-попрыгайчик. Детская игрушка сделанная из гипоаллергенного материала. Лучший подарок вашим маленьким ангелочкам."
             width="260" height="195">
         </a>
+        <div>
         <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
         <p class="catalog-item__info">Рост 30 см, вес 200 г</p>
         <p class="catalog-item__order">
@@ -62,7 +65,7 @@
             1 200 руб.
           </strong>
           <a href="" class="catalog-item__order-cart" aria-label="добавить в корзину">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg version="1.1" id="icon-cart_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px"
               viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849"
               xml:space="preserve">
@@ -71,6 +74,7 @@
             </svg>
           </a>
         </p>
+        </div>
       </li>
 
       <li class="catalog-item">
@@ -86,7 +90,7 @@
             690 руб.
           </strong>
           <a href="" class="catalog-item__order-cart" aria-label="добавить в корзину">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg version="1.1" id="icon-cart_2" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px"
               viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849"
               xml:space="preserve">
@@ -110,7 +114,7 @@
             1 500 руб.
           </strong>
           <a href="" class="catalog-item__order-cart" aria-label="добавить в корзину">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg version="1.1" id="icon-cart_3" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px"
               viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849"
               xml:space="preserve">
@@ -124,11 +128,10 @@
 
     <section class="video-block">
       <h3 class="video-block__title">Процесс производства</h3>
-      <img src="https://via.placeholder.com/150x150" class="video-block__image" alt="заглушка для видео" width="260"
-        height="150">
+      <img class="video-block__video" src="img/video-mobile@1x.jpg" aria-label="Процесс создания вязаных игрушек" width="260" height="150">
       <p class="video-block__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
         появляются наши товары.</p>
-      <a href="form.html" class="btn video-block__btn">Сделать заказ</a>
+      <a href="form.html" class="video-block__btn btn">Сделать заказ</a>
     </section>
   </main>
 
@@ -137,7 +140,7 @@
       <ul class="page-footer__social-list socials">
         <li class="page-footer__social-list-item socials__item">
           <a href="" aria-label="Интернет-магазин Мишка в Инстаграм">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg version="1.1" id="icon-insta__1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.769px" height="21.334px"
               viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334"
               xml:space="preserve">
@@ -152,7 +155,7 @@
         </li>
         <li class="page-footer__social-list-item socials__item">
           <a href="" aria-label="Интернет-магазин Мишка в Фейсбуке">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg version="1.1" id="icon-fb_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.962px" height="27.718px"
               viewBox="56.519 49.996 14.962 27.718" enable-background="new 56.519 49.996 14.962 27.718"
               xml:space="preserve">
@@ -167,7 +170,7 @@
         </li>
         <li class="page-footer__social-list-item socials__item">
           <a href="" aria-label="Интернет-магазин Мишка во Твиттер">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg version="1.1" id="icon-twitter_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.494px" height="20.168px"
               viewBox="52.253 53.771 23.494 20.168" enable-background="new 52.253 53.771 23.494 20.168"
               xml:space="preserve">
@@ -193,22 +196,30 @@
     </div>
   </footer>
 
-  <form action="catalog.html" method="get" class="catalog-popup display-none">
-    <b class="catalog-popup__title">Добавить в корзину</b>
-    <p class="catalog-popup__info">Выберите размер:</p>
-    <label class="catalog-popup__size">
-      <input type="radio" name="order-size" value="size-s">
-      S
-    </label>
-    <label class="catalog-popup__size">
-      <input type="radio" name="order-size" value="size-m">
-      M
-    </label>
-    <label class="catalog-popup__size">
-      <input type="radio" name="order-size" value="size-l">
-      L
-    </label>
-    <button type="submit" class="btn catalog-popup__btn">Добавить</button>
+  <form action="catalog.html" method="get" class="catalog-popup size-popup">
+    <b class="size-popup__title">Добавить в корзину</b>
+    <p class="size-popup__info">Выберите размер:</p>
+    <ul class="size-popup__list">
+      <li class="size-popup__list-item">
+        <input class="size-popup__list-item-radio" type="radio" id="size-s" name="order-size" value="size-s">
+        <label class="size-popup__list-item-label" for="size-s">
+          S
+        </label>
+      </li>
+      <li class="size-popup__list-item">
+        <input class="size-popup__list-item-radio" type="radio" id="size-m" name="order-size" value="size-m">
+        <label class="size-popup__list-item-label" for="size-m">
+          M
+        </label>
+      </li>
+      <li class="size-popup__list-item">
+        <input class="size-popup__list-item-radio" type="radio" id="size-l" name="order-size" value="size-l">
+        <label class="size-popup__list-item-label" for="size-l">
+          L
+        </label>
+      </li>
+    </ul>
+    <button type="submit" class="btn size-popup__btn">Добавить</button>
   </form>
 </body>
 
