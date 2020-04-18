@@ -18,6 +18,15 @@
   margin: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .about-us__title {
+    padding-left: 0;
+    font-size: 43px;
+    line-height: 1.16;
+    margin-bottom: 47px;
+  }
+}
+
 .about-us__list {
   padding: 0;
   list-style: none;
@@ -25,6 +34,12 @@
   width: 260px;
 }
 
+@media (min-width: @tablet-width) {
+  .about-us__list {
+    width: 670px;
+    columns: 2;
+  }
+}
 
 .about-us__list-item {
   font-family: @open-sans-font;
@@ -38,6 +53,15 @@
   box-sizing: border-box;
   min-height: 125px;
   width: 260px;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us__list-item {
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 57px;
+    width: 295px;
+  }
 }
 
 
@@ -58,7 +82,7 @@
 }
 
 .about-us__list-item--producers {
-  background-image: url("../img/icon-feature-ball.svg");
+  background-image: url("../img/icon-feature-rocket.svg");
 }
 
 .about-us__list-item--gift {

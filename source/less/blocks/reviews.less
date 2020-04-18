@@ -4,6 +4,14 @@
   margin-top: 61px;
 }
 
+@media (min-width: @tablet-width) {
+  .reviews {
+    background-image: url(../../img/review@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+}
+
 .reviews__title {
   font-family: @open-sans-font;
   font-size: 25px;
@@ -13,11 +21,28 @@
   padding-left: 30px;
 }
 
+@media (min-width: @tablet-width) {
+  .reviews__title {
+    padding-left: 0;
+    font-size: 43px;
+    line-height: 1.16;
+    order: 1;
+  }
+}
+
 .reviews__sliding {
   padding: 0;
   list-style: none;
   margin: auto;
   width: 260px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__sliding {
+    width: 642px;
+    order: 3;
+    margin: 0;
+  }
 }
 
 .reviews__sliding-field {
@@ -32,6 +57,14 @@
   color: @color-grey;
 }
 
+@media (min-width: @tablet-width) {
+  .reviews__sliding-field-text {
+    font-size: 17px;
+    line-height: 1.76;
+    width: 670px;
+  }
+}
+
 .reviews__sliding-field-name {
   font-family: @open-sans-font;
   font-size: 17px;
@@ -40,9 +73,23 @@
   color: @color-black;
 }
 
+@media (min-width: @tablet-width) {
+  .reviews__sliding-field-name {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
 .reviews__sliding-field-nickname {
   font-size: 17px;
   line-height: 1.76;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__sliding-field-nickname {
+    font-size: 17px;
+    line-height: 1.76;
+  }
 }
 
 .reviews__switch-arrows {
@@ -51,6 +98,12 @@
   display: flex;
   margin: 0 auto 38px auto;
   width: 260px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__switch-arrows {
+    order: 3;
+  }
 }
 
 .reviews__switch-arrows button {
@@ -70,4 +123,30 @@
 
 .reviews__btn {
   margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__btn {
+    order: 2;
+    width: 175px;
+    min-height: 52px;
+
+    &:hover {
+      width: 175px;
+      min-height: 52px;
+    }
+
+    &:focus {
+      width: 175px;
+      min-height: 52px;
+    }
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+.reviews__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
 }

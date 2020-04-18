@@ -8,6 +8,21 @@
   padding: 0;
   list-style: none;
   font-family: @open-sans-font;
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .index-catalog-nav__list {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+
+    &:after {
+      content: url("../../img/bg-zigzag-fill.svg");
+      position: absolute;
+      top: 105px;
+    }
+  }
 }
 
 .index-catalog-nav__list-item a {
@@ -24,6 +39,18 @@
   padding: 30px 185px 0 30px;
 }
 
+@media (min-width: @tablet-width) {
+  .index-catalog-nav__list-item a {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 35px 200px 0 36px;
+    min-height: 119px;
+    box-sizing: border-box;
+    width: 334px;
+  }
+}
+
+
 .index-catalog-nav__list-item--interior a {
   background-color: @color-turquoise;
   background-image: url("../img/icon-interior.svg");
@@ -36,8 +63,6 @@
   background-color: @color-socials;
   background-image: url("../img/icon-interior.svg");
   opacity: 0.8;
-  min-height: 108px;
-  padding: 25px 185px 0 30px;
 }
 
 .index-catalog-nav__list-item--interior a:focus {
@@ -59,8 +84,6 @@
   background-color: #59d5bc;
   background-image: url("../img/icon-toy.svg");
   opacity: 0.8;
-  min-height: 108px;
-  padding: 25px 185px 0 30px;
 }
 
 .index-catalog-nav__list-item--toys a:focus {
