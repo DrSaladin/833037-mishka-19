@@ -11,6 +11,14 @@
   margin: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .form-order__preform-text {
+    font-size: 17px;
+    line-height: 1.76;
+
+  }
+}
+
 .form-order__item-type label {
   margin-bottom: 30px;
   padding-right: 43px;
@@ -29,18 +37,41 @@
   flex-direction: column;
 }
 
+@media (min-width: @tablet-width) {
+  .form-order__item-type {
+  }
+}
+
 .form-order__item-color {
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .form-order__item-color {
+  }
 }
 
 .form-order__item-color label:last-child {
   margin-bottom: 49px;
 }
 
+@media (min-width: @tablet-width) {
+  .form-order__item-color label:last-child {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+}
+
 .form-order__item-info {
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .form-order__item-info {
+  }
 }
 
 .form-order__submit-btn {

@@ -1,12 +1,12 @@
 .reviews {
   font-family: @open-sans-font;
   position: relative;
-  margin-top: 61px;
+  margin: 61px 0 30px;
 }
 
 @media (min-width: @tablet-width) {
   .reviews {
-    background-image: url(../../img/review@1x.jpg);
+    background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: center left;
   }
@@ -18,7 +18,6 @@
   line-height: 1.2;
   font-weight: bold;
   color: @color-black;
-  padding-left: 30px;
 }
 
 @media (min-width: @tablet-width) {
@@ -27,6 +26,7 @@
     font-size: 43px;
     line-height: 1.16;
     order: 1;
+    margin-top: 88px;
   }
 }
 
@@ -65,30 +65,47 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .reviews__sliding-field-review {
+    margin-bottom: 58px;
+  }
+}
+
+.reviews__sliding-field-author {
+  font-style: normal;
+  margin-bottom: 36px;
+}
+
 .reviews__sliding-field-name {
   font-family: @open-sans-font;
   font-size: 17px;
   line-height: 1.41;
   font-weight: bold;
   color: @color-black;
+  display: block;
+  font-style: normal;
 }
 
 @media (min-width: @tablet-width) {
   .reviews__sliding-field-name {
     font-size: 18px;
     line-height: 1.33;
+    margin-bottom: 5px;
   }
 }
 
 .reviews__sliding-field-nickname {
   font-size: 17px;
   line-height: 1.76;
+  display: block;
+  font-style: normal;
 }
 
 @media (min-width: @tablet-width) {
   .reviews__sliding-field-nickname {
     font-size: 17px;
     line-height: 1.76;
+    margin-top: 5px;
   }
 }
 
@@ -103,6 +120,7 @@
 @media (min-width: @tablet-width) {
   .reviews__switch-arrows {
     order: 3;
+    margin: -90px 0 38px auto;
   }
 }
 
@@ -111,6 +129,12 @@
   border: 1px solid #ececec;
   width: 130px;
   height: 52px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__switch-arrows button {
+    border: none;
+  }
 }
 
 .reviews__switch-arrows button:hover {
@@ -130,6 +154,8 @@
     order: 2;
     width: 175px;
     min-height: 52px;
+    margin-right: 0;
+    margin-top: 86px;
 
     &:hover {
       width: 175px;
