@@ -10,8 +10,8 @@
 
 <body>
   <header class="page-header">
-    <div class="container page-header__wrapper">
-      <nav class="page-nav page-nav--opened">
+    <div class="page-header__wrapper">
+      <nav class="page-nav page-nav--closed">
         <a href="index.html" class="page-nav__logo">
           <img src="img/logo-mobile.svg" class="page-nav__logo-img" alt="Магазин подарков ручной работы Mishka"
             height="35" width="86">
@@ -32,12 +32,17 @@
           </li>
           <li class="page-nav__list-item page-nav__list-item--search">
             <a href="">
-              Поиск по сайту
+              <span class="page-nav__list-item-link">Поиск по сайту</span>
             </a>
           </li>
           <li class="page-nav__list-item page-nav__list-item--cart">
             <a href="">
-              Корзина: пока пуста
+              <span>Корзина: пока пуста</span>
+            </a>
+          </li>
+          <li class="page-nav__list-item page-nav__list-item--mobile-hide">
+            <a href="">
+              <span>Бесплатная доставка по России</span>
             </a>
           </li>
         </ul>
@@ -61,7 +66,6 @@
           <label class="fieldset__label fieldset__label--radio" for="accessory-rd">
             Аксессуар для интерьера
           </label>
-
           <input class="fieldset__radio-input" type="radio" id="child-toy-rd" name="gift-type-radio" value="child-toy-rd">
           <label class="fieldset__label fieldset__label--radio" for="child-toy-rd">
             Детская игрушка
@@ -69,6 +73,36 @@
         </fieldset>
 
         <fieldset class="form-order__item-color fieldset">
+          <p class="fieldset__legend ">Цвет</p>
+          <div class="fieldset__legend-input-box">
+          <input class="fieldset__checkbox-input" id="white-cb" type="checkbox" name="white-cb" value="white-cb" checked>
+          <label class="fieldset__label fieldset__label--checkbox" for="white-cb">
+            Белый
+          </label>
+          <input class="fieldset__checkbox-input" id="grey-cb" type="checkbox" name="grey-cb" value="grey-cb" checked>
+          <label class="fieldset__label fieldset__label--checkbox" for="grey-cb">
+            Серый
+          </label>
+          <input class="fieldset__checkbox-input" id="tiffani-cb" type="checkbox" name="tiffani-cb" value="tiffani-cb">
+          <label class="fieldset__label fieldset__label--checkbox" for="tiffani-cb">
+            «Тиффани»
+          </label>
+          <input class="fieldset__checkbox-input" id="white-cb" type="checkbox" name="white-cb" value="white-cb" checked>
+          <label class="fieldset__label fieldset__label--checkbox" for="white-cb">
+            Белый
+          </label>
+          <input class="fieldset__checkbox-input" id="grey-cb" type="checkbox" name="grey-cb" value="grey-cb" checked>
+          <label class="fieldset__label fieldset__label--checkbox" for="grey-cb">
+            Серый
+          </label>
+          <input class="fieldset__checkbox-input" id="tiffani-cb" type="checkbox" name="tiffani-cb" value="tiffani-cb">
+          <label class="fieldset__label fieldset__label--checkbox" for="tiffani-cb">
+            «Тиффани»
+          </label>
+          </div>
+        </fieldset>
+
+        <!--<fieldset class="form-order__item-color fieldset">
           <legend class="fieldset__legend ">Цвет</legend>
           <input class="fieldset__checkbox-input" id="white-cb" type="checkbox" name="white-cb" value="white-cb" checked>
           <label class="fieldset__label fieldset__label--checkbox" for="white-cb">
@@ -94,7 +128,7 @@
           <label class="fieldset__label fieldset__label--checkbox" for="orange-cb">
             Оранжевый
           </label>
-        </fieldset>
+        </fieldset>-->
 
         <fieldset class="form-order__item-info fieldset">
           <legend class="fieldset__legend ">ФИО</legend>

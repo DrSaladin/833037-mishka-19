@@ -5,6 +5,15 @@
   margin: auto;
 }
 
+@media (min-width: @tablet-width) {
+  .page-nav {
+    margin: auto;
+    width: 670px;
+    padding: 0 50px;
+    display: flex;
+  }
+}
+
 .page-nav__logo {
   display: block;
   text-align: center;
@@ -18,8 +27,30 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .page-nav__logo {
+  display: block;
+  text-align: justify;
+  margin: 20px 230px 20px 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+}
+
 .page-nav__logo-img {
   margin-top: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-nav__logo-img {
+    margin-top: 0;
+  }
 }
 
 .page-nav__hamburger {
@@ -33,6 +64,12 @@
   background-color: @color-white;
   cursor: pointer;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-nav__hamburger {
+    display: none;
+  }
 }
 
 .page-nav--closed .page-nav__hamburger::before {
@@ -83,7 +120,55 @@
   list-style: none;
   font-family: @open-sans-font;
   margin: 22px 0 0;
-  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-nav__list {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-nav__list-item:first-child {
+    order: 3;
+    position: absolute;
+    left: 27%;
+    top: 100%;
+    z-index: 1;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-nav__list-item:first-child a {
+    background: transparent;
+    border: none;
+    padding: 25px 20px 10px 20px;
+    min-width: 120px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-nav__list-item:nth-child(2) {
+    order: 4;
+    position: absolute;
+    z-index: 1;
+    left: 4%;
+    top: 100%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-nav__list-item:nth-child(2) a {
+    background: transparent;
+    border: none;
+    padding: 25px 20px 10px 20px;
+    min-width: 120px;
+    font-size: 15px;
+  }
 }
 
 .page-nav__list-item {
@@ -105,10 +190,10 @@
   padding: 32px 20px 10px 76px;
 }
 
-.page-nav__list-item:last-child a {
-  border-bottom: solid 1px #ececec;
+@media (min-width: @tablet-width) {
+  .page-nav__list-item a {
+  }
 }
-
 
 .page-nav__list-item a:hover {
   color: lighten(@color-black, 30%);
@@ -126,6 +211,21 @@
   fill: lighten(#63d1bb, 15%);
 }
 
+@media (min-width: @tablet-width) {
+  .page-nav__list-item-link {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
 .page-nav__list-item svg {
   position: absolute;
   top: 32px;
@@ -136,10 +236,28 @@
   fill: lighten(@color-black, 80%);
 }
 
+@media (min-width: @tablet-width) {
+  .page-nav__list-item--search {
+    order: 0;
+  }
+}
+
 .page-nav__list-item--search a {
   background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
   background-position: calc(20% - 20px);
+}
+
+@media (min-width: @tablet-width) {
+  .page-nav__list-item--search a {
+    min-width: 82px;
+    min-height: 88px;
+    background-color: @color-white;
+    border-right: solid 1px #ececec;
+    border-left: solid 1px #ececec;
+    padding: 0;
+    background-position: 50% 50%;
+  }
 }
 
 .page-nav__list-item--search a:hover {
@@ -149,6 +267,13 @@
 .page-nav__list-item--search a:focus {
   background-image: url("../img/icon-search-hover.svg");
   opacity: 0.6;
+}
+
+@media (min-width: @tablet-width) {
+  .page-nav__list-item--cart {
+    order: 1;
+    width: 200px;
+  }
 }
 
 .page-nav__list-item--cart a {
@@ -164,4 +289,42 @@
 .page-nav__list-item--cart a:focus {
   background-image: url("../img/icon-cart-hover.svg");
   opacity: 0.6;
+}
+
+@media (min-width: @tablet-width) {
+  .page-nav__list-item--cart a {
+    min-width: 316px;
+    min-height: 88px;
+    background-color: @color-white;
+    padding: 32px 0 10px 83px;
+    background-position: 15% 50%;
+    border: none;
+  }
+}
+
+.page-nav__list-item--mobile-hide {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-nav__list-item--mobile-hide {
+    position: absolute;
+    left: 60%;
+    top: 100%;
+    display: block;
+    z-index: 1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-nav__list-item--mobile-hide a{
+    background: transparent;
+    border: none;
+    padding: 25px 20px 10px 20px;
+    min-width: 120px;
+    font-size: 15px;
+    font-weight: normal;
+    font-size: 15px;
+    min-height: 79px;
+  }
 }

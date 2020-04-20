@@ -30,7 +30,7 @@
   font-weight: bold;
   color: @color-black;
   margin-bottom: 32px;
-  padding: 0 30px 10px 30px;
+  padding: 10px 30px 10px 30px;
 }
 
 @media (min-width: @tablet-width) {
@@ -58,8 +58,24 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .contacts__details {
+
+  }
+}
+
+.contacts__details-block {
+  display: flex;
+}
+
 .contacts__details-block dd {
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__details-block dd {
+    margin-right: 55px;
+  }
 }
 
 .contacts__details-mail,

@@ -22,6 +22,8 @@
   color: @color-turquoise;
   position: relative;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
   margin-bottom: 33px;
 }
 
@@ -46,6 +48,15 @@
     display: none;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .fieldset__legend-input-box {
+    display: flex;
+    width: 470px;
+    flex-wrap: wrap;
+  }
+}
+
 
 .fieldset__legend--shorter-line::after {
   content: "";
@@ -84,7 +95,6 @@
 }
 
 .fieldset__label--radio {
-  display: block;
   height: 37px;
 }
 
