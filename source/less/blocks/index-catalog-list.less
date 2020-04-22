@@ -16,11 +16,12 @@
     display: flex;
     justify-content: center;
     background-color: #f8f8f8;
+    flex-wrap: wrap;
 
-    &:after {
+    &::after {
       content: url("../../img/bg-zigzag-fill.svg");
       position: absolute;
-      top: 105px;
+      bottom: -10px;
     }
   }
 }
