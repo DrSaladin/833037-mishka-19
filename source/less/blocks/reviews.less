@@ -4,6 +4,12 @@
   margin: 61px 0 30px;
 }
 
+.reviews__wrapper {
+  width: 260px;
+  padding: 0 30px;
+  margin: auto;
+}
+
 .reviews__title {
   font-family: @open-sans-font;
   font-size: 25px;
@@ -66,6 +72,7 @@
   border: 1px solid #ececec;
   width: 130px;
   height: 52px;
+  padding: 0;
 }
 
 .reviews__switch-arrows button:hover {
@@ -94,6 +101,13 @@
     order: 1;
     margin-top: 88px;
   }
+
+  .reviews__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 670px;
+  padding: 0 50px;
+}
 
   .reviews__sliding {
     width: 642px;
@@ -149,11 +163,6 @@
       min-height: 52px;
     }
   }
-
-  .reviews__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
 }
 
 @media (min-width: @desktop-width) {
@@ -161,16 +170,17 @@
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50px center;
-    padding: 0 50px;
+    padding: 0;
     min-height: 457px;
   }
 
   .reviews__wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 875px;
+  width: 1050px;
   padding: 0 50px;
   margin: auto;
+  justify-content: space-around;
 }
 
   .reviews__title {
@@ -211,9 +221,15 @@
     margin-top: 5px;
   }
 
+  .reviews__sliding-field-author {
+  font-style: normal;
+  margin-bottom: 0;
+}
+
   .reviews__switch-arrows {
     order: 3;
-    margin: -90px 0 38px auto;
+    margin: 0;
+    align-self: flex-end;
   }
 
   .reviews__switch-arrows button {
@@ -225,7 +241,7 @@
     width: 175px;
     min-height: 52px;
     margin-right: 0;
-    margin-top: 86px;
+    margin-top: 80px;
     text-transform: uppercase;
 
     &:hover {

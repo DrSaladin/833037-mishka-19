@@ -7,13 +7,6 @@
   font-family: @open-sans-font;
 }
 
-@media (min-width: @tablet-width) {
-  .catalog-item {
-    width: 670px;
-    display: flex;
-  }
-}
-
 .catalog-item:hover {
   box-shadow: 0 6px 10px 0 #ececec;
 }
@@ -35,12 +28,6 @@
   padding: 32px 28px;
 }
 
-@media (min-width: @tablet-width) {
-  .catalog-item__info {
-    width: 268px;
-  }
-}
-
 .catalog-item__title {
   font-family: @open-sans-font;
   font-size: 17px;
@@ -49,13 +36,6 @@
   color: @color-black;
   margin: 0;
   padding: 0;
-}
-
-@media (min-width: @tablet-width) {
-  .catalog-item__title {
-    font-size: 20px;
-    line-height: 1.2;
-  }
 }
 
 .catalog-item__feature {
@@ -69,25 +49,10 @@
   margin-bottom: 27px;
 }
 
-@media (min-width: @tablet-width) {
-  .catalog-item__feature {
-    margin-top: 15px;
-    margin-bottom: 150px;
-    font-size: 15px;
-    line-height: 2;
-  }
-}
-
 .catalog-item__line {
   width: 200px;
   color: #ececec;
   margin: auto;
-}
-
-@media (min-width: @tablet-width) {
-  .catalog-item__line {
-    width: 268px;
-  }
 }
 
 .catalog-item__order {
@@ -107,6 +72,68 @@
 }
 
 @media (min-width: @tablet-width) {
+  .catalog-item {
+    width: 670px;
+    display: flex;
+  }
+
+  .catalog-item__info {
+    width: 268px;
+  }
+
+  .catalog-item__title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .catalog-item__feature {
+    margin-top: 15px;
+    margin-bottom: 150px;
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .catalog-item__line {
+    width: 268px;
+  }
+
+  .catalog-item__order-price {
+    font-size: 17px;
+    line-height: 1.41;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-item {
+    width: 316px;
+    min-height: 660px;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .catalog-item__info {
+    width: 260px;
+    padding: 29px 28px;
+    margin-top: auto;
+  }
+
+  .catalog-item__title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .catalog-item__feature {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 45px;
+  }
+
+  .catalog-item__line {
+    width: 260px;
+  }
+
   .catalog-item__order-price {
     font-size: 17px;
     line-height: 1.41;
