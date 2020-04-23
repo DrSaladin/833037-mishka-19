@@ -12,24 +12,39 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <nav class="page-nav page-nav--closed">
-        <a href="index.html" class="page-nav__logo">
-          <img src="img/logo-mobile.svg" class="page-nav__logo-img" alt="Магазин подарков ручной работы Mishka"
-            height="35" width="86">
-        </a>
-        <button class="page-nav__hamburger" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="page-nav__list">
-          <li class="page-nav__list-item">
-            <a href="catalog.html">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="page-nav__list-item">
-            <a href="form.html">
-              Вязание на заказ
-            </a>
-          </li>
+        <div class="page-nav__main-nav-box">
+          <a href="index.html" class="page-nav__logo">
+            <img src="img/logo-mobile.svg" class="page-nav__logo-img" alt="Магазин подарков ручной работы Mishka"
+              height="35" width="86">
+          </a>
+          <button class="page-nav__hamburger" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="page-nav__list main-nav">
+            <li class="page-nav__list-item main-nav__item">
+              <a href="catalog.html">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="page-nav__list-item main-nav__item">
+              <a href="form.html">
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="page-nav__list-item main-nav__item main-nav__item--desktop">
+              <a href="">
+                Новые поступления
+              </a>
+            </li>
+            <li class="page-nav__list-item main-nav__item main-nav__item--desktop">
+              <a href="">
+                Распродажа
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="page-nav__list user-nav">
           <li class="page-nav__list-item page-nav__list-item--search">
             <a href="">
               <span class="page-nav__list-item-link">Поиск по сайту</span>
@@ -37,13 +52,11 @@
           </li>
           <li class="page-nav__list-item page-nav__list-item--cart">
             <a href="">
-              <span>Корзина: пока пуста</span>
+              Корзина: пока пуста
             </a>
           </li>
-          <li class="page-nav__list-item page-nav__list-item--mobile-hide">
-            <a href="">
-              <span>Бесплатная доставка по России</span>
-            </a>
+          <li class="page-nav__list-item page-nav__list-item--tablet">
+            <p>Бесплатная доставка по России</p>
           </li>
         </ul>
       </nav>
@@ -89,35 +102,6 @@
           <label class="fieldset__label fieldset__label--checkbox" for="tiffani-cb">
             «Тиффани»
           </label>
-          <input class="fieldset__checkbox-input" id="white-cb" type="checkbox" name="white-cb" value="white-cb" checked>
-          <label class="fieldset__label fieldset__label--checkbox" for="white-cb">
-            Белый
-          </label>
-          <input class="fieldset__checkbox-input" id="grey-cb" type="checkbox" name="grey-cb" value="grey-cb" checked>
-          <label class="fieldset__label fieldset__label--checkbox" for="grey-cb">
-            Серый
-          </label>
-          <input class="fieldset__checkbox-input" id="tiffani-cb" type="checkbox" name="tiffani-cb" value="tiffani-cb">
-          <label class="fieldset__label fieldset__label--checkbox" for="tiffani-cb">
-            «Тиффани»
-          </label>
-          </fieldset>
-        </fieldset>
-
-        <!--<fieldset class="form-order__item-color fieldset">
-          <legend class="fieldset__legend ">Цвет</legend>
-          <input class="fieldset__checkbox-input" id="white-cb" type="checkbox" name="white-cb" value="white-cb" checked>
-          <label class="fieldset__label fieldset__label--checkbox" for="white-cb">
-            Белый
-          </label>
-          <input class="fieldset__checkbox-input" id="grey-cb" type="checkbox" name="grey-cb" value="grey-cb" checked>
-          <label class="fieldset__label fieldset__label--checkbox" for="grey-cb">
-            Серый
-          </label>
-          <input class="fieldset__checkbox-input" id="tiffani-cb" type="checkbox" name="tiffani-cb" value="tiffani-cb">
-          <label class="fieldset__label fieldset__label--checkbox" for="tiffani-cb">
-            «Тиффани»
-          </label>
           <input class="fieldset__checkbox-input" id="black-cb" type="checkbox" name="black-cb" value="black-cb">
           <label class="fieldset__label fieldset__label--checkbox" for="black-cb">
             Черный
@@ -130,42 +114,50 @@
           <label class="fieldset__label fieldset__label--checkbox" for="orange-cb">
             Оранжевый
           </label>
-        </fieldset>-->
+          </fieldset>
+        </fieldset>
 
         <fieldset class="form-order__item-info fieldset">
-          <legend class="fieldset__legend ">ФИО</legend>
-          <label for="first-name" class="fieldset__label">
-            Имя:
-          </label>
-          <input class="fieldset__text-input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
-          <label for="middle-name" class="fieldset__label">
-            Фамилия:
-            <input class="fieldset__text-input" type="text" name="middle-name" id="middle-name" placeholder="Укажите фамилию*" required>
-          </label>
-          <label for="last-name" class="fieldset__label">
-            Отчество:
-            <input class="fieldset__text-input" type="text" name="last-name" id="last-name" placeholder="Отчество, если желаете">
-          </label>
+          <p class="fieldset__legend ">ФИО</p>
+          <fieldset class="fieldset__legend-info-box">
+            <label for="first-name" class="fieldset__label fieldset__label--inline-block">
+              Имя:
+              <input class="fieldset__text-input fieldset__text-input--longer" type="text" name="first-name" id="first-name"
+                placeholder="Введите ваше имя*" required>
+            </label>
+            <label for="middle-name" class="fieldset__label fieldset__label--inline-block">
+              Фамилия:
+              <input class="fieldset__text-input" type="text" name="middle-name" id="middle-name" placeholder="Укажите фамилию*"
+                required>
+            </label>
+            <label for="last-name" class="fieldset__label fieldset__label--inline-block">
+              Отчество:
+              <input class="fieldset__text-input" type="text" name="last-name" id="last-name" placeholder="Отчество, если желаете">
+            </label>
+          </fieldset>
 
           <p class="fieldset__legend ">Тел</p>
-          <label for="tel" class="fieldset__label">
-            Тел:
+          <label for="tel" class="fieldset__label fieldset__label--inline-block">
             <input class="fieldset__tel-input" type="tel" name="tel" id="tel" placeholder="+7 XXX XXX XX XX*" required>
           </label>
-          <p class="fieldset__legend fieldset__legend--shorter-line">E-mail</p>
 
-          <label for="mail" class="fieldset__label">
-            E-mail:
+          <p class="fieldset__legend fieldset__legend--shorter-line">E-mail</p>
+          <label for="mail" class="fieldset__label fieldset__label--inline-block">
             <input class="fieldset__email-input" type="email" name="mail" id="mail" placeholder="Ваш Email*" required>
           </label>
+
+          <fieldset class="form-order__item-textarea">
           <p class="fieldset__legend ">Доп</p>
-          <label for="text" class="fieldset__label">
+          <label for="text" class="fieldset__label fieldset__label--wider">
             <textarea class="fieldset__textarea" placeholder="Опишите все ваши
 пожелания к заказу" name="text" id="text" cols="25" rows="5"></textarea>
           </label>
-          <small class="form-order__elemts-notabene">*Поля обязательны для заполнения</small>
-          <button class="btn form-order__submit-btn" type="submit">Отправить заказ</button>
-        </fieldset>
+          </fieldset>
+          <p class="fieldset__submit-block">
+            <small class="form-order__elemts-notabene">*Поля обязательны для заполнения</small>
+            <button class="btn form-order__submit-btn" type="submit">Отправить заказ</button>
+          </p>
+          </fieldset>
       </div>
     </form>
   </main>

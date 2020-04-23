@@ -13,24 +13,39 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <nav class="page-nav page-nav--closed">
-        <a href="index.html" class="page-nav__logo">
-          <img src="img/logo-mobile.svg" class="page-nav__logo-img" alt="Магазин подарков ручной работы Mishka"
-            height="35" width="86">
-        </a>
-        <button class="page-nav__hamburger" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="page-nav__list">
-          <li class="page-nav__list-item">
-            <a href="catalog.html">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="page-nav__list-item">
-            <a href="form.html">
-              Вязание на заказ
-            </a>
-          </li>
+        <div class="page-nav__main-nav-box">
+          <a href="index.html" class="page-nav__logo">
+            <img src="img/logo-mobile.svg" class="page-nav__logo-img" alt="Магазин подарков ручной работы Mishka"
+              height="35" width="86">
+          </a>
+          <button class="page-nav__hamburger" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="page-nav__list main-nav">
+            <li class="page-nav__list-item main-nav__item">
+              <a href="catalog.html">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="page-nav__list-item main-nav__item">
+              <a href="form.html">
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="page-nav__list-item main-nav__item main-nav__item--desktop">
+              <a href="">
+                Новые поступления
+              </a>
+            </li>
+            <li class="page-nav__list-item main-nav__item main-nav__item--desktop">
+              <a href="">
+                Распродажа
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="page-nav__list user-nav">
           <li class="page-nav__list-item page-nav__list-item--search">
             <a href="">
               <span class="page-nav__list-item-link">Поиск по сайту</span>
@@ -41,10 +56,8 @@
               Корзина: пока пуста
             </a>
           </li>
-          <li class="page-nav__list-item page-nav__list-item--mobile-hide">
-            <a href="">
-              <span>Бесплатная доставка по России</span>
-            </a>
+          <li class="page-nav__list-item page-nav__list-item--tablet">
+            <p>Бесплатная доставка по России</p>
           </li>
         </ul>
       </nav>
