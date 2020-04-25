@@ -37,6 +37,7 @@
   .top-banner {
     min-height: 226px;
     min-width: 768px;
+    margin-top: -50px;
 
     &::after {
     content: url("../../img/bg-zigzag-fill.svg");
@@ -75,12 +76,15 @@
   .top-banner {
     min-height: 226px;
     min-width: @desktop-width;
+    z-index: 0;
 
     &::after {
-    content: url("../../img/bg-zigzag-fill.svg");
+    content: "";
+    background-image: url("../../img/bg-zigzag-fill.svg");
     position: absolute;
     bottom: -5px;
     left: -20px;
+    z-index: 1;
     }
   }
 

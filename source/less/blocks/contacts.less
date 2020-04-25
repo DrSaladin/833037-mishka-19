@@ -1,11 +1,11 @@
 .contacts {
   font-family: @open-sans-font;
-  margin: 65px 0 39px;
+  margin: 44px 0 39px;
+  position: relative;
 }
 
 .contacts__wrapper {
-  margin: auto;
-  width: 320px;
+  padding: 0;
 }
 
 .contacts__title {
@@ -14,8 +14,8 @@
   line-height: 1.67;
   font-weight: bold;
   color: @color-black;
-  margin-bottom: 32px;
-  padding: 10px 30px 10px 30px;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .contacts__details {
@@ -23,7 +23,6 @@
   font-size: 15px;
   line-height: 1.6;
   color: @color-grey;
-  padding: 0 30px;
   font-style: normal;
 }
 
@@ -64,6 +63,7 @@
 .contacts__map {
   position: relative;
   display: block;
+  padding: 0 calc(50% - 166px);
 
   &::before {
   content: url("../img/icon-map-pin.svg");
@@ -86,14 +86,14 @@
   }
 
   .contacts__wrapper {
-    width: 670px;
-    padding: 0 50px;
-  }
+  padding: 0;
+}
 
   .contacts__title {
     font-size: 43px;
     line-height: 1.16;
     padding: 0;
+    margin-bottom: 65px;
   }
 
   .contacts__details {
@@ -101,14 +101,25 @@
     line-height: 1.76;
     display: flex;
     padding: 0;
+    flex-wrap: wrap;
+    margin-bottom: 51px;
   }
 
-  .contacts__details-block dd {
+  .contacts__details-block {
+    width: 48%;
+  }
+
+  .contacts__details-mail-plate {
     margin-right: 55px;
+  }
+
+  .contacts__details-address-plate {
+    margin-right: 0;
   }
 
   .contacts__btn {
     width: 230px;
+    margin-top: 0;
 
     &:hover {
       width: 230px;
@@ -122,6 +133,8 @@
   .contacts__map {
   position: relative;
   display: block;
+  padding: 0 calc(50% - 384px);
+  margin-bottom: 55px;
 
   &::before {
   content: url("../img/icon-map-pin.svg");
@@ -196,6 +209,7 @@
   display: block;
   right: 50px;
   top: 30px;
+  padding: 0;
 
   &::before {
   content: url("../img/icon-map-pin.svg");

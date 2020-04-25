@@ -1,13 +1,7 @@
 .reviews {
   font-family: @open-sans-font;
   position: relative;
-  margin: 61px 0 30px;
-}
-
-.reviews__wrapper {
-  width: 260px;
-  padding: 0 30px;
-  margin: auto;
+  margin: 0 0 30px;
 }
 
 .reviews__title {
@@ -16,13 +10,13 @@
   line-height: 1.2;
   font-weight: bold;
   color: @color-black;
+  margin-bottom: 38px;
 }
 
 .reviews__sliding {
   padding: 0;
   list-style: none;
   margin: auto;
-  width: 260px;
 }
 
 .reviews__sliding-field {
@@ -35,6 +29,10 @@
   font-size: 15px;
   line-height: 1.6;
   color: @color-grey;
+}
+
+.reviews__sliding-field-review {
+  margin-bottom: 40px;
 }
 
 .reviews__sliding-field-author {
@@ -105,8 +103,6 @@
   .reviews__wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 670px;
-  padding: 0 50px;
 }
 
   .reviews__sliding {
@@ -140,10 +136,13 @@
   .reviews__switch-arrows {
     order: 3;
     margin: -90px 0 38px auto;
+    width: 140px;
+    justify-content: space-between;
   }
 
   .reviews__switch-arrows button {
     border: none;
+    width: 50px;
   }
 
   .reviews__btn {
@@ -175,11 +174,6 @@
   }
 
   .reviews__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1050px;
-  padding: 0 50px;
-  margin: auto;
   justify-content: space-between;
 }
 
@@ -231,14 +225,11 @@
     order: 3;
     margin: 0;
     align-self: flex-end;
+    width: 140px;
   }
 
   .reviews__switch-arrows button {
-    width: 86px;
-  }
-
-  .reviews__switch-arrows {
-    width: 164px;
+    width: 50px;
   }
 
   .reviews__btn {
