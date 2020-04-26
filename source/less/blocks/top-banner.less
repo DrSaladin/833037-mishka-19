@@ -1,6 +1,6 @@
 .top-banner {
   min-height: 177px;
-  min-width: 320px;
+  width: 320px;
   margin: auto;
   position: relative;
   background-color: #f9f9f9;
@@ -36,7 +36,7 @@
 @media (min-width: @tablet-width) {
   .top-banner {
     min-height: 226px;
-    min-width: 768px;
+    width: 768px;
 
     &::after {
       content: "";
@@ -80,6 +80,7 @@
 
 @media (min-width: @desktop-width) {
   .top-banner {
+    width: 1150px;
     min-height: 226px;
     min-width: @desktop-width;
     z-index: 0;

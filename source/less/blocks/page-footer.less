@@ -1,5 +1,7 @@
 .page-footer {
   min-height: 160px;
+  width: 320px;
+  margin: auto;
   background-color: @color-light-grey;
 }
 
@@ -76,6 +78,8 @@
   .page-footer {
     min-height: 143px;
     padding-top: 0.1px;
+    width: 770px;
+    margin: auto;
   }
 
   .page-footer__box {
@@ -114,6 +118,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-footer {
+    width: 1150px;
+    margin-block-start: auto;
+  }
+
   .page-footer__box {
     padding: 0 50px;
     width: 1050px;
