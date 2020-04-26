@@ -1,6 +1,6 @@
 .page-nav {
   position: relative;
-  width: 320px;
+  min-width: 320px;
   min-height: 79px;
   margin: auto;
   box-sizing: border-box;
@@ -171,30 +171,22 @@
 
 @media (min-width: @tablet-width) {
   .page-nav {
-    width: 770px;
+    min-width: 770px;
     min-height: 88px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 50px;
+    background: linear-gradient(to bottom, #ffffff 88px, #f9f9f9 89px);
   }
-
-  /*.page-nav::after {
-  content: "";
-  background-color: red;
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-  height: calc(10% + 30px);
-  left: 0;
-}*/
 
   .page-nav__logo {
     order: 0;
     padding: 0;
     height: 50px;
-    padding: 0;
-    margin: 20px auto 20px 0;
+    margin: 20px 0;
+    text-align: left;
+    width: 100%;
   }
 
   .page-nav__hamburger {
@@ -223,17 +215,25 @@
     flex-wrap: wrap;
     width: 350px;
     justify-content: flex-end;
-    border-left: 2px solid #f9f9f9;
     position: relative;
 
     &::before {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    background-color: #f9f9f9;
-    left: 83px;
-  }
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 88px;
+      background-color: #f9f9f9;
+      left: 83px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 88px;
+      width: 2px;
+      background-color: #f9f9f9;
+      left: 0;
+    }
   }
 
   .page-nav__list-item a {
@@ -246,9 +246,22 @@
     margin-right: 37px;
   }
 
+  .main-nav__item:first-child::before {
+    content: "";
+    position: absolute;
+    height: 88px;
+    width: 2px;
+    background-color: #f9f9f9;
+    right: 0;
+  }
+
   .main-nav__item:nth-child(even) {
     margin-right: 0;
     border-right: none;
+  }
+
+  .main-nav__item:nth-child(3n) {
+    border: none;
   }
 
   .main-nav__item a {
@@ -296,23 +309,24 @@
     border: none;
     font-size: 15px;
     line-height: 1.6;
-    margin: 0;
     margin: 10px 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-nav {
-    width: 1150px;
+    min-width: 1150px;
+    max-width: 2000px;
   }
 
   .page-nav__logo {
     order: 1;
     margin: 20px 0 20px auto;
+    width: auto;
   }
 
   .page-nav__main-nav-box {
-    width: 57.2%;
+    width: 54.2%;
     justify-content: space-between;
   }
 
@@ -323,12 +337,11 @@
 
   .page-nav__list-item a {
     font-size: 17px;
-    line-height: 1.41;
+    line-height: 2.2;
   }
 
   .main-nav__item {
     margin-right: 35px;
-    border-right: 2px solid #f9f9f9;
   }
 
   .main-nav__item a {

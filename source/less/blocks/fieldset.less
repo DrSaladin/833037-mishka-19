@@ -68,6 +68,7 @@
   cursor: pointer;
   position: relative;
   padding-left: 62px;
+  height: 37px;
 }
 
 .fieldset__label--checkbox {
@@ -75,10 +76,6 @@
   position: relative;
   padding-left: 62px;
   box-sizing: border-box;
-}
-
-.fieldset__label--radio {
-  height: 37px;
 }
 
 .fieldset__radio-input,
@@ -245,6 +242,15 @@
     vertical-align: top;
   }
 
+  .fieldset__legend-color-box {
+    width: 420px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    text-align: left;
+    margin: 0;
+  }
+
   .form-order__item-type label {
     margin: 0 0 30px 0;
   }
@@ -262,15 +268,6 @@
     bottom: 29px;
   }
 
-  .fieldset__legend-color-box {
-    width: 420px;
-    display: inline-block;
-    vertical-align: top;
-    padding: 0;
-    text-align: left;
-    margin: 0;
-  }
-
   .form-order__item-color label {
     margin-bottom: 44px;
     margin-top: 0;
@@ -285,7 +282,6 @@
     text-align: left;
     margin: 0;
     width: 485px;
-    margin-bottom: 50px;
     margin-top: -25px;
   }
 
@@ -325,21 +321,6 @@
   .fieldset__textarea {
     width: 490px;
   }
-
-  .fieldset__submit-block {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.justtest {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  border: none;
 }
 
 @media (min-width: @desktop-width) {
@@ -347,12 +328,41 @@
     width: 950px;
   }
 
-  .form-order__wrapper {
-    margin: auto;
-    padding: 0 calc(50% - 525px);
-  }
-
   .fieldset__legend {
     margin-right: 60px;
+  }
+
+  .fieldset__legend-info-box {
+    width: 700px;
+  }
+
+  .fieldset__legend-color-box {
+    width: 800px;
+  }
+
+  .fieldset__label--inline-block {
+    width: 800px;
+  }
+
+  .fieldset__text-input {
+    width: 570px;
+  }
+
+  .form-order__contacts-info--no-margin {
+    margin-bottom: 0;
+  }
+
+  .fieldset__text-input--longer {
+    width: 620px;
+  }
+
+  .fieldset__tel-input,
+  .fieldset__email-input {
+    width: 700px;
+  }
+
+  .fieldset__textarea {
+    width: 700px;
+    height: 140px;
   }
 }

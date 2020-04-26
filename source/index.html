@@ -11,7 +11,7 @@
 <body>
   <header class="page-header">
       <nav class="page-nav page-nav--closed">
-        <div class="page-nav__main-nav-box">
+      <div class="page-nav__main-nav-box">
         <a href="index.html" class="page-nav__logo">
           <img src="img/logo-mobile.svg" class="page-nav__logo-img" alt="Магазин подарков ручной работы Mishka"
             height="35" width="86">
@@ -63,9 +63,10 @@
 
   <main class="page-main">
     <div class="top-banner top-banner--index-img">
-      <h1 class="top-banner__title--index-img">
-        Милые штуки ручной работы для дома
-      </h1>
+      <div class="container">
+        <h1 class="top-banner__title top-banner__title--index-img">
+        Милые штуки ручной работы для дома</h1>
+      </div>
     </div>
 
     <nav class="index-catalog-nav">
@@ -89,7 +90,8 @@
       <h2 class="visually-hidden">
         Популярный крафтовые подарки интернет-магазина Мишка
       </h2>
-      <article class="product-card container">
+      <article class="product-card">
+        <div class="container product-card__wrapper">
         <header class="product-card__header">
         <h3 class="product-card__header-title">Вязаные корзинки</h3>
         <p class="product-card__header-subdivision">Товар недели</p>
@@ -120,6 +122,7 @@
         <div class="product-card__footer">
         <strong class="product-card__footer-price">Цена: 990 руб.</strong>
         <a href="" class="btn product-card__footer-btn">Заказать</a>
+        </div>
         </div>
       </article>
     </section>
