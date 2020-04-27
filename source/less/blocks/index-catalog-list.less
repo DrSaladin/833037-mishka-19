@@ -1,5 +1,5 @@
 .index-catalog-nav {
-  min-width: 320px;
+  width: 320px;
   margin: auto;
 }
 
@@ -70,6 +70,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .index-catalog-nav {
+    width: 670px;
+    margin: auto;
+  }
+
   .index-catalog-nav__list {
     display: flex;
     justify-content: center;
@@ -84,6 +89,7 @@
       width: 770px;
       height: 100%;
       bottom: 0;
+      left: -50px;
     }
 
     &::after {
@@ -95,6 +101,7 @@
       transform: scale(85%);
       width: 140vw;
       height: 30px;
+      left: -297px;
     }
   }
 
@@ -109,6 +116,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .index-catalog-nav {
+    width: 1050px;
+    margin: auto;
+  }
+
   .index-catalog-nav__list {
     display: flex;
     justify-content: center;
@@ -123,6 +135,11 @@
       width: 1150px;
       height: 100%;
       bottom: 0;
+      left: -50px;
+    }
+
+    &::after {
+      left: -281px;
     }
   }
 
@@ -132,6 +149,6 @@
     padding: 35px 20px 20px 36px;
     min-height: 119px;
     box-sizing: border-box;
-    min-width: 524px;
+    min-width: 525px;
   }
 }

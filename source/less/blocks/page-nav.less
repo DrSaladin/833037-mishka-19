@@ -98,7 +98,7 @@
   text-decoration: none;
   width: 320px;
   min-height: 79px;
-  background-color: @color-white;
+  background: transparent;
   border-top: solid 1px #ececec;
   padding: 32px 20px 10px 76px;
 }
@@ -245,6 +245,17 @@
     margin-right: 37px;
   }
 
+  .page-nav__list-item--cart a {
+    width: 265px;
+    min-height: 88px;
+    padding: 25px 0 25px 80px;
+    border: none;
+    background-position: 12% 50%;
+    font-size: 17px;
+    line-height: 2.2;
+    text-align: right;
+  }
+
   .main-nav__item:first-child::before {
     content: "";
     position: absolute;
@@ -287,18 +298,8 @@
     box-sizing: border-box;
   }
 
-  .page-nav__list-item--cart a {
-    width: 265px;
-    min-height: 88px;
-    padding: 25px 0 25px 80px;
-    border: none;
-    background-position: 12% 50%;
-    font-size: 17px;
-    line-height: 2.2;
-  }
-
   .page-nav__list-item--tablet {
-    display: initial;
+    display: block;
     z-index: 1;
     flex-grow: 1;
     text-align: right;
@@ -350,7 +351,7 @@
   }
 
   .main-nav__item--desktop {
-    display: initial;
+    display: block;
     width: 180px;
     min-height: 30px;
   }
