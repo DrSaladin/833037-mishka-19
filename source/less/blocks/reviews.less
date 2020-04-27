@@ -1,7 +1,7 @@
 .reviews {
   font-family: @open-sans-font;
   position: relative;
-  margin-top: 61px;
+  margin: 0 0 30px;
 }
 
 .reviews__title {
@@ -10,14 +10,13 @@
   line-height: 1.2;
   font-weight: bold;
   color: @color-black;
-  padding-left: 30px;
+  margin-bottom: 38px;
 }
 
 .reviews__sliding {
   padding: 0;
   list-style: none;
   margin: auto;
-  width: 260px;
 }
 
 .reviews__sliding-field {
@@ -32,17 +31,30 @@
   color: @color-grey;
 }
 
+.reviews__sliding-field-review {
+  margin-bottom: 40px;
+}
+
+.reviews__sliding-field-author {
+  font-style: normal;
+  margin-bottom: 36px;
+}
+
 .reviews__sliding-field-name {
   font-family: @open-sans-font;
   font-size: 17px;
   line-height: 1.41;
   font-weight: bold;
   color: @color-black;
+  display: block;
+  font-style: normal;
 }
 
 .reviews__sliding-field-nickname {
   font-size: 17px;
   line-height: 1.76;
+  display: block;
+  font-style: normal;
 }
 
 .reviews__switch-arrows {
@@ -58,6 +70,7 @@
   border: 1px solid #ececec;
   width: 130px;
   height: 52px;
+  padding: 0;
 }
 
 .reviews__switch-arrows button:hover {
@@ -70,4 +83,173 @@
 
 .reviews__btn {
   margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    margin-bottom: 50px;
+  }
+
+  .reviews__title {
+    padding-left: 0;
+    font-size: 43px;
+    line-height: 1.16;
+    order: 1;
+    margin-top: 88px;
+  }
+
+  .reviews__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reviews__sliding {
+    width: 642px;
+    order: 3;
+    margin: 0;
+  }
+
+  .reviews__sliding-field-text {
+    font-size: 17px;
+    line-height: 1.76;
+    width: 670px;
+  }
+
+  .reviews__sliding-field-review {
+    margin-bottom: 58px;
+  }
+
+  .reviews__sliding-field-name {
+    font-size: 18px;
+    line-height: 1.33;
+    margin-bottom: 5px;
+  }
+
+  .reviews__sliding-field-nickname {
+    font-size: 17px;
+    line-height: 1.76;
+    margin-top: 5px;
+  }
+
+  .reviews__switch-arrows {
+    order: 3;
+    margin: -90px 0 38px auto;
+    width: 140px;
+    justify-content: space-between;
+  }
+
+  .reviews__switch-arrows button {
+    border: none;
+    width: 50px;
+  }
+
+  .reviews__btn {
+    order: 2;
+    width: 175px;
+    min-height: 52px;
+    margin-right: 0;
+    margin-top: 86px;
+
+    &:hover {
+      width: 175px;
+      min-height: 52px;
+    }
+
+    &:focus {
+      width: 175px;
+      min-height: 52px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50px center;
+    padding: 0;
+    min-height: 457px;
+    width: 1150px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .reviews__wrapper {
+    justify-content: space-between;
+  }
+
+  .reviews__title {
+    padding-left: 0;
+    font-size: 53px;
+    line-height: 1.08;
+    order: 1;
+    margin-top: 80px;
+    margin-left: 160px;
+  }
+
+  .reviews__sliding {
+    width: 642px;
+    order: 3;
+    margin: 0;
+    margin-left: 160px;
+  }
+
+  .reviews__sliding-field-text {
+    font-size: 17px;
+    line-height: 1.76;
+    width: 768px;
+  }
+
+  .reviews__sliding-field-review {
+    margin-bottom: 47px;
+    width: 780px;
+  }
+
+  .reviews__sliding-field-name {
+    font-size: 17px;
+    line-height: 1.41;
+    margin-bottom: 5px;
+  }
+
+  .reviews__sliding-field-nickname {
+    font-size: 17px;
+    line-height: 1.41;
+    margin-top: 5px;
+  }
+
+  .reviews__sliding-field-author {
+    font-style: normal;
+    margin-bottom: 0;
+  }
+
+  .reviews__switch-arrows {
+    order: 3;
+    margin: 0;
+    align-self: flex-end;
+    width: 140px;
+  }
+
+  .reviews__switch-arrows button {
+    width: 50px;
+  }
+
+  .reviews__btn {
+    order: 2;
+    width: 175px;
+    text-transform: uppercase;
+    margin: 90px 0 45px auto;
+
+    &:hover {
+      width: 175px;
+      min-height: 52px;
+    }
+
+    &:focus {
+      width: 175px;
+      min-height: 52px;
+    }
+  }
 }

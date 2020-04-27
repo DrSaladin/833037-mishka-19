@@ -1,5 +1,21 @@
 .container {
+  width: 260px;
+  padding: 0 30px;
   margin: auto;
-  padding: 0;
-  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 670px;
+    padding: 0 50px;
+    margin: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1050px;
+    padding: 0 50px;
+    margin: auto;
+  }
 }

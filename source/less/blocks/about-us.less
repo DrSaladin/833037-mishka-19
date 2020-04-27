@@ -1,11 +1,9 @@
 .about-us {
   font-family: @open-sans-font;
   position: relative;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: 0 16px;
-  background-size: 110%;
-  padding-top: 76px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  min-width: 320px;
 }
 
 .about-us__title {
@@ -14,17 +12,14 @@
   line-height: 1.2;
   font-weight: bold;
   color: @color-black;
-  padding-left: 30px;
-  margin: 0;
+  margin: 0 0 31px 0;
 }
 
 .about-us__list {
   padding: 0;
   list-style: none;
-  margin: auto;
-  width: 260px;
+  margin: 0;
 }
-
 
 .about-us__list-item {
   font-family: @open-sans-font;
@@ -37,9 +32,7 @@
   background-repeat: no-repeat;
   box-sizing: border-box;
   min-height: 125px;
-  width: 260px;
 }
-
 
 .about-us__list-item--materials {
   background-image: url("../img/icon-feature-flower.svg");
@@ -58,9 +51,56 @@
 }
 
 .about-us__list-item--producers {
-  background-image: url("../img/icon-feature-ball.svg");
+  background-image: url("../img/icon-feature-rocket.svg");
 }
 
 .about-us__list-item--gift {
   background-image: url("../img/icon-feature-gift.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .about-us__title {
+    font-size: 43px;
+    line-height: 1.16;
+    margin-bottom: 47px;
+  }
+
+  .about-us__list {
+    columns: 2;
+    column-gap: 85px;
+  }
+
+  .about-us__list-item {
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 57px;
+    width: 295px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us {
+    margin-bottom: 45px;
+  }
+
+  .about-us__title {
+    padding-left: 0;
+    font-size: 53px;
+    line-height: 1.08;
+    margin-bottom: 44px;
+    margin-left: 160px;
+  }
+
+  .about-us__list {
+    width: 715px;
+    columns: 2;
+    column-gap: 115px;
+    margin-left: 160px;
+  }
+
+  .about-us__list-item {
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 57px;
+  }
 }
