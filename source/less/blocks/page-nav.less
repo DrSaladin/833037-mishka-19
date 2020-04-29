@@ -76,6 +76,10 @@
   }
 }
 
+.page-nav--nomagic .page-nav__hamburger {
+  display: none;
+}
+
 .page-nav__list {
   padding: 0;
   list-style: none;
@@ -167,6 +171,12 @@
 
 .main-nav__item--desktop {
   display: none;
+}
+
+@media (max-width: @pre-tablet-widt) {
+  .page-nav--closed .page-nav__list {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
