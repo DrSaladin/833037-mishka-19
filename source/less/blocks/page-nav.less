@@ -23,7 +23,7 @@
 .page-nav__hamburger {
   position: absolute;
   top: 15px;
-  right: 41px;
+  right: 15px;
   z-index: 2;
   display: block;
   width: 45px;
@@ -36,12 +36,12 @@
 .page-nav--closed .page-nav__hamburger::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 17.5px;
+  left: 9px;
   width: 20px;
   height: 2px;
   background-color: @color-black;
-  box-shadow: 0 8px 0 0 @color-black, 0 16px 0 0 @color-black;
+  box-shadow: 0 5.5px 0 0 @color-black, 0 11.5px 0 0 @color-black;
 }
 
 .page-nav--closed .page-nav__hamburger:active::before {
@@ -54,8 +54,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 13px;
-    left: 8px;
+    top: 15px;
+    left: 9px;
     width: 20px;
     height: 2px;
     background-color: @color-black;
@@ -173,7 +173,7 @@
   display: none;
 }
 
-@media (max-width: @pre-tablet-widt) {
+@media (max-width: @pre-tablet-width) {
   .page-nav--closed .page-nav__list {
     display: none;
   }

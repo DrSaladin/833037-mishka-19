@@ -7,7 +7,7 @@
 }
 
 .top-banner--index-img {
-  min-height: 285px;
+  min-height: 282px;
   background-color: #f9f9f9;
   background-repeat: no-repeat;
   background-image: url("../img/hero-mobile@1x.jpg");
@@ -27,10 +27,10 @@
 }
 
 .top-banner__title--index-img {
-  width: 260px;
+  width: 210px;
   margin: auto;
   font-family: @open-sans-font;
-  padding-top: 76px;
+  padding-top: 70px;
 }
 
 @media (min-width: @tablet-width) {
@@ -38,24 +38,22 @@
     min-height: 226px;
     width: 768px;
 
-    /*&::after {
+    &::after {
       content: "";
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       position: absolute;
       bottom: -10px;
-      transform: scale(85%);
-      width: 770px;
+      width: 100%;
       height: 30px;
       left: 0;
-    }*/
+    }
   }
 
   .top-banner--index-img {
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% 0%;
     min-height: 626px;
-    width: 100%;
 
     &::after {
       content: "";
@@ -91,8 +89,7 @@
       background-repeat: repeat-x;
       position: absolute;
       bottom: -10px;
-      transform: scale(85%);
-      width: 1050px;
+      width: 100%;
       height: 30px;
       left: 0;
     }
