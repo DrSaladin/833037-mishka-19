@@ -2,7 +2,7 @@
   width: 260px;
   padding: 0;
   border: 1px solid @color-light-grey;
-  margin: 30px auto 50px;
+  margin: 0 auto 58px;
   font-family: @open-sans-font;
   position: relative;
 }
@@ -17,6 +17,8 @@
   background-image: url("../img/icon-video.svg");
   background-repeat: no-repeat;
   background-position: 34px 5px;
+  margin-top: 23px;
+  margin-bottom: 25px;
 }
 
 .video-block__info {
@@ -25,12 +27,13 @@
   line-height: 1.85;
   color: @color-grey;
   width: 183px;
-  margin: 34px auto 29px auto;
-  padding: 0;
+  padding: 25px 30px 23px 33px;
+  margin: 0;
 }
 
 .video-block__btn {
   width: 192px;
+  letter-spacing: 0.6px;
 
   &:hover {
     width: 192px;
@@ -44,7 +47,7 @@
 @media (min-width: @tablet-width) {
   .video-block {
     width: 670px;
-    margin: 50px auto 50px;
+    margin: 0 auto 63px;
     display: flex;
     flex-direction: column;
   }
@@ -52,11 +55,13 @@
   .video-block__title {
     order: 2;
     min-height: 40px;
-    background-position: 45px 5px;
-    margin: 40px 0 0;
+    background-position: 43px 2px;
+    margin: 30px 0 0;
     padding-left: 107px;
     display: flex;
     align-items: center;
+    font-size: 19px;
+    letter-spacing: 0.8px;
   }
 
   .video-block__video {
@@ -66,9 +71,10 @@
   .video-block__info {
     order: 3;
     width: 580px;
-    margin: 34px auto 29px auto;
+    margin: 24px auto 34px 40px;
     font-size: 15px;
     line-height: 2;
+    padding: 0;
   }
 
   .video-block__btn {
@@ -81,6 +87,7 @@
 
     &:focus {
       width: 584px;
+      margin-bottom: 45px;
     }
   }
 }
@@ -91,20 +98,21 @@
     display: flex;
     flex-direction: column;
     flex-wrap: unset;
-    margin-bottom: 30px;
+    margin-bottom: 104px;
     min-height: 455px;
   }
 
   .video-block__title {
     order: 1;
     min-height: 40px;
-    background-position: 5px 10px;
+    background-position: 3px 7px;
     display: flex;
     align-items: unset;
-    margin: 40px 190px 42px auto;
+    margin: 35px 140.5px 33px auto;
     padding-top: 60px;
     padding-left: 0;
     width: 150px;
+    line-height: 1.3;
   }
 
   .video-block__video {
@@ -117,13 +125,13 @@
   .video-block__info {
     order: 2;
     width: 242px;
-    margin: 0 100px 51px auto;
+    margin: 0 48px 46px auto;
   }
 
   .video-block__btn {
     order: 3;
     width: 230px;
-    margin: 0 115px 0 auto;
+    margin: 0 58px 0 auto;
 
     &:hover {
       width: 230px;

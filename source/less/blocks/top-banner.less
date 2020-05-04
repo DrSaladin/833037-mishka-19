@@ -7,7 +7,7 @@
 }
 
 .top-banner--index-img {
-  min-height: 282px;
+  min-height: 282.5px;
   background-color: #f9f9f9;
   background-repeat: no-repeat;
   background-image: url("../img/hero-mobile@1x.jpg");
@@ -22,20 +22,25 @@
   font-weight: bold;
   color: @color-black;
   text-align: center;
-  padding-top: 76px;
+  padding-top: 67px;
   margin: auto;
+}
+
+.catalog-item__title--margin-bottom {
+  margin: 0 0 7px 0;
 }
 
 .top-banner__title--index-img {
   width: 210px;
   margin: auto;
   font-family: @open-sans-font;
-  padding-top: 70px;
+  padding-top: 69px;
+  line-height: 1.1;
 }
 
 @media (min-width: @tablet-width) {
   .top-banner {
-    min-height: 226px;
+    min-height: 186px;
     width: 768px;
 
     &::after {
@@ -52,8 +57,8 @@
 
   .top-banner--index-img {
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: 50% 0%;
-    min-height: 626px;
+    background-position: 50% 30%;
+    min-height: 575px;
 
     &::after {
       content: "";
@@ -65,13 +70,14 @@
   .top-banner__title {
     font-size: 43px;
     line-height: 1.16;
-    padding-top: 66px;
+    padding-top: 43px;
     margin: auto;
+    letter-spacing: 0.2px;
   }
 
   .top-banner__title--index-img {
     width: 497px;
-    padding-top: 161px;
+    padding-top: 101px;
     font-size: 43px;
     line-height: 1.16;
   }
@@ -80,7 +86,7 @@
 @media (min-width: @desktop-width) {
   .top-banner {
     width: 1150px;
-    min-height: 226px;
+    min-height: 206px;
     z-index: 0;
 
     &::after {
@@ -97,8 +103,8 @@
 
   .top-banner--index-img {
     background-image: url("../img/hero-desktop@1x.jpg");
-    background-position: 50% 0%;
-    min-height: 626px;
+    background-position: 50% 30%;
+    min-height: 575px;
 
     &::after {
       content: "";
@@ -110,13 +116,13 @@
   .top-banner__title {
     font-size: 53px;
     line-height: 1.08;
-    padding-top: 66px;
+    padding-top: 42px;
     margin: 0;
   }
 
   .top-banner__title--index-img {
-    width: 497px;
-    padding-top: 161px;
+    width: 697px;
+    padding-top: 102px;
     font-size: 53px;
     line-height: 1.08;
     margin: auto;

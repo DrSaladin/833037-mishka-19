@@ -39,7 +39,7 @@
 
 .reviews__sliding-field-author {
   font-style: normal;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 
 .reviews__sliding-field-name {
@@ -73,7 +73,7 @@
   background-color: @color-white;
   border: 1px solid #ececec;
   width: 130px;
-  height: 52px;
+  height: 51px;
   padding: 0;
 }
 
@@ -87,6 +87,9 @@
 
 .reviews__btn {
   margin: auto;
+  font-size: 18px;
+  min-height: 50px;
+  padding: 13px 0 15px 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -95,6 +98,7 @@
     background-repeat: no-repeat;
     background-position: center left;
     margin-bottom: 50px;
+    min-height: 456.5px;
   }
 
   .reviews__title {
@@ -102,7 +106,9 @@
     font-size: 43px;
     line-height: 1.16;
     order: 1;
-    margin-top: 88px;
+    margin-top: 77px;
+    margin-left: -4px;
+    margin-bottom: 31px;
   }
 
   .reviews__wrapper {
@@ -124,23 +130,24 @@
 
   .reviews__sliding-field-review {
     margin-bottom: 58px;
+    line-height: 1.76;
   }
 
   .reviews__sliding-field-name {
     font-size: 18px;
     line-height: 1.33;
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
 
   .reviews__sliding-field-nickname {
     font-size: 17px;
-    line-height: 1.76;
-    margin-top: 5px;
+    line-height: 1.8;
+    margin-top: 3px;
   }
 
   .reviews__switch-arrows {
     order: 3;
-    margin: -90px 0 38px auto;
+    margin: -82px 19px 38px auto;
     width: 140px;
     justify-content: space-between;
   }
@@ -153,9 +160,10 @@
   .reviews__btn {
     order: 2;
     width: 175px;
-    min-height: 52px;
-    margin-right: 0;
-    margin-top: 86px;
+    min-height: 50px;
+    margin-right: 1.5px;
+    margin-top: 80px;
+    letter-spacing: -0.4px;
 
     &:hover {
       width: 175px;
@@ -178,7 +186,7 @@
     min-height: 457px;
     width: 1150px;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   .reviews__wrapper {
@@ -190,15 +198,15 @@
     font-size: 53px;
     line-height: 1.08;
     order: 1;
-    margin-top: 80px;
-    margin-left: 160px;
+    margin-top: 70px;
+    margin-left: 170px;
   }
 
   .reviews__sliding {
     width: 642px;
     order: 3;
     margin: 0;
-    margin-left: 160px;
+    margin-left: 175px;
   }
 
   .reviews__sliding-field-text {
@@ -208,8 +216,9 @@
   }
 
   .reviews__sliding-field-review {
-    margin-bottom: 47px;
+    margin-bottom: 39px;
     width: 780px;
+    margin-top: 14px;
   }
 
   .reviews__sliding-field-name {
@@ -234,26 +243,33 @@
     margin: 0;
     align-self: flex-end;
     width: 140px;
+    margin-right: 18px;
+    margin-bottom: -2px;
   }
 
   .reviews__switch-arrows button {
     width: 50px;
   }
 
+  .reviews__switch-arrows-left {
+    margin-right: 25px;
+  }
+
   .reviews__btn {
     order: 2;
     width: 175px;
     text-transform: uppercase;
-    margin: 90px 0 45px auto;
+    margin: 80px 0 30px auto;
+    min-height: 50px;
 
     &:hover {
       width: 175px;
-      min-height: 52px;
+      height: 50px;
     }
 
     &:focus {
       width: 175px;
-      min-height: 52px;
+      height: 50px;
     }
   }
 }

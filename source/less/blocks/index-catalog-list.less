@@ -1,5 +1,5 @@
 .index-catalog-nav {
-  //width: 320px;
+  width: 320px;
   margin: 0 auto;
   position: relative;
 }
@@ -23,7 +23,7 @@
   box-sizing: border-box;
   position: relative;
   min-height: 103px;
-  padding: 26.5px 20px 20px 28.5px;
+  padding: 25.5px 20px 20px 28.5px;
 }
 
 .index-catalog-nav__list-item--interior a {
@@ -70,7 +70,7 @@
 
 @media (min-width: @tablet-width) {
   .index-catalog-nav {
-    //width: 670px;
+    width: 670px;
     margin: auto;
     background-color: #f9f9f9;
 
@@ -94,16 +94,24 @@
   .index-catalog-nav__list-item a {
     font-size: 20px;
     line-height: 1.5;
-    padding: 35px 20px 20px 36px;
+    padding: 27px 20px 20px 35px;
     min-height: 119px;
     box-sizing: border-box;
     min-width: 334px;
+  }
+
+  .index-catalog-nav__list-item--interior a {
+    background-position: 87.5% 53%;
+  }
+
+  .index-catalog-nav__list-item--toys a {
+    background-position: 88% 52%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .index-catalog-nav {
-    //width: 1050px;
+    width: 1050px;
     margin: auto;
     background-color: #f9f9f9;
   }
@@ -119,9 +127,17 @@
   .index-catalog-nav__list-item a {
     font-size: 20px;
     line-height: 1.5;
-    padding: 35px 20px 20px 36px;
+    padding: 27px 20px 20px 36px;
     min-height: 119px;
     box-sizing: border-box;
     min-width: 525px;
+  }
+
+  .index-catalog-nav__list-item--interior a {
+    background-position: 92.5% 53%;
+  }
+
+  .index-catalog-nav__list-item--toys a {
+    background-position: 92.5% 52%;
   }
 }

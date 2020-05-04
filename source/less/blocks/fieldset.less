@@ -2,7 +2,7 @@
 .fieldset {
   padding: 0;
   border: 0 none;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -19,7 +19,7 @@
   width: 60px;
   margin: 0;
   padding: 0;
-  margin-bottom: 33px;
+  margin-bottom: 23px;
 }
 
 .fieldset__legend::after {
@@ -53,6 +53,10 @@
   width: 179px;
   left: 80px;
   top: 12px;
+}
+
+.fieldset__legend--type-margin {
+  margin-bottom: 26px;
 }
 
 .fieldset__label {
@@ -94,14 +98,14 @@
 
 .fieldset__label--radio::before {
   content: "";
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   position: absolute;
   border: @color-grey solid 2px;
   background-color: @color-white;
   border-radius: 50%;
   left: 0;
-  bottom: -5px;
+  bottom: 2px;
 }
 
 .fieldset__label--radio:hover::before {
@@ -118,19 +122,23 @@
   width: 5px;
   height: 5px;
   position: absolute;
-  left: 14px;
-  bottom: 20px;
+  left: 10px;
+  bottom: 25px;
+}
+
+.fieldset__label--checkbox:first-of-type {
+  margin-top: 34px;
 }
 
 .fieldset__label--checkbox::before {
   content: "";
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   position: absolute;
   border: @color-grey solid 2px;
   background-color: @color-white;
-  left: 0;
-  bottom: -10px;
+  left: -1px;
+  bottom: -9px;
 }
 
 .fieldset__label--checkbox:hover::before {
@@ -145,10 +153,14 @@
 .fieldset__checkbox-input:checked + .fieldset__label--checkbox::after {
   content: url("../img/tick-checkbox.svg");
   position: absolute;
-  left: 10px;
-  bottom: 5px;
+  left: 8px;
+  bottom: 2px;
   width: 22px;
   height: 16px;
+}
+
+.fieldset__legend-info-box {
+  margin: 0 0 8px 0;
 }
 
 .fieldset__tel-input,
@@ -159,7 +171,7 @@
   border: none;
   border-bottom: 3px solid @color-black;
   line-height: 3;
-  margin-bottom: 24px;
+  margin-bottom: 18.5px;
   outline: none;
   height: 55px;
 
@@ -172,11 +184,25 @@
   }
 }
 
+.fieldset__legend--no-bottom-margin {
+  margin-bottom: 0;
+}
+
+.fieldset__email-input,
+.fieldset__tel-input {
+  background-color: transparent;
+}
+
+.fieldset__tel-input {
+  margin-bottom: 29px;
+  letter-spacing: 0.9px;
+}
+
 .fieldset__tel-input {
   content: "";
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
-  background-position: 95% 50%;
+  background-position: 97% 60%;
 
   &:hover {
     background-image: url("../img/icon-phone-focus.svg");
@@ -188,10 +214,14 @@
 }
 
 .fieldset__email-input {
+  margin-bottom: 27px;
+}
+
+.fieldset__email-input {
   content: "";
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
-  background-position: 95% 50%;
+  background-position: 98% 65%;
 
   &:hover {
     background-image: url("../img/icon-mail-focus.svg");
@@ -206,6 +236,8 @@
   width: 260px;
   resize: none;
   box-sizing: border-box;
+  padding: 13px 16px 0;
+  height: 140px;
 
   &:hover {
     border: 2px solid #62d1ba;
@@ -218,20 +250,16 @@
 
 @media (min-width: @tablet-width) {
   .fieldset {
-    width: 670px;
+    width: 770px;
     margin-bottom: 50px;
   }
 
   .fieldset__legend {
     line-height: 0.94;
     display: inline-block;
-    margin-right: 120px;
+    margin-right: 104px;
     padding-top: 0;
     min-width: 60px;
-  }
-
-  .fieldset__legend--type-margin {
-    margin-top: 24px;
   }
 
   .fieldset__legend::after {
@@ -240,12 +268,27 @@
 
   .fieldset__legend-type-box {
     display: inline-block;
+    width: 370px;
     vertical-align: top;
     padding-top: 25px;
+    margin: 0;
+  }
+
+   .fieldset__legend--type-margin {
+    margin-top: 24px;
+    margin-right: 120px;
+  }
+
+  .fieldset__label--radio::before {
+    width: 48px;
+    height: 48px;
+    left: -17px;
+    top: -10px;
   }
 
   .fieldset__legend-color-box {
-    width: 420px;
+    width: 500px;
+    min-height: 260px;
     display: inline-block;
     vertical-align: top;
     padding: 0;
@@ -253,8 +296,9 @@
     margin: 0;
   }
 
-  .form-order__item-type label {
-    margin: 0 0 30px 0;
+  .fieldset__legend--color-margin {
+    margin-top: 22px;
+    margin-right: 122px;
   }
 
   .fieldset__label {
@@ -262,19 +306,34 @@
     line-height: 0.95;
   }
 
-  .fieldset__label--radio::before {
-    bottom: 5px;
+  .fieldset__label--checkbox:nth-of-type(odd) {
+    margin-right: 58px;
+  }
+
+  .fieldset__label--checkbox::before {
+    width: 50px;
+    height: 49px;
+    left: -19px;
+    bottom: -19px;
+  }
+
+  .fieldset__label--checkbox:first-of-type {
+    margin-top: 21px;
   }
 
   .fieldset__radio-input:checked + .fieldset__label--radio::after {
     bottom: 29px;
+    left: -2px;
+    top: 6px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background-color: black;
   }
 
-  .form-order__item-color label {
-    margin-bottom: 44px;
-    margin-top: 0;
-    display: inline-block;
-    min-width: 200px;
+  .fieldset__checkbox-input:checked + .fieldset__label--checkbox::after {
+    left: -3px;
+    bottom: -5px;
   }
 
   .fieldset__legend-info-box {
@@ -283,26 +342,46 @@
     padding: 0;
     text-align: left;
     margin: 0;
-    width: 485px;
-    margin-top: -25px;
+    width: 505px;
+    margin-top: -1px;
+  }
+
+  .fieldset__legend--name-info-margin {
+    margin-top: 16px;
+  }
+
+  .fieldset--less-margin {
+    margin-top: 28px;
+    margin-bottom: 0;
   }
 
   .fieldset__label--inline-block {
     display: inline-block;
-    width: 483px;
+    width: 505px;
   }
 
   .fieldset__text-input {
-    margin-left: 26px;
-    width: 351px;
+    margin-left: 21px;
+    width: 374px;
+    margin-bottom: 20px;
+    padding-left: 15px;
   }
 
   .fieldset__text-input--longer {
-    width: 403px;
+    width: 425px;
   }
 
   .fieldset__tel-input {
     width: 490px;
+    margin-bottom: 0;
+    padding-left: 15px;
+    letter-spacing: 0.1px;
+  }
+
+  .fieldset__tel-input {
+  content: "";
+  background-image: url("../img/icon-phone.svg");
+  background-position: 96.5% 49%;
   }
 
   .fieldset__email-input {
@@ -311,7 +390,7 @@
 
   .form-order__item-textarea {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
   }
 
   .fieldset__label--wider {
