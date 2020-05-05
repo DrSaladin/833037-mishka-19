@@ -9,7 +9,7 @@
 .fieldset__legend {
   font-family: @open-sans-font;
   font-size: 17px;
-  line-height: 1.41;
+  line-height: 24px;
   font-weight: bold;
   color: @color-turquoise;
   position: relative;
@@ -44,6 +44,7 @@
 .fieldset__legend-info-box {
   border: none;
   padding: 0;
+  margin: 0 0 8px 0;
 }
 
 .fieldset__legend--shorter-line::after {
@@ -55,14 +56,14 @@
   top: 12px;
 }
 
-.fieldset__legend--type-margin {
+.fieldset__legend--type {
   margin-bottom: 26px;
 }
 
 .fieldset__label {
   font-family: @open-sans-font;
   font-size: 17px;
-  line-height: 1.06;
+  line-height: 18px;
   font-weight: bold;
   color: @color-black;
   display: block;
@@ -151,16 +152,12 @@
 }
 
 .fieldset__checkbox-input:checked + .fieldset__label--checkbox::after {
-  content: url("../img/tick-checkbox.svg");
+  content: url("../img/icon-tick.svg");
   position: absolute;
-  left: 8px;
-  bottom: 2px;
+  left: 3px;
+  bottom: 7px;
   width: 22px;
   height: 16px;
-}
-
-.fieldset__legend-info-box {
-  margin: 0 0 8px 0;
 }
 
 .fieldset__tel-input,
@@ -170,10 +167,11 @@
   width: 260px;
   border: none;
   border-bottom: 3px solid @color-black;
-  line-height: 3;
+  line-height: 51px;
   margin-bottom: 18.5px;
   outline: none;
   height: 55px;
+  position: relative;
 
   &:hover {
     border-bottom: 3px solid #62d1ba;
@@ -196,10 +194,6 @@
 .fieldset__tel-input {
   margin-bottom: 29px;
   letter-spacing: 0.9px;
-}
-
-.fieldset__tel-input {
-  content: "";
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 97% 60%;
@@ -215,10 +209,6 @@
 
 .fieldset__email-input {
   margin-bottom: 27px;
-}
-
-.fieldset__email-input {
-  content: "";
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
   background-position: 98% 65%;
@@ -255,7 +245,7 @@
   }
 
   .fieldset__legend {
-    line-height: 0.94;
+    line-height: 16px;
     display: inline-block;
     margin-right: 104px;
     padding-top: 0;
@@ -274,7 +264,7 @@
     margin: 0;
   }
 
-   .fieldset__legend--type-margin {
+  .fieldset__legend--type {
     margin-top: 24px;
     margin-right: 120px;
   }
@@ -296,14 +286,14 @@
     margin: 0;
   }
 
-  .fieldset__legend--color-margin {
+  .fieldset__legend--color {
     margin-top: 22px;
     margin-right: 122px;
   }
 
   .fieldset__label {
     font-size: 19px;
-    line-height: 0.95;
+    line-height: 18.1px;
   }
 
   .fieldset__label--checkbox:nth-of-type(odd) {
@@ -328,12 +318,12 @@
     height: 20px;
     width: 20px;
     border-radius: 50px;
-    background-color: black;
+    background-color: #63d1bb;
   }
 
   .fieldset__checkbox-input:checked + .fieldset__label--checkbox::after {
-    left: -3px;
-    bottom: -5px;
+    left: -7px;
+    bottom: 5px;
   }
 
   .fieldset__legend-info-box {
@@ -346,21 +336,13 @@
     margin-top: -1px;
   }
 
-  .fieldset__legend--name-info-margin {
+  .fieldset__legend--name-info {
     margin-top: 16px;
   }
 
-  .fieldset--less-margin {
-    margin-top: 28px;
-    margin-bottom: 0;
-  }
-
-  .fieldset--less-margin-top {
-    margin-top: 20px;
-    margin-bottom: 0;
-  }
-
-  .fieldset__label--inline-block {
+  .fieldset__label--full-name,
+  .fieldset__label--tel,
+  .fieldset__label--email {
     display: inline-block;
     width: 505px;
   }
@@ -372,7 +354,7 @@
     padding-left: 15px;
   }
 
-  .fieldset__text-input--longer {
+  .fieldset__text-input--name {
     width: 425px;
   }
 
@@ -381,12 +363,7 @@
     margin-bottom: 0;
     padding-left: 15px;
     letter-spacing: 0.1px;
-  }
-
-  .fieldset__tel-input {
-  content: "";
-  background-image: url("../img/icon-phone.svg");
-  background-position: 96.5% 49%;
+    position: relative;
   }
 
   .fieldset__email-input {
@@ -395,7 +372,7 @@
     letter-spacing: 0.1px;
   }
 
-  .fieldset__label--wider {
+  .fieldset__label--textarea {
     width: 480px;
     display: inline-block;
     vertical-align: top;
@@ -414,30 +391,69 @@
   }
 
   .fieldset__legend {
-    margin-right: 60px;
+    margin: 27px 66px 0 12px;
+  }
+
+  .fieldset__legend-type-box {
+    padding-top: 29px;
   }
 
   .fieldset__legend-info-box {
     width: 700px;
   }
 
+  .fieldset__label--checkbox:nth-of-type(odd) {
+    margin-right: 0;
+  }
+
+  .fieldset__legend--color {
+    margin-top: 17px;
+  }
+
+  .fieldset__legend--name-info {
+    margin-top: 19px;
+    margin-right: 51px;
+  }
+
   .fieldset__legend-color-box {
+    width: 800px;
+    margin-top: -5px;
+    min-height: 160px;
+  }
+
+  .fieldset__label--full-name,
+  .fieldset__label--tel,
+  .fieldset__label--email {
     width: 800px;
   }
 
-  .fieldset__label--inline-block {
-    width: 800px;
+  .fieldset--less-margin {
+    margin-top: 23px;
+  }
+
+  .fieldset-info__contacts {
+    margin-bottom: 0;
+    margin-top: 20px;
+    height: 63px;
+  }
+
+  .fieldset__legend--tel {
+    margin: 26px 50px 0 12px;
+  }
+
+  .fieldset__legend--email {
+    margin: 26px 50px 0 12px;
+  }
+
+  .fieldset__legend--text {
+    margin: 3px 54px 0 11px;
   }
 
   .fieldset__text-input {
     width: 570px;
   }
 
-  .form-order__contacts-info--no-margin {
-    margin-bottom: 0;
-  }
-
-  .fieldset__text-input--longer {
+  .fieldset__text-input--name {
     width: 620px;
   }
 

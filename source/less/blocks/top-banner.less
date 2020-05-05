@@ -1,6 +1,5 @@
 .top-banner {
   min-height: 177px;
-  width: 320px;
   margin: auto;
   position: relative;
   background-color: #f9f9f9;
@@ -18,7 +17,7 @@
 .top-banner__title {
   font-family: @open-sans-font;
   font-size: 27px;
-  line-height: 1.2;
+  line-height: 32.4px;
   font-weight: bold;
   color: @color-black;
   text-align: center;
@@ -31,17 +30,16 @@
 }
 
 .top-banner__title--index-img {
-  width: 210px;
+  width: 260px;
   margin: auto;
   font-family: @open-sans-font;
   padding-top: 69px;
-  line-height: 1.1;
+  line-height: 30px;
 }
 
 @media (min-width: @tablet-width) {
   .top-banner {
     min-height: 186px;
-    width: 768px;
 
     &::after {
       content: "";
@@ -69,23 +67,26 @@
 
   .top-banner__title {
     font-size: 43px;
-    line-height: 1.16;
+    line-height: 49.9px;
     padding-top: 43px;
     margin: auto;
     letter-spacing: 0.2px;
   }
 
   .top-banner__title--index-img {
-    width: 497px;
+    width: 520px;
     padding-top: 101px;
     font-size: 43px;
-    line-height: 1.16;
+    line-height: 49.9px;
+  }
+
+  .top-banner-br {
+    display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .top-banner {
-    width: 1150px;
     min-height: 206px;
     z-index: 0;
 
@@ -104,7 +105,7 @@
   .top-banner--index-img {
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: 50% 30%;
-    min-height: 575px;
+    min-height: 576px;
 
     &::after {
       content: "";
@@ -115,7 +116,7 @@
 
   .top-banner__title {
     font-size: 53px;
-    line-height: 1.08;
+    line-height: 57px;
     padding-top: 42px;
     margin: 0;
   }
@@ -124,7 +125,7 @@
     width: 697px;
     padding-top: 102px;
     font-size: 53px;
-    line-height: 1.08;
+    line-height: 57px;
     margin: auto;
   }
 }

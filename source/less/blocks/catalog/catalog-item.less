@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+.catalog-item-bigger-card {
+  min-height: 400px;
+}
+
 .catalog-item:hover {
   box-shadow: 0 6px 10px 0 #ececec;
 }
@@ -29,14 +33,14 @@
   padding: 22.5px 29px 25px 28px;
 }
 
-.catalog-item__info--extra-padding {
-  padding: 27px 30px 23.5px 13px;
+.catalog-item__info-bigger-block {
+  padding: 23px 30px 23.5px 26px;
 }
 
 .catalog-item__title {
   font-family: @open-sans-font;
   font-size: 17px;
-  line-height: 1.41;
+  line-height: 24px;
   font-weight: bold;
   color: @color-black;
   padding: 0;
@@ -46,7 +50,7 @@
 .catalog-item__feature {
   font-family: @open-sans-font;
   font-size: 13px;
-  line-height: 2.31;
+  line-height: 30px;
   font-weight: normal;
   color: @color-grey;
   margin: 0;
@@ -76,35 +80,43 @@
     width: 670px;
     display: flex;
     margin-bottom: 54px;
-    min-height: 332px;
+    min-height: 333px;
   }
 
   .catalog-item__info {
     min-width: 275px;
-    margin-left: 15px;
+    margin-left: auto;
     padding: 23px 30px 28px 13px;
     display: flex;
     flex-direction: column;
   }
 
+  .catalog-item__info-bigger-block {
+    padding: 23px 30px 23.5px 26px;
+  }
+
   .catalog-item__title {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
     letter-spacing: 0.2px;
     margin-bottom: 6.5px;
   }
 
-  .catalog-item__title--margin-bottom {
+  .catalog-item__shorter-title {
+    width: 220px;
+  }
+
+  .catalog-item__title-bowl {
     margin: 0 0 11px 0;
   }
 
-  .catalog-item__title--padding-right {
+  .catalog-item__title-shorter-card {
     padding-right: 30px;
   }
 
   .catalog-item__feature {
     font-size: 15px;
-    line-height: 2;
+    line-height: 30px;
   }
 
   .catalog-item__line {
@@ -117,13 +129,9 @@
 
   .catalog-item__order-price {
     font-size: 17px;
-    line-height: 1.41;
+    line-height: 24px;
     margin-left: 5px;
     letter-spacing: 0.3px;
-  }
-
-  .catalog-item__order-price--left-margin {
-    margin-left: 3px;
   }
 }
 
@@ -147,14 +155,14 @@
 
   .catalog-item__title {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
     letter-spacing: 0.1px;
   }
 
   .catalog-item__feature {
     margin-top: 0;
     font-size: 15px;
-    line-height: 2;
+    line-height: 30px;
     margin-bottom: 35px;
   }
 
@@ -164,7 +172,7 @@
 
   .catalog-item__order-price {
     font-size: 17px;
-    line-height: 1.41;
+    line-height: 24px;
     margin-left: 0;
     margin-top: 2px;
   }
