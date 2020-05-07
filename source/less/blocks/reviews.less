@@ -75,6 +75,7 @@
   width: 130px;
   height: 51px;
   padding: 0;
+  cursor: pointer;
 }
 
 .reviews__switch-arrows button:hover {
@@ -90,6 +91,16 @@
   font-size: 18px;
   min-height: 50px;
   padding: 13px 0 15px 0;
+
+  &:hover {
+    padding: 13px 0 15px 0;
+    min-height: 50px;
+  }
+
+  &:focus {
+    padding: 13px 0 15px 0;
+    min-height: 50px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -167,12 +178,12 @@
 
     &:hover {
       width: 175px;
-      min-height: 52px;
+      min-height: 50px;
     }
 
     &:focus {
       width: 175px;
-      min-height: 52px;
+      min-height: 50px;
     }
   }
 }
@@ -265,12 +276,12 @@
 
     &:hover {
       width: 175px;
-      height: 50px;
+      min-height: 50px;
     }
 
     &:focus {
       width: 175px;
-      height: 50px;
+      min-height: 50px;
     }
   }
 }

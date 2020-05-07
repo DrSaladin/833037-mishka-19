@@ -17,7 +17,6 @@
             height="35" width="86">
         </a>
         <button class="page-nav__hamburger" type="button">
-          <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="page-nav__list main-nav">
           <li class="page-nav__list-item main-nav__item">
@@ -220,15 +219,19 @@
       </address>
       </div>
       <a href="" class="contacts__map">
-        <img class="contacts__map-img" src="img/map-mobile@1x.jpg"
-          alt="Адрес - г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="320" height="457">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+            <img class="contacts__map-img" src="img/map-mobile@1x.jpg"
+              alt="Адрес - г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        </picture>
       </a>
       <a href="" class="btn contacts__btn">Напишите нам</a>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__box">
+    <div class="container page-footer__wrapper">
       <a href="" class="page-footer__logo">
         <svg version="1.1" id="logo-footer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" width="101.615px" height="34.056px" viewBox="0 0 101.615 34.056"

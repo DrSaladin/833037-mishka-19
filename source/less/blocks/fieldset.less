@@ -31,6 +31,19 @@
   top: 12px;
 }
 
+.fieldset__legend--email {
+  position: relative;
+}
+
+.fieldset__legend--email::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #63d1bb;
+  width: 178px;
+  left: 80px;
+  top: 12px;
+}
+
 .fieldset__legend-type-box {
   border: none;
   padding: 0;
@@ -119,12 +132,14 @@
 }
 
 .fieldset__radio-input:checked + .fieldset__label--radio::after {
-  content: url("../img/radio-dot.png");
-  width: 5px;
-  height: 5px;
-  position: absolute;
-  left: 10px;
-  bottom: 25px;
+  content: "";
+  bottom: 29px;
+  left: -1px;
+  top: 6px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background-color: #63d1bb;
 }
 
 .fieldset__label--checkbox:first-of-type {
@@ -228,13 +243,16 @@
   box-sizing: border-box;
   padding: 13px 16px 0;
   height: 140px;
+  outline: none;
+  outline-offset: -2px;
+  line-height: 1.15;
 
   &:hover {
-    border: 2px solid #62d1ba;
+    outline: 2px solid #62d1ba;
   }
 
   &:focus {
-    border: 2px solid #62d1ba;
+    outline: 2px solid #62d1ba;
   }
 }
 
@@ -313,7 +331,7 @@
 
   .fieldset__radio-input:checked + .fieldset__label--radio::after {
     bottom: 29px;
-    left: -2px;
+    left: -1px;
     top: 6px;
     height: 20px;
     width: 20px;
@@ -350,7 +368,7 @@
   .fieldset__text-input {
     margin-left: 21px;
     width: 374px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     padding-left: 15px;
   }
 
@@ -372,6 +390,12 @@
     letter-spacing: 0.1px;
   }
 
+  .fieldset-info__contacts {
+    margin-top: 27px;
+    margin-bottom: 0;
+    height: 51px;
+  }
+
   .fieldset__label--textarea {
     width: 480px;
     display: inline-block;
@@ -388,6 +412,7 @@
 @media (min-width: @desktop-width) {
   .fieldset {
     width: 950px;
+    margin-bottom: 48px;
   }
 
   .fieldset__legend {
@@ -442,11 +467,11 @@
   }
 
   .fieldset__legend--email {
-    margin: 26px 50px 0 12px;
+    margin: 2px 50px 0 12px;
   }
 
   .fieldset__legend--text {
-    margin: 3px 54px 0 11px;
+    margin: 3px 50px 0 11px;
   }
 
   .fieldset__text-input {
@@ -460,10 +485,12 @@
   .fieldset__tel-input,
   .fieldset__email-input {
     width: 700px;
+    background-position: 99% 48%;
   }
 
   .fieldset__textarea {
-    width: 700px;
+    width: 698px;
     height: 140px;
+    padding: 10px 13px 0;
   }
 }

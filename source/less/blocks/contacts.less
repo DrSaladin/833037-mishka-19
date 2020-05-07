@@ -77,11 +77,14 @@
 .contacts__map-img {
   display: block;
   margin: auto;
+  width: 100%;
+  height: auto;
 }
 
 .contacts__btn {
   margin: 38.5px auto 0 auto;
   letter-spacing: 1.3px;
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
@@ -90,10 +93,6 @@
     background-image: url("../img/icon-flag.svg");
     background-position: 92.7% 0.7%;
     background-repeat: no-repeat;
-  }
-
-  .contacts__wrapper {
-    padding: 0;
   }
 
   .contacts__title {
@@ -161,10 +160,6 @@
       top: 30%;
       left: 47.3%;
     }
-  }
-
-  .contacts__map-img {
-    max-width: 870px;
   }
 }
 
@@ -245,7 +240,7 @@
     position: absolute;
     display: block;
     right: 0;
-    top: -61px;
+    top: -50px;
     padding: 0;
 
     &::before {
