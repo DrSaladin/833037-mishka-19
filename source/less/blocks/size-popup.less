@@ -4,12 +4,12 @@
   font-family: @open-sans-font;
   left: calc(50% - 160px);
   top: 50%;
-  min-width: 320px;
+  width: 320px;
   min-height: 336px;
   background-color: @color-white;
-  padding: 0 86px;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   display: none;
+  z-index: 2;
 }
 
 .size-popup__list {
@@ -53,13 +53,14 @@
 .size-popup__title {
   font-family: @open-sans-font;
   font-size: 25px;
-  line-height: 1.2;
+  line-height: 30px;
   font-weight: bold;
   color: @color-black;
   display: block;
-  margin: 36px 0 25px 0;
+  margin: 36px auto 25px auto;
   text-transform: uppercase;
   text-align: center;
+  width: 148px;
 }
 
 .size-popup__info {
@@ -86,10 +87,9 @@
 
 @media (min-width: @tablet-width) {
   .size-popup {
-    min-width: 566px;
+    width: 566px;
     min-height: 336px;
     left: calc(50% - 283px);
-    padding: 0 106px;
     box-sizing: border-box;
   }
 
@@ -104,13 +104,14 @@
 
   .size-popup__title {
     font-size: 30px;
-    line-height: 1.9;
-    margin: 36px 0 25px 0;
+    line-height: 57px;
+    margin: 36px auto 25px auto;
+    width: 355px;
   }
 
   .size-popup__info {
     font-size: 17px;
-    line-height: 1.76;
+    line-height: 30px;
   }
 
   .size-popup__btn {

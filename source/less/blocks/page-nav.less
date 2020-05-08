@@ -31,23 +31,30 @@
   background-color: @color-white;
   cursor: pointer;
   border: none;
-  outline: none;
+
+  &:hover {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .page-nav--closed .page-nav__hamburger::before {
   content: "";
   position: absolute;
-  top: 17.5px;
+  top: 18px;
   left: 9px;
   width: 20px;
   height: 2px;
   background-color: @color-black;
-  box-shadow: 0 5.5px 0 0 @color-black, 0 11.5px 0 0 @color-black;
+  box-shadow: 0 6px 0 0 @color-black, 0 12px 0 0 @color-black;
 }
 
 .page-nav--closed .page-nav__hamburger:active::before {
   background-color: lighten(@color-black, 30%);
-  box-shadow: 0 5.5px 0 0 lighten(@color-black, 30%), 0 11.5px 0 0 lighten(@color-black, 30%);
+  box-shadow: 0 6px 0 0 lighten(@color-black, 30%), 0 12px 0 0 lighten(@color-black, 30%);
 }
 
 .page-nav--opened .page-nav__hamburger {
@@ -95,7 +102,7 @@
 .page-nav__list-item a {
   font-family: @open-sans-font;
   font-size: 17px;
-  line-height: 23.9px;
+  line-height: 24px;
   font-weight: bold;
   color: @color-black;
   display: block;
@@ -265,7 +272,7 @@
     border: none;
     background-position: 13% 50%;
     font-size: 17px;
-    line-height: 37.4px;
+    line-height: 37px;
     text-align: right;
   }
 
@@ -339,7 +346,7 @@
   }
 
   .page-nav__main-nav-box {
-    width: 54.2%;
+    width: 570px;
     justify-content: space-between;
   }
 
@@ -349,7 +356,7 @@
 
   .page-nav__list-item a {
     font-size: 17px;
-    line-height: 37.4px;
+    line-height: 37px;
   }
 
   .main-nav {
@@ -373,7 +380,7 @@
   .main-nav__item a {
     width: 180px;
     min-height: 88px;
-    padding: 23.5px 0 25px 0;
+    padding: 24px 0 25px 0;
     letter-spacing: 0.1px;
   }
 
@@ -385,7 +392,7 @@
 
   .main-nav__item--desktop a {
     font-size: 15px;
-    line-height: 23.4px;
+    line-height: 23px;
     padding: 18px 0 10px 1px;
     min-height: 44px;
     letter-spacing: 0.2px;
