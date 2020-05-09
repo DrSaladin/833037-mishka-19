@@ -9,9 +9,8 @@
 </head>
 
 <body>
-
   <header class="page-header">
-    <nav class="page-nav page-nav--closed">
+    <nav class="page-nav page-nav--closed page-nav--nomagic">
       <div class="page-nav__main-nav-box">
         <a href="index.html" class="page-nav__logo">
           <img src="img/logo-mobile.svg" class="page-nav__logo-img" alt="Магазин подарков ручной работы Mishka"
@@ -72,9 +71,12 @@
     <ul class="catalog-list">
       <li class="catalog-list__item catalog-item">
         <a href="" class="catalog-item__img-link">
-          <img src="img/photo-hare-mobile@1x.jpg"
-            alt="Зайчик-попрыгайчик. Детская игрушка сделанная из гипоаллергенного материала. Лучший подарок вашим маленьким ангелочкам."
-            width="260" height="195">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
+              <img src="img/photo-hare-mobile@1x.jpg"
+                alt="Зайчик-попрыгайчик. Детская игрушка сделанная из гипоаллергенного материала. Лучший подарок вашим маленьким ангелочкам.">
+          </picture>
         </a>
         <div class="catalog-item__info">
         <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
@@ -99,12 +101,15 @@
 
       <li class="catalog-item">
         <a href="" class="catalog-item__img-link">
-          <img src="img/photo-bowl-mobile@1x.jpg"
-            alt="Корзинка для белья. Создана любящими руками только из натуральных тканей. Пять расцветок, три размера."
-            width="260" height="195">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
+              <img src="img/photo-bowl-mobile@1x.jpg"
+                alt="Корзинка для белья. Создана любящими руками только из натуральных тканей. Пять расцветок, три размера.">
+          </picture>
         </a>
         <div class="catalog-item__info">
-        <h3 class="catalog-item__title">Корзинка для белья</h3>
+        <h3 class="catalog-item__title catalog-item__title-bowl">Корзинка для белья</h3>
         <p class="catalog-item__feature">Диаметр 15 см, высота 10 см</p>
         <hr class="catalog-item__line">
         <p class="catalog-item__order">
@@ -124,15 +129,18 @@
         </div>
       </li>
 
-      <li class="catalog-item">
+      <li class="catalog-item catalog-item-bigger-card">
         <a href="" class="catalog-item__img-link">
-          <img src="img/photo-toys-mobile@1x.jpg" class="catalog-item__image"
-            alt="Большая корзинка для игрушек. Домик для все игрушек вашего чада. Гипоаллергенный материал и простой фасон подойдет для детей любого возраста."
-            width="260" height="195">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
+              <img src="img/photo-toys-mobile@1x.jpg" class="catalog-item__image"
+                alt="Большая корзинка для игрушек. Домик для все игрушек вашего чада. Гипоаллергенный материал и простой фасон подойдет для детей любого возраста.">
+          </picture>
         </a>
-        <div class="catalog-item__info">
-        <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
-        <p class="catalog-item__feature">Диаметр 30 см, высота 30 см</p>
+        <div class="catalog-item__info catalog-item__info-bigger-block">
+        <h3 class="catalog-item__title catalog-item__shorter-title">Большая корзинка для игрушек</h3>
+        <p class="catalog-item__feature catalog-item__feature-bigger-block">Диаметр 30 см, высота 30 см</p>
         <hr class="catalog-item__line">
         <p class="catalog-item__order">
           <strong class="catalog-item__order-price">
@@ -154,7 +162,11 @@
 
     <section class="video-block">
       <h3 class="video-block__title">Процесс производства</h3>
-      <img class="video-block__video" src="img/video-mobile@1x.jpg" alt="Процесс создания вязаных игрушек" width="260" height="150">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
+        <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+        <img class="video-block__video" src="img/video-mobile@1x.jpg" alt="Процесс создания вязаных игрушек">
+      </picture>
       <p class="video-block__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
         появляются наши товары.</p>
       <a href="form.html" class="video-block__btn btn">Сделать заказ</a>
@@ -162,7 +174,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="container page-footer__box">
+    <div class="container page-footer__wrapper">
       <a href="" class="page-footer__logo">
         <svg version="1.1" id="logo-footer_1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="101.615px" height="34.056px"
@@ -270,6 +282,8 @@
     </ul>
     <button type="submit" class="btn size-popup__btn">Добавить</button>
   </form>
-</body>
 
+  <script src="js/script.js"></script>
+
+</body>
 </html>

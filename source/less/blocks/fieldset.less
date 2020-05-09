@@ -2,14 +2,14 @@
 .fieldset {
   padding: 0;
   border: 0 none;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
 }
 
 .fieldset__legend {
   font-family: @open-sans-font;
   font-size: 17px;
-  line-height: 1.41;
+  line-height: 24px;
   font-weight: bold;
   color: @color-turquoise;
   position: relative;
@@ -19,7 +19,7 @@
   width: 60px;
   margin: 0;
   padding: 0;
-  margin-bottom: 33px;
+  margin-bottom: 23px;
 }
 
 .fieldset__legend::after {
@@ -28,6 +28,24 @@
   border: 1px solid #63d1bb;
   width: 198px;
   left: 60px;
+  top: 12px;
+}
+
+.fieldset__legend--tel {
+  margin-bottom: 0;
+}
+
+.fieldset__legend--email {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.fieldset__legend--email::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #63d1bb;
+  width: 178px;
+  left: 80px;
   top: 12px;
 }
 
@@ -44,6 +62,7 @@
 .fieldset__legend-info-box {
   border: none;
   padding: 0;
+  margin: 0 0 8px 0;
 }
 
 .fieldset__legend--shorter-line::after {
@@ -55,10 +74,14 @@
   top: 12px;
 }
 
+.fieldset__legend--type {
+  margin-bottom: 26px;
+}
+
 .fieldset__label {
   font-family: @open-sans-font;
   font-size: 17px;
-  line-height: 1.06;
+  line-height: 18px;
   font-weight: bold;
   color: @color-black;
   display: block;
@@ -94,14 +117,14 @@
 
 .fieldset__label--radio::before {
   content: "";
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   position: absolute;
   border: @color-grey solid 2px;
   background-color: @color-white;
   border-radius: 50%;
   left: 0;
-  bottom: -5px;
+  bottom: 2px;
 }
 
 .fieldset__label--radio:hover::before {
@@ -114,23 +137,30 @@
 }
 
 .fieldset__radio-input:checked + .fieldset__label--radio::after {
-  content: url("../img/radio-dot.png");
-  width: 5px;
-  height: 5px;
+  content: "";
   position: absolute;
-  left: 14px;
-  bottom: 20px;
+  bottom: 29px;
+  left: 10px;
+  top: 6px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background-color: #63d1bb;
+}
+
+.fieldset__label--checkbox:first-of-type {
+  margin-top: 34px;
 }
 
 .fieldset__label--checkbox::before {
   content: "";
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   position: absolute;
   border: @color-grey solid 2px;
   background-color: @color-white;
-  left: 0;
-  bottom: -10px;
+  left: -1px;
+  bottom: -9px;
 }
 
 .fieldset__label--checkbox:hover::before {
@@ -143,10 +173,10 @@
 }
 
 .fieldset__checkbox-input:checked + .fieldset__label--checkbox::after {
-  content: url("../img/tick-checkbox.svg");
+  content: url("../img/icon-tick.svg");
   position: absolute;
-  left: 10px;
-  bottom: 5px;
+  left: 3px;
+  bottom: 7px;
   width: 22px;
   height: 16px;
 }
@@ -158,10 +188,11 @@
   width: 260px;
   border: none;
   border-bottom: 3px solid @color-black;
-  line-height: 3;
-  margin-bottom: 24px;
+  line-height: 51px;
+  margin-bottom: 19px;
   outline: none;
   height: 55px;
+  position: relative;
 
   &:hover {
     border-bottom: 3px solid #62d1ba;
@@ -172,11 +203,21 @@
   }
 }
 
+.fieldset__legend--no-bottom-margin {
+  margin-bottom: 0;
+}
+
+.fieldset__email-input,
 .fieldset__tel-input {
-  content: "";
+  background-color: transparent;
+}
+
+.fieldset__tel-input {
+  margin-bottom: 29px;
+  letter-spacing: 0.9px;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
-  background-position: 95% 50%;
+  background-position: 97% 60%;
 
   &:hover {
     background-image: url("../img/icon-phone-focus.svg");
@@ -188,10 +229,10 @@
 }
 
 .fieldset__email-input {
-  content: "";
+  margin-bottom: 27px;
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
-  background-position: 95% 50%;
+  background-position: 98% 65%;
 
   &:hover {
     background-image: url("../img/icon-mail-focus.svg");
@@ -206,32 +247,33 @@
   width: 260px;
   resize: none;
   box-sizing: border-box;
+  padding: 13px 16px 0;
+  height: 140px;
+  outline: none;
+  outline-offset: -2px;
+  line-height: 22px;
 
   &:hover {
-    border: 2px solid #62d1ba;
+    outline: 2px solid #62d1ba;
   }
 
   &:focus {
-    border: 2px solid #62d1ba;
+    outline: 2px solid #62d1ba;
   }
 }
 
 @media (min-width: @tablet-width) {
   .fieldset {
-    width: 670px;
+    width: 710px;
     margin-bottom: 50px;
   }
 
   .fieldset__legend {
-    line-height: 0.94;
+    line-height: 16px;
     display: inline-block;
-    margin-right: 120px;
+    margin-right: 104px;
     padding-top: 0;
     min-width: 60px;
-  }
-
-  .fieldset__legend--type-margin {
-    margin-top: 24px;
   }
 
   .fieldset__legend::after {
@@ -240,12 +282,27 @@
 
   .fieldset__legend-type-box {
     display: inline-block;
+    width: 370px;
     vertical-align: top;
     padding-top: 25px;
+    margin: 0;
+  }
+
+  .fieldset__legend--type {
+    margin-top: 24px;
+    margin-right: 120px;
+  }
+
+  .fieldset__label--radio::before {
+    width: 48px;
+    height: 48px;
+    left: -17px;
+    top: -10px;
   }
 
   .fieldset__legend-color-box {
-    width: 420px;
+    width: 500px;
+    min-height: 260px;
     display: inline-block;
     vertical-align: top;
     padding: 0;
@@ -253,28 +310,46 @@
     margin: 0;
   }
 
-  .form-order__item-type label {
-    margin: 0 0 30px 0;
+  .fieldset__legend--color {
+    margin-top: 22px;
+    margin-right: 122px;
   }
 
   .fieldset__label {
     font-size: 19px;
-    line-height: 0.95;
+    line-height: 18px;
   }
 
-  .fieldset__label--radio::before {
-    bottom: 5px;
+  .fieldset__label--checkbox:nth-of-type(odd) {
+    margin-right: 58px;
+  }
+
+  .fieldset__label--checkbox::before {
+    width: 50px;
+    height: 49px;
+    left: -19px;
+    bottom: -19px;
+  }
+
+  .fieldset__label--checkbox:first-of-type {
+    margin-top: 21px;
   }
 
   .fieldset__radio-input:checked + .fieldset__label--radio::after {
+    content: "";
+    position: absolute;
     bottom: 29px;
+    left: -1px;
+    top: 6px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background-color: #63d1bb;
   }
 
-  .form-order__item-color label {
-    margin-bottom: 44px;
-    margin-top: 0;
-    display: inline-block;
-    min-width: 200px;
+  .fieldset__checkbox-input:checked + .fieldset__label--checkbox::after {
+    left: -7px;
+    bottom: 5px;
   }
 
   .fieldset__legend-info-box {
@@ -283,88 +358,147 @@
     padding: 0;
     text-align: left;
     margin: 0;
-    width: 485px;
-    margin-top: -25px;
+    width: 505px;
+    margin-top: -1px;
   }
 
-  .fieldset__label--inline-block {
+  .fieldset__legend--name-info {
+    margin-top: 16px;
+  }
+
+  .fieldset__label--full-name,
+  .fieldset__label--tel,
+  .fieldset__label--email {
     display: inline-block;
-    width: 483px;
+    width: 505px;
   }
 
   .fieldset__text-input {
-    margin-left: 26px;
-    width: 351px;
+    margin-left: 21px;
+    width: 374px;
+    margin-bottom: 22px;
+    padding-left: 15px;
   }
 
-  .fieldset__text-input--longer {
-    width: 403px;
+  .fieldset__text-input--name {
+    width: 425px;
   }
 
   .fieldset__tel-input {
     width: 490px;
+    margin-bottom: 0;
+    padding-left: 15px;
+    letter-spacing: 0.1px;
+    position: relative;
   }
 
   .fieldset__email-input {
     width: 490px;
+    padding-left: 15px;
+    letter-spacing: 0.1px;
   }
 
-  .form-order__item-textarea {
-    margin-top: 50px;
-    margin-bottom: 50px;
+  .fieldset-info__contacts {
+    margin-top: 24px;
+    margin-bottom: 0;
+    height: 51px;
   }
 
-  .fieldset__label--wider {
+  .fieldset__label--textarea {
     width: 480px;
     display: inline-block;
     vertical-align: top;
   }
 
   .fieldset__textarea {
-    width: 490px;
+    width: 495px;
+    margin-top: -15px;
+    padding: 13px 13px 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .fieldset {
     width: 950px;
+    margin-bottom: 48px;
   }
 
   .fieldset__legend {
-    margin-right: 60px;
+    margin: 27px 66px 0 12px;
+  }
+
+  .fieldset__legend-type-box {
+    padding-top: 29px;
   }
 
   .fieldset__legend-info-box {
     width: 700px;
   }
 
+  .fieldset__label--checkbox:nth-of-type(odd) {
+    margin-right: 0;
+  }
+
+  .fieldset__legend--color {
+    margin-top: 17px;
+  }
+
+  .fieldset__legend--name-info {
+    margin-top: 19px;
+    margin-right: 51px;
+  }
+
   .fieldset__legend-color-box {
+    width: 800px;
+    margin-top: -5px;
+    min-height: 160px;
+  }
+
+  .fieldset__label--full-name,
+  .fieldset__label--tel,
+  .fieldset__label--email {
     width: 800px;
   }
 
-  .fieldset__label--inline-block {
-    width: 800px;
+  .fieldset--less-margin {
+    margin-top: 23px;
+  }
+
+  .fieldset-info__contacts {
+    margin-bottom: 0;
+    margin-top: 20px;
+    height: 63px;
+  }
+
+  .fieldset__legend--tel {
+    margin: 26px 50px 0 12px;
+  }
+
+  .fieldset__legend--email {
+    margin: 2px 50px 0 12px;
+  }
+
+  .fieldset__legend--text {
+    margin: 3px 50px 0 11px;
   }
 
   .fieldset__text-input {
     width: 570px;
   }
 
-  .form-order__contacts-info--no-margin {
-    margin-bottom: 0;
-  }
-
-  .fieldset__text-input--longer {
+  .fieldset__text-input--name {
     width: 620px;
   }
 
   .fieldset__tel-input,
   .fieldset__email-input {
     width: 700px;
+    background-position: 99% 48%;
   }
 
   .fieldset__textarea {
-    width: 700px;
+    width: 698px;
     height: 140px;
+    padding: 10px 13px 0;
   }
 }

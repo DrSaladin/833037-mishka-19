@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+.catalog-item-bigger-card {
+  min-height: 400px;
+}
+
 .catalog-item:hover {
   box-shadow: 0 6px 10px 0 #ececec;
 }
@@ -26,27 +30,31 @@
 }
 
 .catalog-item__info {
-  padding: 32px 28px;
+  padding: 23px 29px 25px 28px;
+}
+
+.catalog-item__info-bigger-block {
+  padding: 23px 30px 24px 26px;
 }
 
 .catalog-item__title {
   font-family: @open-sans-font;
   font-size: 17px;
-  line-height: 1.41;
+  line-height: 24px;
   font-weight: bold;
   color: @color-black;
   padding: 0;
-  margin: 0 0 18px 0;
+  margin: 0 0 5px 0;
 }
 
 .catalog-item__feature {
   font-family: @open-sans-font;
   font-size: 13px;
-  line-height: 2.31;
+  line-height: 30px;
   font-weight: normal;
   color: @color-grey;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 19px;
 }
 
 .catalog-item__line {
@@ -58,50 +66,72 @@
 .catalog-item__order {
   position: relative;
   padding: 0;
-  margin: 27px 0 0;
+  margin: 24px 0 0;
   display: flex;
   justify-content: space-between;
 }
 
-.catalog-item__table-price {
-  font-family: @open-sans-font;
-  font-size: 15px;
-  line-height: 1.6;
-  font-weight: bold;
-  color: @color-black;
+.catalog-item__order-price {
+  letter-spacing: -0.5px;
 }
 
 @media (min-width: @tablet-width) {
   .catalog-item {
     width: 670px;
     display: flex;
-    margin-bottom: 54px;
+    margin-bottom: 55px;
+    min-height: 333px;
   }
 
   .catalog-item__info {
-    width: 268px;
+    min-width: 275px;
     margin-left: auto;
+    padding: 23px 30px 28px 13px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-item__info-bigger-block {
+    padding: 23px 30px 24px 26px;
   }
 
   .catalog-item__title {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-bottom: 7px;
+  }
+
+  .catalog-item__shorter-title {
+    width: 220px;
+  }
+
+  .catalog-item__title-bowl {
+    margin: 0 0 11px 0;
+  }
+
+  .catalog-item__title-shorter-card {
+    padding-right: 30px;
   }
 
   .catalog-item__feature {
-    margin-top: 15px;
-    margin-bottom: 150px;
     font-size: 15px;
-    line-height: 2;
+    line-height: 30px;
   }
 
   .catalog-item__line {
     width: 268px;
   }
 
+  .catalog-item__order {
+    margin: 21px 0 0;
+  }
+
   .catalog-item__order-price {
     font-size: 17px;
-    line-height: 1.41;
+    line-height: 24px;
+    margin-left: 5px;
+    letter-spacing: 0.3px;
   }
 }
 
@@ -116,21 +146,28 @@
   }
 
   .catalog-item__info {
-    width: 260px;
-    padding: 29px 28px;
-    margin-top: auto;
+    padding: 22px 32px 29px 26px;
+    margin-top: 0;
+    display: block;
+    margin-left: 0;
+    box-sizing: border-box;
   }
 
   .catalog-item__title {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
+    letter-spacing: 0.1px;
   }
 
   .catalog-item__feature {
-    margin-top: 15px;
+    margin-top: 0;
     font-size: 15px;
-    line-height: 2;
-    margin-bottom: 45px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  .catalog-item__feature-bigger-block {
+    margin-bottom: 15px;
   }
 
   .catalog-item__line {
@@ -139,6 +176,8 @@
 
   .catalog-item__order-price {
     font-size: 17px;
-    line-height: 1.41;
+    line-height: 24px;
+    margin-left: 0;
+    margin-top: 2px;
   }
 }

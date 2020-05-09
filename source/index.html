@@ -10,14 +10,13 @@
 
 <body>
   <header class="page-header">
-      <nav class="page-nav page-nav--closed">
+      <nav class="page-nav page-nav--closed page-nav--nomagic">
       <div class="page-nav__main-nav-box">
         <a href="index.html" class="page-nav__logo">
           <img src="img/logo-mobile.svg" class="page-nav__logo-img" alt="Магазин подарков ручной работы Mishka"
             height="35" width="86">
         </a>
         <button class="page-nav__hamburger" type="button">
-          <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="page-nav__list main-nav">
           <li class="page-nav__list-item main-nav__item">
@@ -65,7 +64,7 @@
     <div class="top-banner top-banner--index-img">
       <div class="container">
         <h1 class="top-banner__title top-banner__title--index-img">
-        Милые штуки ручной работы для дома</h1>
+        Милые штуки ручной <br class="top-banner-br"> работы для дома</h1>
       </div>
     </div>
 
@@ -103,22 +102,25 @@
         </p>
         <table class="product-card__main-table">
           <tr class="product-card__main-table-row">
-            <td class="product-card__main-table-data">Цвет:</td>
-            <td class="product-card__main-table-data">«Тиффани»/серый</td>
+            <td class="product-card__main-table-data product-card__main-table-data-traits">Цвет:</td>
+            <td class="product-card__main-table-data product-card__main-table-data-stats">«Тиффани»/серый</td>
           </tr>
           <tr class="product-card__main-table-row">
-            <td class="product-card__main-table-data">Диаметр:</td>
-            <td class="product-card__main-table-data">25 см</td>
+            <td class="product-card__main-table-data product-card__main-table-data-traits">Диаметр:</td>
+            <td class="product-card__main-table-data product-card__main-table-data-stats">25 см</td>
           </tr>
           <tr class="product-card__main-table-row">
-            <td class="product-card__main-table-data">Высота:</td>
-            <td class="product-card__main-table-data">15 см</td>
+            <td class="product-card__main-table-data product-card__main-table-data-traits">Высота:</td>
+            <td class="product-card__main-table-data product-card__main-table-data-stats">15 см</td>
           </tr>
         </table>
       </div>
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
         <img class="product-card__img" src="img/triple-set-mobile@1x.jpg"
-          alt="Экологически чистая пряжа, ручная работа. Доступны в шести расцветках (красный, черный, белый, синий, желтый и бирюзовый) и трех размерах (2м, 3м и 5м)."
-          width="260" height="315">
+          alt="Экологически чистая пряжа, ручная работа. Доступны в шести расцветках (красный, черный, белый, синий, желтый и бирюзовый) и трех размерах (2м, 3м и 5м).">
+      </picture>
         <div class="product-card__footer">
         <strong class="product-card__footer-price">Цена: 990 руб.</strong>
         <a href="" class="btn product-card__footer-btn">Заказать</a>
@@ -162,10 +164,10 @@
           <li class="reviews__sliding-field">
             <article class="reviews__sliding-field-text">
               <h2 class="visually-hidden">Отзыв нашего покупателя, Анастасии Красильниковой</h2>
-              <p class="reviews__sliding-field-review"><q>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
+              <p class="reviews__sliding-field-review">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
               как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
               и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-              </q></p>
+              </p>
               <p class="reviews__sliding-field-author">
               <cite class="reviews__sliding-field-name">
                 Анастасия Красильникова
@@ -178,7 +180,7 @@
           </li>
         </ul>
         <ul class="reviews__switch-arrows">
-          <li>
+          <li class="reviews__switch-arrows-left">
             <button aria-label="предыдущий отзыв">
               <svg version="1.1" id="icon-left-arrow_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                 y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003"
@@ -187,7 +189,7 @@
               </svg>
             </button>
           </li>
-          <li>
+          <li class="reviews__switch-arrows-right">
             <button aria-label="следующий отзыв">
               <svg version="1.1" id="icon-right-arrow_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                 y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003"
@@ -209,26 +211,30 @@
       <address class="contacts__details">
         <dl class="contacts__details-block">
           <dt class="contacts__details-mail">e-mail:</dt>
-          <dd><a class="contacts__details-mail-plate" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
+          <dd class="contacts__details-mail-plate"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
         </dl>
         <dl class="contacts__details-block">
           <dt class="contacts__details-address">адрес:</dt>
           <dd class="contacts__details-address-plate">
             г. Санкт-Петербург, <br> ул. Большая
-            Конюшенная, д. 19/8, офис 101</dd>
+            Конюшенная, <br> д. 19/8, офис 101</dd>
         </dl>
       </address>
       </div>
       <a href="" class="contacts__map">
-        <img class="contacts__map-img" src="img/map-mobile@1x.jpg"
-          alt="Адрес - г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="320" height="457">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+            <img class="contacts__map-img" src="img/map-mobile@1x.jpg"
+              alt="Адрес - г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        </picture>
       </a>
       <a href="" class="btn contacts__btn">Напишите нам</a>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__box">
+    <div class="container page-footer__wrapper">
       <a href="" class="page-footer__logo">
         <svg version="1.1" id="logo-footer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" width="101.615px" height="34.056px" viewBox="0 0 101.615 34.056"
@@ -304,6 +310,7 @@
     </div>
   </footer>
 
-</body>
 
+  <script src="js/script.js"></script>
+</body>
 </html>
