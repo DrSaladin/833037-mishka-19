@@ -1,0 +1,41 @@
+.socials {
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: @color-black;
+  margin: 0;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.socials__item {
+  margin-left: 40px;
+}
+
+.socials__item a {
+  color: @color-black;
+}
+
+.socials__item a:hover {
+  color: @color-socials;
+}
+
+.socials__item a:focus {
+  color: @color-socials;
+  opacity: 0.3;
+}
+
+.socials__item:first-child {
+  margin-left: -4px;
+}
+
+@media (min-width: @tablet-width) {
+  .socials {
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
+}
