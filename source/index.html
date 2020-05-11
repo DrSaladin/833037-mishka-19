@@ -106,7 +106,7 @@
         </header>
         <div class="product-card__main">
         <p class="product-card__main-info">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках<span class="product-card__ghost-comma">,</span> и трех
           размерах.
         </p>
         <table class="product-card__main-table">
@@ -129,9 +129,9 @@
         <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/triple-set-tablet@1x.webp 1x, img/webp/triple-set-tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/webp/triple-set-mobile@1x.webp 1x, img/webp/triple-set-mobile@2x.webp 2x">
 
-        <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x">
-        <img class="product-card__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+        <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+        <img class="product-card__img" src="img/triple-set-mobile@1x.jpg 1x" srcset="img/triple-set-mobile@2x.jpg 2x"
           alt="Экологически чистая пряжа, ручная работа. Доступны в шести расцветках (красный, черный, белый, синий, желтый и бирюзовый) и трех размерах (2м, 3м и 5м).">
       </picture>
         <div class="product-card__footer">
@@ -178,7 +178,7 @@
             <article class="reviews__sliding-field-text">
               <h2 class="visually-hidden">Отзыв нашего покупателя, Анастасии Красильниковой</h2>
               <p class="reviews__sliding-field-review">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
-              как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+              как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, <br class="reviews__sliding-field-br">
               и мои фотографии сразу стали более стильными, а также набирают больше лайков!
               </p>
               <p class="reviews__sliding-field-author">
@@ -285,6 +285,34 @@
       </a>
     </div>
   </footer>
+
+  <div class="blure-background">
+    <form action="catalog.html" method="get" class="catalog-popup size-popup">
+      <b class="size-popup__title">Добавить в корзину</b>
+      <p class="size-popup__info">Выберите размер:</p>
+      <ul class="size-popup__list">
+        <li class="size-popup__list-item">
+          <input class="size-popup__list-item-radio" type="radio" id="size-s" name="order-size" value="size-s">
+          <label class="size-popup__list-item-label" for="size-s">
+            S
+          </label>
+        </li>
+        <li class="size-popup__list-item">
+          <input class="size-popup__list-item-radio" type="radio" id="size-m" name="order-size" value="size-m">
+          <label class="size-popup__list-item-label" for="size-m">
+            M
+          </label>
+        </li>
+        <li class="size-popup__list-item">
+          <input class="size-popup__list-item-radio" type="radio" id="size-l" name="order-size" value="size-l">
+          <label class="size-popup__list-item-label" for="size-l">
+            L
+          </label>
+        </li>
+      </ul>
+      <button type="submit" class="btn size-popup__btn">Добавить</button>
+    </form>
+  </div>
 
   <div class="visually-hidden">
     <include src="build/img/page-sprite.svg"></include>
