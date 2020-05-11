@@ -2,22 +2,22 @@
   padding: 0;
   list-style: none;
   border: 1px solid @color-light-grey;
-  width: 260px;
+  width: 261px;
   margin: 0 auto 30px auto;
   font-family: @open-sans-font;
   box-sizing: border-box;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 #ececec;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 #ececec;
+  }
 }
 
 .catalog-item-bigger-card {
   min-height: 400px;
-}
-
-.catalog-item:hover {
-  box-shadow: 0 6px 10px 0 #ececec;
-}
-
-.catalog-item:focus {
-  box-shadow: 0 3px 5px 0 #ececec;
 }
 
 .catalog-item__order-cart {

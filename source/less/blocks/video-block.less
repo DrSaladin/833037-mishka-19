@@ -5,15 +5,31 @@
   margin: 0 auto 58px;
   font-family: @open-sans-font;
   position: relative;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 #ececec;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 #ececec;
+  }
 }
 
-.video-block::before {
-  content: url("../img/icon-play.svg");
+.video-block__play-button {
   position: absolute;
   top: 130px;
   left: 80px;
   z-index: 1;
   cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2, 1.2);
+  }
+
+  &:active {
+    transform: scale(0.8, 0.8);
+    opacity: 0.6;
+  }
 }
 
 .video-block__title {
@@ -65,7 +81,7 @@
     flex-direction: column;
   }
 
-  .video-block::before {
+  .video-block__play-button {
     top: 185px;
     left: 285px;
   }
