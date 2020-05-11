@@ -23,16 +23,16 @@
 .catalog-item__order-cart {
   color: @color-black;
   opacity: 0.2;
-}
 
-.catalog-item__order-cart:hover {
-  color: @color-turquoise;
-  opacity: 1;
-}
+  &:hover .catalog-item__order-cart-svg {
+    fill: @color-turquoise;
+    opacity: 1;
+  }
 
-.catalog-item__order-cart:focus {
-  color: @color-turquoise;
-  opacity: 0.6;
+  &:focus .catalog-item__order-cart-svg {
+    fill: @color-turquoise;
+    opacity: 0.6;
+  }
 }
 
 .catalog-item__info {
