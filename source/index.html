@@ -6,11 +6,16 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel=stylesheet href=css/style.min.css>
+  <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2">
+  <script src="js/picturefill.js"></script>
 </head>
 
 <body>
   <header class="page-header">
-    <nav class="page-nav page-nav--closed page-nav--nomagic">
+    <nav class="page-nav page-nav--opened page-nav--nomagic">
       <div class="page-nav__main-nav-box">
         <a href="index.html" class="page-nav__logo">
           <picture>
@@ -23,22 +28,22 @@
         </button>
         <ul class="page-nav__list main-nav">
           <li class="page-nav__list-item main-nav__item">
-            <a href="catalog.html">
+            <a class="page-nav__list-item-link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
           <li class="page-nav__list-item main-nav__item">
-            <a href="form.html">
+            <a class="page-nav__list-item-link" href="form.html">
               Вязание на заказ
             </a>
           </li>
           <li class="page-nav__list-item main-nav__item main-nav__item--desktop">
-            <a href="">
+            <a class="page-nav__list-item-link" href="">
               Новые поступления
             </a>
           </li>
           <li class="page-nav__list-item main-nav__item main-nav__item--desktop">
-            <a href="">
+            <a class="page-nav__list-item-link" href="">
               Распродажа
             </a>
           </li>
@@ -47,16 +52,16 @@
 
       <ul class="page-nav__list user-nav">
         <li class="page-nav__list-item page-nav__list-item--search">
-          <a href="">
-            <svg class="page-nav__list-item-svg--search" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6">
+          <a class="page-nav__list-item-link" href="">
+            <svg class="page-nav__list-item-svg" width="18" height="18" viewBox="-0.8 -0.8 17.6 17.6">
               <use xlink:href="#icon-page-search"></use>
             </svg>
-            <span class="page-nav__list-item-link">Поиск по сайту</span>
+            <span class="page-nav__list-item-button-text">Поиск по сайту</span>
           </a>
         </li>
         <li class="page-nav__list-item page-nav__list-item--cart">
-          <a href="" aria-label="добавить в корзину">
-            <svg class="page-nav__list-item-svg--productcart" width="20.294px" height="18.849px">
+          <a class="page-nav__list-item-link" href="" aria-label="добавить в корзину">
+            <svg class="page-nav__list-item-svg" width="20" height="19">
               <use xlink:href="#icon-productcart"></use>
             </svg>
             Корзина: пока пуста
@@ -80,7 +85,7 @@
     <nav class="index-catalog-nav">
       <ul class="index-catalog-nav__list">
         <li class="index-catalog-nav__list-item index-catalog-nav__list-item--interior">
-          <a href="">
+          <a href="" class="index-catalog-nav__link">
             Предметы <br>
             интерьера
           </a>
@@ -111,16 +116,16 @@
         </p>
         <table class="product-card__main-table">
           <tr class="product-card__main-table-row">
-            <td class="product-card__main-table-data product-card__main-table-data-traits">Цвет:</td>
-            <td class="product-card__main-table-data product-card__main-table-data-stats">«Тиффани»/серый</td>
+            <td class="product-card__main-table-data product-card__main-table-data--traits">Цвет:</td>
+            <td class="product-card__main-table-data product-card__main-table-data--stats">«Тиффани»/серый</td>
           </tr>
           <tr class="product-card__main-table-row">
-            <td class="product-card__main-table-data product-card__main-table-data-traits">Диаметр:</td>
-            <td class="product-card__main-table-data product-card__main-table-data-stats">25 см</td>
+            <td class="product-card__main-table-data product-card__main-table-data--traits">Диаметр:</td>
+            <td class="product-card__main-table-data product-card__main-table-data--stats">25 см</td>
           </tr>
           <tr class="product-card__main-table-row">
-            <td class="product-card__main-table-data product-card__main-table-data-traits">Высота:</td>
-            <td class="product-card__main-table-data product-card__main-table-data-stats">15 см</td>
+            <td class="product-card__main-table-data product-card__main-table-data--traits">Высота:</td>
+            <td class="product-card__main-table-data product-card__main-table-data--stats">15 см</td>
           </tr>
         </table>
       </div>
@@ -131,7 +136,7 @@
 
         <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-        <img class="product-card__img" src="img/triple-set-mobile@1x.jpg 1x" srcset="img/triple-set-mobile@2x.jpg 2x"
+        <img class="product-card__img" srcset="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
           alt="Экологически чистая пряжа, ручная работа. Доступны в шести расцветках (красный, черный, белый, синий, желтый и бирюзовый) и трех размерах (2м, 3м и 5м).">
       </picture>
         <div class="product-card__footer">
@@ -195,14 +200,14 @@
         <ul class="reviews__switch-arrows">
           <li class="reviews__switch-arrows-left">
             <button aria-label="предыдущий отзыв">
-              <svg width="50px" height="26.003px" viewBox="0 0 50 26.003">
+              <svg width="50" height="26" viewBox="0 0 50 26.003">
                 <use xlink:href="#icon-review-left-arrow"></use>
               </svg>
             </button>
           </li>
           <li class="reviews__switch-arrows-right">
             <button aria-label="следующий отзыв">
-              <svg width="50px" height="26.003px" viewBox="0 0 50 26.003">
+              <svg width="50" height="26" viewBox="0 0 50 26.003">
                 <use xlink:href="#icon-review-right-arrow"></use>
               </svg>
             </button>
@@ -230,47 +235,39 @@
         </dl>
       </address>
       </div>
-      <a href="" class="contacts__map">
-        <picture>
-          <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/map-desktop@1x.webp 1x, img/webp/map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/map-tablet@1x.webp 1x, img/webp/map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/webp/map-mobile@1x.webp 1x, img/webp/map-mobile@2x.webp 2x">
-
-          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x">
-            <img class="contacts__map-img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"
-              alt="Адрес - г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-        </picture>
-      </a>
+        <iframe class="contacts__iframe-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+          width="320" height="457" allowfullscreen>
+        </iframe>
       <a href="" class="btn contacts__btn">Напишите нам</a>
     </section>
   </main>
 
   <footer class="page-footer">
     <div class="container page-footer__wrapper">
-      <a href="" class="page-footer__logo">
-        <svg width="101.615px" height="34.056px">
+      <a href="index.html" class="page-footer__logo">
+        <svg width="102" height="34">
           <use xlink:href="#mishka-footer-logo"></use>
         </svg>
       </a>
       <ul class="page-footer__social-list socials">
         <li class="page-footer__social-list-item socials__item">
           <a href="" aria-label="Интернет-магазин Мишка в Инстаграм">
-            <svg width="21.769px" height="21.334px">
+            <svg width="22" height="21">
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-list-item socials__item">
           <a href="" aria-label="Интернет-магазин Мишка в Фейсбуке">
-            <svg width="14.962px" height="27.718px">
+            <svg width="15" height="28">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-list-item socials__item">
           <a href="" aria-label="Интернет-магазин Мишка во Твиттер">
-            <svg width="23.494px" height="20.168px">
+            <svg width="24" height="20">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
@@ -279,14 +276,14 @@
       <hr class="page-footer__line">
       <a class="page-footer__developers" href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
-        <svg width="26.943px" height="34.09px">
+        <svg class="page-footer__developers-logo" width="27" height="34">
           <use xlink:href="#htmlacademy-footer-logo"></use>
         </svg>
       </a>
     </div>
   </footer>
 
-  <div class="blure-background">
+  <div class="blure-background visually-hidden">
     <form action="catalog.html" method="get" class="catalog-popup size-popup">
       <b class="size-popup__title">Добавить в корзину</b>
       <p class="size-popup__info">Выберите размер:</p>
@@ -318,5 +315,6 @@
     <include src="build/img/page-sprite.svg"></include>
   </div>
   <script src="js/script.js"></script>
+  <script src="js/popup-script.js"></script>
 </body>
 </html>

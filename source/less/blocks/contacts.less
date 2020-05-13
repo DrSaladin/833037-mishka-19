@@ -1,7 +1,6 @@
 .contacts {
   font-family: @open-sans-font;
-  margin: 32px 0 39px;
-  position: relative;
+  margin: 31px 0 39px;
 }
 
 .contacts__title {
@@ -42,6 +41,7 @@
   margin: 0;
   line-height: 30px;
   margin-top: -2px;
+  letter-spacing: -0.1px;
 }
 
 .contacts__details-mail-plate a {
@@ -62,9 +62,19 @@
   }
 }
 
+.contacts__iframe-map {
+  width: 100%;
+  min-height: 454px;
+  min-width: 320px;
+  position: relative;
+  border: none;
+}
+
 .contacts__map {
   position: relative;
   display: block;
+  top: 0;
+  width: 100%;
 
   &::before {
     content: url("../img/icon-map-pin.svg");
@@ -82,31 +92,38 @@
 }
 
 .contacts__btn {
-  margin: 42px auto 0 auto;
-  letter-spacing: 1.3px;
+  margin: 36px auto 0 auto;
   position: relative;
+  font-size: 17px;
+  letter-spacing: 0.9px;
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
-    margin: 24px 0 57px;
-    background-image: url("../img/icon-flag.svg");
-    background-position: 93% 1%;
-    background-repeat: no-repeat;
+    margin: 24px 0 55px;
+    position: relative;
+
+    &::before {
+      content: url("../img/icon-flag.svg");
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      top: -2%;
+      right: 7%;
+    }
   }
 
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
     padding: 0;
-    margin: 0 0 33px -2px;
-    padding-top: 20px;
+    margin: 46px 0 33px -3px;
     letter-spacing: -0.3px;
   }
 
   .contacts__details {
     font-size: 17px;
-    line-height: 30px;
+    line-height: 25px;
     display: flex;
     padding: 0;
     flex-wrap: wrap;
@@ -131,14 +148,22 @@
 
   .contacts__details-address-plate {
     margin-right: 0;
-    line-height: 31px;
-    margin-top: -1px;
+    line-height: 30px;
+  }
+
+  .contacts__iframe-map {
+    width: 100%;
+    min-height: 457px;
+    position: relative;
+    border: none;
+    margin-bottom: 55px;
   }
 
   .contacts__btn {
     width: 230px;
     margin-top: 0;
-    letter-spacing: 1px;
+    letter-spacing: -0.6px;
+    font-size: 18px;
 
     &:hover {
       width: 230px;
@@ -166,11 +191,11 @@
 @media (min-width: @desktop-width) {
   .contacts {
     background-image: url("../img/icon-flag.svg");
-    background-position: 6% 3%;
+    background-position: 6% 11%;
     background-repeat: no-repeat;
     width: 1050px;
-    margin: 105px auto 105px auto;
-    padding-top: 20px;
+    margin: 79px auto 105px auto;
+    position: relative;
   }
 
   .contacts__wrapper {
@@ -225,7 +250,7 @@
     margin: 0;
     text-transform: uppercase;
     margin-left: 175px;
-    margin-top: -39px;
+    margin-top: -34px;
 
     &:hover {
       width: 230px;
@@ -236,18 +261,16 @@
     }
   }
 
-  .contacts__map {
+  .contacts__iframe-map {
+    width: 100%;
+    height: 457px;
+    width: 525px;
     position: absolute;
-    display: block;
+    border: none;
+    margin-bottom: 0;
+    margin-top: 27px;
     right: 0;
     top: -50px;
     padding: 0;
-
-    &::before {
-      content: url("../img/icon-map-pin.svg");
-      position: absolute;
-      top: 32%;
-      left: 45%;
-    }
   }
 }

@@ -6,11 +6,16 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Каталог</title>
   <link rel=stylesheet href=css/style.min.css>
+  <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2">
+  <script src="js/picturefill.js"></script>
 </head>
 
 <body>
   <header class="page-header">
-    <nav class="page-nav page-nav--closed page-nav--nomagic">
+    <nav class="page-nav page-nav--opened page-nav--nomagic">
       <div class="page-nav__main-nav-box">
         <a href="index.html" class="page-nav__logo">
           <picture>
@@ -23,22 +28,22 @@
         </button>
         <ul class="page-nav__list main-nav">
           <li class="page-nav__list-item main-nav__item">
-            <a href="catalog.html">
+            <a class="page-nav__list-item-link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
           <li class="page-nav__list-item main-nav__item">
-            <a href="form.html">
+            <a class="page-nav__list-item-link" href="form.html">
               Вязание на заказ
             </a>
           </li>
           <li class="page-nav__list-item main-nav__item main-nav__item--desktop">
-            <a href="">
+            <a class="page-nav__list-item-link" href="">
               Новые поступления
             </a>
           </li>
           <li class="page-nav__list-item main-nav__item main-nav__item--desktop">
-            <a href="">
+            <a class="page-nav__list-item-link" href="">
               Распродажа
             </a>
           </li>
@@ -47,16 +52,16 @@
 
       <ul class="page-nav__list user-nav">
         <li class="page-nav__list-item page-nav__list-item--search">
-          <a href="">
-            <svg class="page-nav__list-item-svg--search" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6">
+          <a class="page-nav__list-item-link" href="">
+            <svg class="page-nav__list-item-svg" width="18" height="18" viewBox="-0.8 -0.8 17.6 17.6">
               <use xlink:href="#icon-page-search"></use>
             </svg>
-            <span class="page-nav__list-item-link">Поиск по сайту</span>
+            <span class="page-nav__list-item-button-text">Поиск по сайту</span>
           </a>
         </li>
         <li class="page-nav__list-item page-nav__list-item--cart">
-          <a href="" aria-label="добавить в корзину">
-            <svg class="page-nav__list-item-svg--productcart" width="20.294px" height="18.849px">
+          <a class="page-nav__list-item-link" href="" aria-label="добавить в корзину">
+            <svg class="page-nav__list-item-svg" width="20" height="19">
               <use xlink:href="#icon-productcart"></use>
             </svg>
             Корзина: пока пуста
@@ -86,12 +91,12 @@
 
             <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg, img/photo-hare-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg, img/photo-hare-tablet@2x.jpg 2x">
-              <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x"
+              <img srcset="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x"
                 alt="Зайчик-попрыгайчик. Детская игрушка сделанная из гипоаллергенного материала. Лучший подарок вашим маленьким ангелочкам.">
           </picture>
         </a>
         <div class="catalog-item__info">
-        <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
+        <a class="catalog-item__title-link" href=""><h3 class="catalog-item__title">Зайчик-попрыгайчик</h3></a>
         <p class="catalog-item__feature">Рост 30 см, вес 200 г</p>
         <hr class="catalog-item__line">
         <p class="catalog-item__order">
@@ -99,7 +104,7 @@
             1 200 руб.
           </strong>
           <a href="" class="catalog-item__order-cart" aria-label="добавить в корзину">
-            <svg class="catalog-item__order-cart-svg" width="20.294px" height="18.849px">
+            <svg class="catalog-item__order-cart-svg" width="20" height="19">
               <use xlink:href="#icon-productcart"></use>
             </svg>
           </a>
@@ -116,12 +121,12 @@
 
             <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg, img/photo-bowl-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg, img/photo-bowl-tablet@2x.jpg 2x">
-              <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x"
+              <img srcset="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x"
                 alt="Корзинка для белья. Создана любящими руками только из натуральных тканей. Пять расцветок, три размера.">
           </picture>
         </a>
         <div class="catalog-item__info">
-        <h3 class="catalog-item__title catalog-item__title-bowl">Корзинка для белья</h3>
+        <a class="catalog-item__title-link" href=""><h3 class="catalog-item__title catalog-item__title-bowl">Корзинка для белья</h3></a>
         <p class="catalog-item__feature">Диаметр 15 см, высота 10 см</p>
         <hr class="catalog-item__line">
         <p class="catalog-item__order">
@@ -129,7 +134,7 @@
             690 руб.
           </strong>
           <a href="" class="catalog-item__order-cart" aria-label="добавить в корзину">
-            <svg class="catalog-item__order-cart-svg"width="20.294px" height="18.849px">
+            <svg class="catalog-item__order-cart-svg" width="20" height="19">
               <use xlink:href="#icon-productcart"></use>
             </svg>
           </a>
@@ -137,7 +142,7 @@
         </div>
       </li>
 
-      <li class="catalog-item catalog-item-bigger-card">
+      <li class="catalog-item catalog-item--bigger-card">
         <a href="" class="catalog-item__img-link">
           <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/photo-toys-desktop@1x.webp 1x, img/webp/photo-toys-desktop@2x.webp 2x">
@@ -146,20 +151,20 @@
 
             <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg, img/photo-toys-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg, img/photo-toys-tablet@2x.jpg 2x">
-              <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" class="catalog-item__image"
+              <img srcset="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" class="catalog-item__image"
                 alt="Большая корзинка для игрушек. Домик для все игрушек вашего чада. Гипоаллергенный материал и простой фасон подойдет для детей любого возраста.">
           </picture>
         </a>
-        <div class="catalog-item__info catalog-item__info-bigger-block">
-        <h3 class="catalog-item__title catalog-item__shorter-title">Большая корзинка для игрушек</h3>
-        <p class="catalog-item__feature catalog-item__feature-bigger-block">Диаметр 30 см, высота 30 см</p>
+        <div class="catalog-item__info catalog-item__info--bigger-block">
+        <a class="catalog-item__title-link" href=""><h3 class="catalog-item__title catalog-item__shorter-title">Большая корзинка для игрушек</h3></a>
+        <p class="catalog-item__feature catalog-item__feature--bigger-block">Диаметр 30 см, высота 30 см</p>
         <hr class="catalog-item__line">
         <p class="catalog-item__order">
           <strong class="catalog-item__order-price">
             1 500 руб.
           </strong>
           <a href="" class="catalog-item__order-cart" aria-label="добавить в корзину">
-            <svg class="catalog-item__order-cart-svg" width="20.294px" height="18.849px">
+            <svg class="catalog-item__order-cart-svg" width="20" height="19">
               <use xlink:href="#icon-productcart"></use>
             </svg>
           </a>
@@ -178,7 +183,7 @@
 
         <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
-        <img class="video-block__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс создания вязаных игрушек">
+        <img class="video-block__video" srcset="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс создания вязаных игрушек">
       </picture>
       <p class="video-block__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
         появляются наши товары.</p>
@@ -188,29 +193,29 @@
 
   <footer class="page-footer">
     <div class="container page-footer__wrapper">
-      <a href="" class="page-footer__logo">
-        <svg width="101.615px" height="34.056px">
+      <a href="index.html" class="page-footer__logo">
+        <svg width="102" height="34">
           <use xlink:href="#mishka-footer-logo"></use>
         </svg>
       </a>
       <ul class="page-footer__social-list socials">
         <li class="page-footer__social-list-item socials__item">
           <a href="" aria-label="Интернет-магазин Мишка в Инстаграм">
-            <svg width="21.769px" height="21.334px">
+            <svg width="22" height="21">
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-list-item socials__item">
           <a href="" aria-label="Интернет-магазин Мишка в Фейсбуке">
-            <svg width="14.962px" height="27.718px">
+            <svg width="15" height="28">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-list-item socials__item">
           <a href="" aria-label="Интернет-магазин Мишка во Твиттер">
-            <svg width="23.494px" height="20.168px">
+            <svg width="24" height="20">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
@@ -219,14 +224,14 @@
       <hr class="page-footer__line">
       <a class="page-footer__developers" href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
-        <svg width="26.943px" height="34.09px">
+        <svg class="page-footer__developers-logo" width="27" height="34">
           <use xlink:href="#htmlacademy-footer-logo"></use>
         </svg>
       </a>
     </div>
   </footer>
 
-  <div class="blure-background">
+  <div class="blure-background visually-hidden">
     <form action="catalog.html" method="get" class="catalog-popup size-popup">
       <b class="size-popup__title">Добавить в корзину</b>
       <p class="size-popup__info">Выберите размер:</p>
@@ -258,5 +263,6 @@
     <include src="build/img/page-sprite.svg"></include>
   </div>
   <script src="js/script.js"></script>
+  <script src="js/popup-script.js"></script>
 </body>
 </html>

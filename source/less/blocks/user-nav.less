@@ -1,0 +1,29 @@
+@media (min-width: @tablet-width) {
+    .user-nav {
+    display: flex;
+    order: 1;
+    min-height: 88px;
+    flex-wrap: wrap;
+    width: 350px;
+    justify-content: flex-end;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 88px;
+      background-color: #f9f9f9;
+      left: 83px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 88px;
+      width: 2px;
+      background-color: #f9f9f9;
+      left: 0;
+    }
+  }
+}
