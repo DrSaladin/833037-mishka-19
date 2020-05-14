@@ -136,8 +136,35 @@
 
   .reviews__sliding {
     width: 642px;
+    height: 284.6px;
     order: 3;
     margin: 0;
+    position: relative;
+  }
+
+  .reviews__sliding-field {
+    width: 642px;
+    height: 235.6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s;
+  }
+
+  .reviews__sliding-field--current {
+    width: 642px;
+    height: 235.6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 2;
   }
 
   .reviews__sliding-field-text {
@@ -168,6 +195,8 @@
     margin: -85px 19px 38px auto;
     width: 140px;
     justify-content: space-between;
+    position: relative;
+    z-index: 3;
   }
 
   .reviews__switch-arrows button {
@@ -231,6 +260,7 @@
     order: 3;
     margin: 0;
     margin-left: 175px;
+    position: relative;
   }
 
   .reviews__sliding-field-text {

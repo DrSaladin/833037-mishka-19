@@ -179,7 +179,7 @@
       <div class="container reviews__wrapper">
         <h2 class="reviews__title">Отзывы</h2>
         <ul class="reviews__sliding">
-          <li class="reviews__sliding-field">
+          <li class="reviews__sliding-field reviews__sliding-field--current">
             <article class="reviews__sliding-field-text">
               <h2 class="visually-hidden">Отзыв нашего покупателя, Анастасии Красильниковой</h2>
               <p class="reviews__sliding-field-review">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
@@ -196,17 +196,51 @@
             </p>
             </article>
           </li>
+          <li class="reviews__sliding-field">
+            <article class="reviews__sliding-field-text">
+              <h2 class="visually-hidden">Отзы123123123 упателя, Анастасии Красильниковой</h2>
+              <p class="reviews__sliding-field-review">To be, or not to be, that is the question; Whether 'tis nobler in the mind to suffer; The Slings and Arrows of
+              outrageous Fortune; Or to take arms against a sea of troubles, And by opposing, end them. To die, to sleep; No more; and
+              by a sleep to say we end; The heart-ache and the thousand natural shocks
+              </p>
+              <p class="reviews__sliding-field-author">
+                <cite class="reviews__sliding-field-name">
+                  Гамлет, принц датский
+                </cite>
+                <cite class="reviews__sliding-field-nickname">
+                  @gamlet
+                </cite>
+              </p>
+            </article>
+          </li>
+          <li class="reviews__sliding-field">
+            <article class="reviews__sliding-field-text">
+              <h2 class="visually-hidden">1111 нашего покупателя, Анастасии Красильниковой</h2>
+              <p class="reviews__sliding-field-review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+              aute irure dolor in reprehenderit
+              </p>
+              <p class="reviews__sliding-field-author">
+                <cite class="reviews__sliding-field-name">
+                  Рыба, просто рыба
+                </cite>
+                <cite class="reviews__sliding-field-nickname">
+                  @pisces
+                </cite>
+              </p>
+            </article>
+          </li>
         </ul>
         <ul class="reviews__switch-arrows">
           <li class="reviews__switch-arrows-left">
-            <button aria-label="предыдущий отзыв">
+            <button aria-label="предыдущий отзыв" class="previous">
               <svg width="50" height="26" viewBox="0 0 50 26.003">
                 <use xlink:href="#icon-review-left-arrow"></use>
               </svg>
             </button>
           </li>
           <li class="reviews__switch-arrows-right">
-            <button aria-label="следующий отзыв">
+            <button aria-label="следующий отзыв" class="next">
               <svg width="50" height="26" viewBox="0 0 50 26.003">
                 <use xlink:href="#icon-review-right-arrow"></use>
               </svg>
@@ -316,5 +350,6 @@
   </div>
   <script src="js/script.js"></script>
   <script src="js/popup-script.js"></script>
+  <script src="js/slide.js"></script>
 </body>
 </html>
