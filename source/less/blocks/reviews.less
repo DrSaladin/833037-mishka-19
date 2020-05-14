@@ -10,19 +10,46 @@
   line-height: 30px;
   font-weight: bold;
   color: @color-black;
-  margin-bottom: 25px;
+  margin-bottom: 9px;
   margin-left: -2px;
 }
 
 .reviews__sliding {
   padding: 0;
   list-style: none;
+  position: relative;
+  width: 260px;
+  height: 354px;
+  margin: 0;
+  margin-bottom: 45px;
 }
 
 .reviews__sliding-field {
-  padding: 0;
-  list-style: none;
-}
+    width: 260px;
+    height: 354px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s;
+    padding: 0;
+    list-style: none;
+  }
+
+  .reviews__sliding-field--current {
+    width: 260px;
+    height: 354px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 2;
+  }
 
 .reviews__sliding-field-text {
   font-family: @open-sans-font;
@@ -136,8 +163,35 @@
 
   .reviews__sliding {
     width: 642px;
+    height: 284.6px;
     order: 3;
     margin: 0;
+    position: relative;
+  }
+
+  .reviews__sliding-field {
+    width: 642px;
+    height: 235.6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s;
+  }
+
+  .reviews__sliding-field--current {
+    width: 642px;
+    height: 235.6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 2;
   }
 
   .reviews__sliding-field-text {
@@ -168,6 +222,8 @@
     margin: -85px 19px 38px auto;
     width: 140px;
     justify-content: space-between;
+    position: relative;
+    z-index: 3;
   }
 
   .reviews__switch-arrows button {
@@ -222,7 +278,7 @@
     font-size: 53px;
     line-height: 57px;
     order: 1;
-    margin-top: 70px;
+    margin-top: 69px;
     margin-left: 170px;
   }
 
@@ -231,6 +287,7 @@
     order: 3;
     margin: 0;
     margin-left: 175px;
+    position: relative;
   }
 
   .reviews__sliding-field-text {
@@ -273,7 +330,7 @@
     align-self: flex-end;
     width: 140px;
     margin-right: 18px;
-    margin-bottom: -2px;
+    margin-bottom: 86px;
   }
 
   .reviews__switch-arrows button {
@@ -288,7 +345,7 @@
     order: 2;
     width: 175px;
     text-transform: uppercase;
-    margin: 80px 0 30px auto;
+    margin: 78px 0 30px auto;
     min-height: 50px;
 
     &:hover {
