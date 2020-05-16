@@ -10,12 +10,12 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2">
-  <script src="js/picturefill.js"></script>
+  <script src="../node_modules/picturefill/dist/picturefill.js"></script>
 </head>
 
 <body>
   <header class="page-header">
-    <nav class="page-nav page-nav--opened page-nav--nomagic">
+    <nav class="page-nav page-nav--nomagic">
       <div class="page-nav__main-nav-box">
         <a href="index.html" class="page-nav__logo">
           <picture>
@@ -85,13 +85,13 @@
     <nav class="index-catalog-nav">
       <ul class="index-catalog-nav__list">
         <li class="index-catalog-nav__list-item index-catalog-nav__list-item--interior">
-          <a href="" class="index-catalog-nav__link">
+          <a href="" class="index-catalog-nav__link index-catalog-nav__link--interior">
             Предметы <br>
             интерьера
           </a>
         </li>
         <li class="index-catalog-nav__list-item index-catalog-nav__list-item--toys">
-          <a href="">
+          <a href="" class="index-catalog-nav__link index-catalog-nav__link--toys">
             Детские <br>
             игрушки
           </a>
@@ -136,7 +136,7 @@
 
         <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-        <img class="product-card__img" srcset="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+        <img class="product-card__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
           alt="Экологически чистая пряжа, ручная работа. Доступны в шести расцветках (красный, черный, белый, синий, желтый и бирюзовый) и трех размерах (2м, 3м и 5м).">
       </picture>
         <div class="product-card__footer">

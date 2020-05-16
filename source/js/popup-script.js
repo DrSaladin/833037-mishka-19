@@ -21,4 +21,3 @@ for (var i = 0; i < links.length; i++) {
     popupBlure.classList.add("blure-background-popup-show");
   });
 }
-

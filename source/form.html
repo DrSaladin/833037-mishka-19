@@ -10,12 +10,12 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2">
-  <script src="js/picturefill.js"></script>
+  <script src="../node_modules/picturefill/dist/picturefill.js"></script>
 </head>
 
 <body>
   <header class="page-header">
-    <nav class="page-nav page-nav--opened page-nav--nomagic">
+    <nav class="page-nav page-nav--nomagic">
       <div class="page-nav__main-nav-box">
         <a href="index.html" class="page-nav__logo">
           <picture>
@@ -100,8 +100,10 @@
             </label>
           </fieldset>
         </fieldset>
+      </div>
 
         <fieldset class="form-order__item-color fieldset">
+          <div class="container">
           <p class="fieldset__legend fieldset__legend--color">Цвет</p>
           <fieldset class="fieldset__legend-color-box">
             <input class="fieldset__checkbox-input" id="white-cb" type="checkbox" name="white-cb" value="white-cb" checked>
@@ -129,9 +131,11 @@
               Оранжевый
             </label>
           </fieldset>
+          </div>
         </fieldset>
 
         <fieldset class="form-order__name-info fieldset">
+          <div class="container">
           <p class="fieldset__legend fieldset__legend--name-info">ФИО</p>
           <fieldset class="fieldset__legend-info-box">
             <label for="first-name" class="fieldset__label fieldset__label--full-name">
@@ -149,9 +153,11 @@
               <input class="fieldset__text-input" type="text" name="last-name" id="last-name" placeholder="Отчество, если желаете">
             </label>
           </fieldset>
+          </div>
         </fieldset>
 
         <fieldset class="form-order__contacts-info fieldset-info">
+          <div class="container">
           <fieldset class="fieldset-info__contacts fieldset">
             <p class="fieldset__legend fieldset__legend--tel">Тел</p>
             <label for="tel" class="fieldset__label fieldset__label--tel">
@@ -164,19 +170,21 @@
               <input class="fieldset__email-input" type="email" name="mail" id="mail" placeholder="Ваш Email*" required>
             </label>
           </fieldset>
+          </div>
         </fieldset>
 
-          <fieldset class="form-order__item-textarea">
-          <p class="fieldset__legend fieldset__legend--text">Доп</p>
-          <label for="text" class="fieldset__label fieldset__label--textarea">
-            <textarea class="fieldset__textarea" placeholder="Опишите все ваши пожелания к заказу" name="text" id="text" cols="25" rows="6"></textarea>
-          </label>
-          </fieldset>
+        <fieldset class="form-order__item-textarea">
+          <div class="container">
+            <p class="fieldset__legend fieldset__legend--text">Доп</p>
+            <label for="text" class="fieldset__label fieldset__label--textarea">
+              <textarea class="fieldset__textarea" placeholder="Опишите все ваши пожелания к заказу" name="text" id="text" cols="25" rows="6"></textarea>
+            </label>
+          </div>
+        </fieldset>
           <p class="form-order__submit-block">
             <small class="form-order__nota-bene">*Поля обязательны для заполнения</small>
             <button class="btn form-order__submit-btn" type="submit">Отправить заказ</button>
           </p>
-      </div>
     </form>
   </main>
 

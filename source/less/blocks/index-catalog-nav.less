@@ -11,7 +11,7 @@
   position: relative;
 }
 
-.index-catalog-nav__list-item a {
+.index-catalog-nav__link {
   font-family: @open-sans-font;
   font-size: 19px;
   line-height: 23px;
@@ -25,46 +25,72 @@
   padding: 26px 20px 20px 29px;
 }
 
-.index-catalog-nav__list-item--interior a {
+.index-catalog-nav__link--interior {
   background-color: #63d1bb;
+}
+
+.index-catalog-nav__link--interior::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 62px;
   background-image: url("../img/icon-interior.svg");
-  background-position: 87% 55%;
   background-repeat: no-repeat;
+  top: 24px;
+  right: 17px;
+  opacity: 0.5;
 }
 
-.index-catalog-nav__list-item--interior a:hover {
+.index-catalog-nav__link--interior:hover {
   color: rgba(255, 255, 255, 0.7);
   background-color: #59d5bc;
-  background-image: url("../img/icon-interior.svg");
-  opacity: 0.8;
 }
 
-.index-catalog-nav__list-item--interior a:focus {
-  color: rgba(255, 255, 255, 0.7);
+.index-catalog-nav__link--interior:hover::after {
+  opacity: 0.7;
+}
+
+.index-catalog-nav__link--interior:focus {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #59d5bc;
-  background-image: url("../img/icon-interior.svg");
-  opacity: 0.8;
 }
 
-.index-catalog-nav__list-item--toys a {
+.index-catalog-nav__link--interior:focus::after {
+  opacity: 0.3;
+}
+
+.index-catalog-nav__link--toys {
   background-color: #56c3b2;
+}
+
+.index-catalog-nav__link--toys::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 62px;
   background-image: url("../img/icon-toy.svg");
-  background-position: 90% 50%;
   background-repeat: no-repeat;
+  top: 21px;
+  right: 28px;
+  opacity: 0.5;
 }
 
-.index-catalog-nav__list-item--toys a:hover {
+.index-catalog-nav__link--toys:hover {
   color: rgba(255, 255, 255, 0.7);
   background-color: #46c1ae;
-  background-image: url("../img/icon-toy.svg");
-  opacity: 0.8;
 }
 
-.index-catalog-nav__list-item--toys a:focus {
-  color: rgba(255, 255, 255, 0.7);
+.index-catalog-nav__link--toys:hover::after {
+  opacity: 0.7;
+}
+
+.index-catalog-nav__link--toys:focus {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #46c1ae;
-  background-image: url("../img/icon-toy.svg");
-  opacity: 0.8;
+}
+
+.index-catalog-nav__link--toys:focus::after {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -89,7 +115,7 @@
     flex-wrap: wrap;
   }
 
-  .index-catalog-nav__list-item a {
+  .index-catalog-nav__link {
     font-size: 20px;
     line-height: 30px;
     padding: 27px 20px 20px 35px;
@@ -98,12 +124,49 @@
     min-width: 334px;
   }
 
-  .index-catalog-nav__list-item--interior a {
-    background-position: 88% 53%;
+  .index-catalog-nav__link--interior::after {
+    top: 30px;
+    right: 17px;
   }
 
-  .index-catalog-nav__list-item--toys a {
-    background-position: 88% 52%;
+  .index-catalog-nav__link--toys::after {
+    top: 31px;
+    right: 33px;
+  }
+
+  .index-catalog-nav__list-item--interior a:hover,
+  .index-catalog-nav__list-item--toys a:hover {
+    padding: 22px 20px 20px 35px;
+  }
+
+  .index-catalog-nav__link--interior:hover::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 334px;
+    top: -5px;
+    left: 0;
+    background-color: #59d5bc;
+  }
+
+  .index-catalog-nav__link--toys:hover::before {
+    content: "";
+    background-color: #46c1ae;
+    position: absolute;
+    height: 5px;
+    width: 334px;
+    top: -5px;
+    left: 0;
+  }
+
+  .index-catalog-nav__link--interior:hover::after {
+    top: 25px;
+    right: 17px;
+  }
+
+  .index-catalog-nav__link--toys:hover::after {
+    top: 26px;
+    right: 33px;
   }
 }
 
@@ -121,7 +184,7 @@
     margin: auto;
   }
 
-  .index-catalog-nav__list-item a {
+  .index-catalog-nav__link {
     font-size: 20px;
     line-height: 30px;
     padding: 27px 20px 20px 36px;
@@ -130,11 +193,11 @@
     min-width: 525px;
   }
 
-  .index-catalog-nav__list-item--interior a {
-    background-position: 93% 53%;
+  .index-catalog-nav__list-item--interior a:hover::before {
+    width: 525px;
   }
 
-  .index-catalog-nav__list-item--toys a {
-    background-position: 93% 52%;
+  .index-catalog-nav__list-item--toys a:hover::before {
+    width: 525px;
   }
 }

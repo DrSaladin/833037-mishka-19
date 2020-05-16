@@ -1,6 +1,7 @@
 var pageNav = document.querySelector('.page-nav');
 var hamburger = document.querySelector('.page-nav__hamburger');
 
+pageNav.classList.add("page-nav--opened");
 pageNav.classList.remove('page-nav--nomagic');
 
 hamburger.addEventListener('click', function () {
@@ -12,5 +13,3 @@ hamburger.addEventListener('click', function () {
     pageNav.classList.remove('page-nav--opened');
   }
 });
-
-
