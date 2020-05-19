@@ -1,27 +1,28 @@
 .catalog-list {
-  min-width: 320px;
   display: flex;
   flex-direction: column;
-  padding: 0;
-  margin-top: 27px;
-  margin-bottom: 0;
+  margin: 27px auto 0 auto;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 30px;
 }
 
 @media (min-width: @tablet-width) {
   .catalog-list {
-    min-width: 670px;
     margin-top: 68px;
+    width: 768px;
+    padding: 0 50px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .catalog-list {
-    width: 1050px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 125px auto 5px auto;
     flex-wrap: wrap;
+    width: 1150px;
   }
 
   .catalog-list__wrapper {

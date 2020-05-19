@@ -1,8 +1,8 @@
 
 var slides = document.querySelectorAll(".reviews__sliding .reviews__sliding-field");
 var currentSlide = 0;
-var next = document.querySelector(".next");
-var previous = document.querySelector(".previous");
+var next = document.querySelector(".reviews__switch-arrows-next");
+var previous = document.querySelector(".reviews__switch-arrows-previous");
 
 
 function nextSlide() {
