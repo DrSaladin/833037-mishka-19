@@ -22,7 +22,7 @@
 }
 
 .catalog-item__info {
-  padding: 23px 27px 25px 28px;
+  padding: 27px 27px 27px 27px;
 }
 
 .catalog-item__title-link {
@@ -31,7 +31,7 @@
 }
 
 .catalog-item__info--bigger-block {
-  padding: 23px 30px 24px 26px;
+  padding: 26px 30px 24px 26px;
 }
 
 .catalog-item__title {
@@ -69,7 +69,7 @@
 .catalog-item__order {
   position: relative;
   padding: 0;
-  margin: 24px 0 0;
+  margin: 23px 0 0;
   display: flex;
   justify-content: space-between;
 }
@@ -82,21 +82,21 @@
   width: 20px;
   height: 19px;
   display: block;
-  //overflow: hidden;
+  overflow: hidden;
+  fill: @color-black;
+  fill-opacity: 0.2;
 }
 
 .catalog-item__order-cart {
   color: @color-black;
-  opacity: 0.2;
 
   &:hover .catalog-item__order-cart-svg {
     fill: @color-turquoise;
-    opacity: 1;
+    fill-opacity: 1;
   }
 
   &:focus .catalog-item__order-cart-svg {
-    fill: @color-turquoise;
-    opacity: 0.6;
+    fill: rgba(99, 209, 187, 0.6);
   }
 }
 
@@ -111,20 +111,20 @@
   .catalog-item__info {
     min-width: 275px;
     margin-left: auto;
-    padding: 23px 30px 28px 13px;
+    padding: 23px 33px 28px 13px;
     display: flex;
     flex-direction: column;
   }
 
   .catalog-item__info--bigger-block {
-    padding: 23px 30px 28px 26px;
+    padding: 23px 34px 28px 26px;
   }
 
   .catalog-item__title {
     font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.1px;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
   }
 
   .catalog-item__img {
@@ -138,10 +138,6 @@
 
   .catalog-item__shorter-title {
     width: 220px;
-  }
-
-  .catalog-item__title-bowl {
-    margin: 0 0 7px 0;
   }
 
   .catalog-item__title-shorter-card {
@@ -181,7 +177,7 @@
   }
 
   .catalog-item__info {
-    padding: 22px 32px 21px 26px;
+    padding: 25px 32px 21px 26px;
     margin-top: 0;
     display: block;
     margin-left: 0;
@@ -189,13 +185,14 @@
   }
 
   .catalog-item__info--bigger-block {
-    padding: 21px 32px 21px 26px;
+    padding: 24px 32px 21px 26px;
   }
 
   .catalog-item__title {
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 0.1px;
+    margin-bottom: 7px;
   }
 
   .catalog-item__img-link {
